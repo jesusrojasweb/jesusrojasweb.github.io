@@ -1,0 +1,858 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"pre",
+				"pre-wrap"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"blo",
+				"blog"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"padint",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"perfi",
+				"perfil__nombres"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"pts",
+				"ptsini"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"php",
+				"php	php1"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"elem",
+				"element"
+			],
+			[
+				"element",
+				"elemento1"
+			],
+			[
+				"a",
+				"a	Tag"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"requ",
+				"requestHandlers"
+			],
+			[
+				"inici",
+				"iniciar"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"imge",
+				"imagen4"
+			],
+			[
+				"imagen",
+				"imagen"
+			],
+			[
+				"ima",
+				"imagen"
+			],
+			[
+				"im",
+				"imagen"
+			],
+			[
+				"der",
+				"derOK"
+			],
+			[
+				"image",
+				"imagen"
+			],
+			[
+				"Ir",
+				"Ironman"
+			],
+			[
+				"Iron",
+				"Ironman"
+			],
+			[
+				"irn",
+				"IronDibujo"
+			],
+			[
+				"iz",
+				"izquiOK"
+			],
+			[
+				"fre",
+				"frenteOK"
+			],
+			[
+				"atra",
+				"atrasURL"
+			],
+			[
+				"at",
+				"atURL"
+			],
+			[
+				"izq",
+				"izqURL"
+			],
+			[
+				"Irn",
+				"Ironman"
+			],
+			[
+				"co",
+				"contexto"
+			],
+			[
+				"bla",
+				"bolaOK"
+			],
+			[
+				"bola",
+				"bolaOK"
+			],
+			[
+				"bol",
+				"bola"
+			],
+			[
+				"con",
+				"confirmarBola"
+			],
+			[
+				"fo",
+				"fondoURL"
+			],
+			[
+				"fren",
+				"frenteOK"
+			],
+			[
+				"frente",
+				"frenteOK"
+			],
+			[
+				"frent",
+				"frenteURL"
+			],
+			[
+				"de",
+				"derURL"
+			],
+			[
+				"ho",
+				"horca"
+			],
+			[
+				"confirmar",
+				"confirmarHorca"
+			],
+			[
+				"pi",
+				"pierna1"
+			],
+			[
+				"br",
+				"brazo2"
+			],
+			[
+				"bra",
+				"brazo1"
+			],
+			[
+				"palab",
+				"palabra"
+			],
+			[
+				"Ma",
+				"Maquina"
+			],
+			[
+				"en",
+				"encontrado"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"di",
+				"dibujar"
+			],
+			[
+				"pie",
+				"pierna2"
+			],
+			[
+				"dib",
+				"dibujar"
+			],
+			[
+				"conf",
+				"confirmarBrazo1"
+			],
+			[
+				"dibu",
+				"dibujar"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"pr",
+				"proto	Prototype"
+			],
+			[
+				"syle",
+				"style	Tag"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"st",
+				"stroke"
+			],
+			[
+				"s",
+				"strokeStyle"
+			],
+			[
+				"line",
+				"lineWidth"
+			],
+			[
+				"lin",
+				"lineTo"
+			],
+			[
+				"cl",
+				"closePath"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"c",
+				"c++	snippet_c++"
+			],
+			[
+				"ca",
+				"canvas	Tag"
+			],
+			[
+				"ti",
+				"tifiDibujo"
+			],
+			[
+				"L",
+				"lizURL"
+			],
+			[
+				"b",
+				"beginPath"
+			],
+			[
+				"an",
+				"anchoLinea"
+			],
+			[
+				"limi",
+				"limiteY"
+			],
+			[
+				"stro",
+				"stroke"
+			],
+			[
+				"str",
+				"stroke"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"nom",
+				"nom"
+			],
+			[
+				"ata",
+				"ataque"
+			],
+			[
+				"vi",
+				"vida"
+			],
+			[
+				"dato",
+				"datos"
+			],
+			[
+				"pika",
+				"Pikachu"
+			],
+			[
+				"Pika",
+				"Pikachu"
+			],
+			[
+				"gri",
+				"gritar"
+			],
+			[
+				"bul",
+				"bulbasur"
+			],
+			[
+				"vida",
+				"vidaPoke"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"gana",
+				"ganaste"
+			],
+			[
+				"pu",
+				"puntosMaquina"
+			],
+			[
+				"punto",
+				"puntosUsuario"
+			],
+			[
+				"pun",
+				"puntosUsuario"
+			],
+			[
+				"puntos",
+				"puntosMaquina"
+			],
+			[
+				"op",
+				"opcionMaquina"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2864,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Java/JavaC.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: L",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: !",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 174.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/proyecto/css/estilos.css",
+		"/E/proyecto/index.html",
+		"/C/inetpub/wwwroot/index.html",
+		"/C/inetpub/wwwroot/proyectos/index.html",
+		"/C/inetpub/wwwroot/css/estilos.css",
+		"/C/inetpub/wwwroot/proyectos/css/estilos.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/game.html",
+		"/C/inetpub/wwwroot/proyectos/juego-de-la-serpiente/index.html",
+		"/C/inetpub/wwwroot/proyectos/juego-de-la-serpiente/css/estilos.css",
+		"/C/inetpub/wwwroot/proyectos/juego-de-la-serpiente/game.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/estilo.css",
+		"/C/inetpub/wwwroot/informacion/index.html",
+		"/C/inetpub/wwwroot/informacion/css/estilos.css",
+		"/C/inetpub/wwwroot/informacion/liderazgo-ignaciano/index.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/liderazgo.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/informacion.html",
+		"/E/proyecto/css/font-awesome.min.css",
+		"/E/proyecto/informacion/css/estilos.css",
+		"/E/proyecto/informacion/index.html",
+		"/E/CursoHTML/index.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/prueba.php",
+		"/E/CursoHTML/css/estilos.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/style.css",
+		"/E/proyecto/img/facebook.png",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/index.html",
+		"/E/CursoHTML/css/vendor/normalize.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/slambook-form.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/style(4).css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso de html y css/style-final.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/style(3).css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Search form.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/iframe.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/login-final.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/style-final.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/formularios.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/google15b32889703ab3ff.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/default.php",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/index.php",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Advertencia.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Juego.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/game.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Advertencia1.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso de html y css/index.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso de html y css/style.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso de html y css/index1.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Advertencia",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Advertencia1",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Juego",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/game",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso de html y css/css/estilos.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso de html y css/fundamentos HTML.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/fundamentos HTML.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Archivos/default.php",
+		"/C/AppServ/www/prueba.php",
+		"/C/AppServ/www/formulario.php",
+		"/C/AppServ/www/procesar.php",
+		"/C/AppServ/www/prueba1.php",
+		"/C/AppServ/www/curso07.php",
+		"/C/AppServ/www/curso06.php",
+		"/C/AppServ/www/curso05.php",
+		"/C/AppServ/www/curso04.php",
+		"/C/AppServ/www/curso03.php",
+		"/C/AppServ/www/curso02.php",
+		"/C/AppServ/www/curso01.php",
+		"/C/Users/Administrador.Sitio-laptop-PC/AppData/Roaming/Sublime Text 2/Packages/User/snippet_html5.sublime-snippet",
+		"/C/Users/Administrador.Sitio-laptop-PC/AppData/Roaming/Sublime Text 2/Packages/User/php1.sublime-snippet",
+		"/C/Users/Administrador.Sitio-laptop-PC/AppData/Roaming/Sublime Text 2/Packages/User/php.sublime-snippet",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/Juego.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/node/backend.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/Practica/node/Juego.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/node/formulario.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/node_modules/download/index.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/node_modules/download/package.json",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/dibujar.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/funciones.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/Teclado.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/Inicio.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/Personaje.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/js/codigo3.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/js/codigo2.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/js/codigo.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/tarea.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/codigo6.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/codigo5.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/clase6.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Juego.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/zelda/tifis.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/zelda/tifis.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/ahorcado.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/ahorcado.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/tarea.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/hola.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/write.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/clase4/write.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/tareaj.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/practica3.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/practica3.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/clase1.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/objetos.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/clase1.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/tarea.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/canvas2.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/clase8.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Dropbox/curso basico/clase5.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/tarea.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/clase6.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/tifis.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/tifis.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Pokemon Reloaded Beta 14.exe",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/canvas/clase7.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/problema del juego del ahorcado",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/canvas/canvas.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/canvas.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/clase7.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/clase6.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/js/codigo3.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/js/codigo3-matriz.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/clase4-dom.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/codigo6.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/practica2.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/practica2.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/clase5.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/codigo5.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/js/codigo4-document.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/clase3-arrays.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/js/codigo4-matriz.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/Practica/practica.js",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/Practica/practica.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"png",
+			"usuario",
+			"pony",
+			"IncomingMessage {\n  _readableState:\n   ReadableState {\n     objectMode: false,\n     highWaterMark: 16384,\n     buffer: [],\n     length: 0,\n     pipes: null,\n     pipesCount: 0,\n     flowing: null,\n     ended: false,\n     endEmitted: false,\n     reading: false,\n     sync: true,\n     needReadable: false,\n     emittedReadable: false,\n     readableListening: false,\n     resumeScheduled: false,\n     defaultEncoding: 'utf8',\n     ranOut: false,\n     awaitDrain: 0,\n     readingMore: false,\n     decoder: null,\n     encoding: null },\n  readable: true,\n  domain: null,\n  _events: {},\n  _eventsCount: 0,\n  _maxListeners: undefined,\n  socket:\n   Socket {\n     _connecting: false,\n     _hadError: false,\n     _handle:\n      TCP {\n        bytesRead: 526,\n        _externalStream: {},\n        fd: -1,\n        reading: true,\n        owner: [Circular],\n        onread: [Function: onread],\n        onconnection: null,\n        writeQueueSize: 0 },\n     _parent: null,\n     _host: null,\n     _readableState:\n      ReadableState {\n        objectMode: false,\n        highWaterMark: 16384,\n        buffer: [],\n        length: 0,\n        pipes: null,\n        pipesCount: 0,\n        flowing: true,\n        ended: false,\n        endEmitted: false,\n        reading: true,\n        sync: false,\n        needReadable: true,\n        emittedReadable: false,\n        readableListening: false,\n        resumeScheduled: false,\n        defaultEncoding: 'utf8',\n        ranOut: false,\n        awaitDrain: 0,\n        readingMore: false,\n        decoder: null,\n        encoding: null },\n     readable: true,\n     domain: null,\n     _events:\n      { end: [Object],\n        finish: [Function: onSocketFinish],\n        _socketEnd: [Function: onSocketEnd],\n        drain: [Object],\n        timeout: [Function],\n        error: [Function: socketOnError],\n        close: [Object],\n        data: [Function: socketOnData],\n        resume: [Function: onSocketResume],\n        pause: [Function: onSocketPause] },\n     _eventsCount: 10,\n     _maxListeners: undefined,\n     _writableState:\n      WritableState {\n        objectMode: false,\n        highWaterMark: 16384,\n        needDrain: false,\n        ending: false,\n        ended: false,\n        finished: false,\n        decodeStrings: false,\n        defaultEncoding: 'utf8',\n        length: 0,\n        writing: false,\n        corked: 0,\n        sync: true,\n        bufferProcessing: false,\n        onwrite: [Function],\n        writecb: null,\n        writelen: 0,\n        bufferedRequest: null,\n        lastBufferedRequest: null,\n        pendingcb: 0,\n        prefinished: false,\n        errorEmitted: false,\n        bufferedRequestCount: 0,\n        corkedRequestsFree: [Object] },\n     writable: true,\n     allowHalfOpen: true,\n     destroyed: false,\n     _bytesDispatched: 0,\n     _sockname: null,\n     _pendingData: null,\n     _pendingEncoding: '',\n     server:\n      Server {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 3,\n        _maxListeners: undefined,\n        _connections: 1,\n        _handle: [Object],\n        _usingSlaves: false,\n        _slaves: [],\n        _unref: false,\n        allowHalfOpen: true,\n        pauseOnConnect: false,\n        httpAllowHalfOpen: false,\n        timeout: 120000,\n        _pendingResponseData: 0,\n        _connectionKey: '6::::80' },\n     _server:\n      Server {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 3,\n        _maxListeners: undefined,\n        _connections: 1,\n        _handle: [Object],\n        _usingSlaves: false,\n        _slaves: [],\n        _unref: false,\n        allowHalfOpen: true,\n        pauseOnConnect: false,\n        httpAllowHalfOpen: false,\n        timeout: 120000,\n        _pendingResponseData: 0,\n        _connectionKey: '6::::80' },\n     _idleTimeout: 120000,\n     _idleNext: { _idleNext: [Circular], _idlePrev: [Circular] },\n     _idlePrev: { _idleNext: [Circular], _idlePrev: [Circular] },\n     _idleStart: 9936,\n     parser:\n      HTTPParser {\n        '0': [Function: parserOnHeaders],\n        '1': [Function: parserOnHeadersComplete],\n        '2': [Function: parserOnBody],\n        '3': [Function: parserOnMessageComplete],\n        '4': [Function: onParserExecute],\n        _headers: [],\n        _url: '',\n        _consumed: true,\n        socket: [Circular],\n        incoming: [Circular],\n        outgoing: null,\n        maxHeaderPairs: 2000,\n        onIncoming: [Function: parserOnIncoming] },\n     on: [Function: socketOnWrap],\n     _paused: false,\n     read: [Function],\n     _consuming: true,\n     _httpMessage:\n      ServerResponse {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 1,\n        _maxListeners: undefined,\n        output: [],\n        outputEncodings: [],\n        outputCallbacks: [],\n        outputSize: 0,\n        writable: true,\n        _last: false,\n        chunkedEncoding: false,\n        shouldKeepAlive: true,\n        useChunkedEncodingByDefault: true,\n        sendDate: true,\n        _removedHeader: {},\n        _contentLength: null,\n        _hasBody: true,\n        _trailer: '',\n        finished: false,\n        _headerSent: false,\n        socket: [Circular],\n        connection: [Circular],\n        _header: null,\n        _headers: [Object],\n        _headerNames: [Object],\n        _onPendingData: [Function: updateOutgoingData],\n        req: [Circular],\n        locals: {} } },\n  connection:\n   Socket {\n     _connecting: false,\n     _hadError: false,\n     _handle:\n      TCP {\n        bytesRead: 526,\n        _externalStream: {},\n        fd: -1,\n        reading: true,\n        owner: [Circular],\n        onread: [Function: onread],\n        onconnection: null,\n        writeQueueSize: 0 },\n     _parent: null,\n     _host: null,\n     _readableState:\n      ReadableState {\n        objectMode: false,\n        highWaterMark: 16384,\n        buffer: [],\n        length: 0,\n        pipes: null,\n        pipesCount: 0,\n        flowing: true,\n        ended: false,\n        endEmitted: false,\n        reading: true,\n        sync: false,\n        needReadable: true,\n        emittedReadable: false,\n        readableListening: false,\n        resumeScheduled: false,\n        defaultEncoding: 'utf8',\n        ranOut: false,\n        awaitDrain: 0,\n        readingMore: false,\n        decoder: null,\n        encoding: null },\n     readable: true,\n     domain: null,\n     _events:\n      { end: [Object],\n        finish: [Function: onSocketFinish],\n        _socketEnd: [Function: onSocketEnd],\n        drain: [Object],\n        timeout: [Function],\n        error: [Function: socketOnError],\n        close: [Object],\n        data: [Function: socketOnData],\n        resume: [Function: onSocketResume],\n        pause: [Function: onSocketPause] },\n     _eventsCount: 10,\n     _maxListeners: undefined,\n     _writableState:\n      WritableState {\n        objectMode: false,\n        highWaterMark: 16384,\n        needDrain: false,\n        ending: false,\n        ended: false,\n        finished: false,\n        decodeStrings: false,\n        defaultEncoding: 'utf8',\n        length: 0,\n        writing: false,\n        corked: 0,\n        sync: true,\n        bufferProcessing: false,\n        onwrite: [Function],\n        writecb: null,\n        writelen: 0,\n        bufferedRequest: null,\n        lastBufferedRequest: null,\n        pendingcb: 0,\n        prefinished: false,\n        errorEmitted: false,\n        bufferedRequestCount: 0,\n        corkedRequestsFree: [Object] },\n     writable: true,\n     allowHalfOpen: true,\n     destroyed: false,\n     _bytesDispatched: 0,\n     _sockname: null,\n     _pendingData: null,\n     _pendingEncoding: '',\n     server:\n      Server {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 3,\n        _maxListeners: undefined,\n        _connections: 1,\n        _handle: [Object],\n        _usingSlaves: false,\n        _slaves: [],\n        _unref: false,\n        allowHalfOpen: true,\n        pauseOnConnect: false,\n        httpAllowHalfOpen: false,\n        timeout: 120000,\n        _pendingResponseData: 0,\n        _connectionKey: '6::::80' },\n     _server:\n      Server {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 3,\n        _maxListeners: undefined,\n        _connections: 1,\n        _handle: [Object],\n        _usingSlaves: false,\n        _slaves: [],\n        _unref: false,\n        allowHalfOpen: true,\n        pauseOnConnect: false,\n        httpAllowHalfOpen: false,\n        timeout: 120000,\n        _pendingResponseData: 0,\n        _connectionKey: '6::::80' },\n     _idleTimeout: 120000,\n     _idleNext: { _idleNext: [Circular], _idlePrev: [Circular] },\n     _idlePrev: { _idleNext: [Circular], _idlePrev: [Circular] },\n     _idleStart: 9936,\n     parser:\n      HTTPParser {\n        '0': [Function: parserOnHeaders],\n        '1': [Function: parserOnHeadersComplete],\n        '2': [Function: parserOnBody],\n        '3': [Function: parserOnMessageComplete],\n        '4': [Function: onParserExecute],\n        _headers: [],\n        _url: '',\n        _consumed: true,\n        socket: [Circular],\n        incoming: [Circular],\n        outgoing: null,\n        maxHeaderPairs: 2000,\n        onIncoming: [Function: parserOnIncoming] },\n     on: [Function: socketOnWrap],\n     _paused: false,\n     read: [Function],\n     _consuming: true,\n     _httpMessage:\n      ServerResponse {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 1,\n        _maxListeners: undefined,\n        output: [],\n        outputEncodings: [],\n        outputCallbacks: [],\n        outputSize: 0,\n        writable: true,\n        _last: false,\n        chunkedEncoding: false,\n        shouldKeepAlive: true,\n        useChunkedEncodingByDefault: true,\n        sendDate: true,\n        _removedHeader: {},\n        _contentLength: null,\n        _hasBody: true,\n        _trailer: '',\n        finished: false,\n        _headerSent: false,\n        socket: [Circular],\n        connection: [Circular],\n        _header: null,\n        _headers: [Object],\n        _headerNames: [Object],\n        _onPendingData: [Function: updateOutgoingData],\n        req: [Circular],\n        locals: {} } },\n  httpVersionMajor: 1,\n  httpVersionMinor: 1,\n  httpVersion: '1.1',\n  complete: false,\n  headers:\n   { host: '127.0.0.1',\n     connection: 'keep-alive',\n     'content-length': '37',\n     'cache-control': 'max-age=0',\n     accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',\n     origin: 'http://127.0.0.1',\n     'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36',\n     'content-type': 'application/x-www-form-urlencoded',\n     referer: 'http://127.0.0.1/',\n     'accept-encoding': 'gzip, deflate',\n     'accept-language': 'es-ES,es;q=0.8,en;q=0.6' },\n  rawHeaders:\n   [ 'Host',\n     '127.0.0.1',\n     'Connection',\n     'keep-alive',\n     'Content-Length',\n     '37',\n     'Cache-Control',\n     'max-age=0',\n     'Accept',\n     'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',\n     'Origin',\n     'http://127.0.0.1',\n     'User-Agent',\n     'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36',\n     'Content-Type',\n     'application/x-www-form-urlencoded',\n     'Referer',\n     'http://127.0.0.1/',\n     'Accept-Encoding',\n     'gzip, deflate',\n     'Accept-Language',\n     'es-ES,es;q=0.8,en;q=0.6' ],\n  trailers: {},\n  rawTrailers: [],\n  upgrade: false,\n  url: '/entrar',\n  method: 'POST',\n  statusCode: null,\n  statusMessage: null,\n  client:\n   Socket {\n     _connecting: false,\n     _hadError: false,\n     _handle:\n      TCP {\n        bytesRead: 526,\n        _externalStream: {},\n        fd: -1,\n        reading: true,\n        owner: [Circular],\n        onread: [Function: onread],\n        onconnection: null,\n        writeQueueSize: 0 },\n     _parent: null,\n     _host: null,\n     _readableState:\n      ReadableState {\n        objectMode: false,\n        highWaterMark: 16384,\n        buffer: [],\n        length: 0,\n        pipes: null,\n        pipesCount: 0,\n        flowing: true,\n        ended: false,\n        endEmitted: false,\n        reading: true,\n        sync: false,\n        needReadable: true,\n        emittedReadable: false,\n        readableListening: false,\n        resumeScheduled: false,\n        defaultEncoding: 'utf8',\n        ranOut: false,\n        awaitDrain: 0,\n        readingMore: false,\n        decoder: null,\n        encoding: null },\n     readable: true,\n     domain: null,\n     _events:\n      { end: [Object],\n        finish: [Function: onSocketFinish],\n        _socketEnd: [Function: onSocketEnd],\n        drain: [Object],\n        timeout: [Function],\n        error: [Function: socketOnError],\n        close: [Object],\n        data: [Function: socketOnData],\n        resume: [Function: onSocketResume],\n        pause: [Function: onSocketPause] },\n     _eventsCount: 10,\n     _maxListeners: undefined,\n     _writableState:\n      WritableState {\n        objectMode: false,\n        highWaterMark: 16384,\n        needDrain: false,\n        ending: false,\n        ended: false,\n        finished: false,\n        decodeStrings: false,\n        defaultEncoding: 'utf8',\n        length: 0,\n        writing: false,\n        corked: 0,\n        sync: true,\n        bufferProcessing: false,\n        onwrite: [Function],\n        writecb: null,\n        writelen: 0,\n        bufferedRequest: null,\n        lastBufferedRequest: null,\n        pendingcb: 0,\n        prefinished: false,\n        errorEmitted: false,\n        bufferedRequestCount: 0,\n        corkedRequestsFree: [Object] },\n     writable: true,\n     allowHalfOpen: true,\n     destroyed: false,\n     _bytesDispatched: 0,\n     _sockname: null,\n     _pendingData: null,\n     _pendingEncoding: '',\n     server:\n      Server {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 3,\n        _maxListeners: undefined,\n        _connections: 1,\n        _handle: [Object],\n        _usingSlaves: false,\n        _slaves: [],\n        _unref: false,\n        allowHalfOpen: true,\n        pauseOnConnect: false,\n        httpAllowHalfOpen: false,\n        timeout: 120000,\n        _pendingResponseData: 0,\n        _connectionKey: '6::::80' },\n     _server:\n      Server {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 3,\n        _maxListeners: undefined,\n        _connections: 1,\n        _handle: [Object],\n        _usingSlaves: false,\n        _slaves: [],\n        _unref: false,\n        allowHalfOpen: true,\n        pauseOnConnect: false,\n        httpAllowHalfOpen: false,\n        timeout: 120000,\n        _pendingResponseData: 0,\n        _connectionKey: '6::::80' },\n     _idleTimeout: 120000,\n     _idleNext: { _idleNext: [Circular], _idlePrev: [Circular] },\n     _idlePrev: { _idleNext: [Circular], _idlePrev: [Circular] },\n     _idleStart: 9936,\n     parser:\n      HTTPParser {\n        '0': [Function: parserOnHeaders],\n        '1': [Function: parserOnHeadersComplete],\n        '2': [Function: parserOnBody],\n        '3': [Function: parserOnMessageComplete],\n        '4': [Function: onParserExecute],\n        _headers: [],\n        _url: '',\n        _consumed: true,\n        socket: [Circular],\n        incoming: [Circular],\n        outgoing: null,\n        maxHeaderPairs: 2000,\n        onIncoming: [Function: parserOnIncoming] },\n     on: [Function: socketOnWrap],\n     _paused: false,\n     read: [Function],\n     _consuming: true,\n     _httpMessage:\n      ServerResponse {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 1,\n        _maxListeners: undefined,\n        output: [],\n        outputEncodings: [],\n        outputCallbacks: [],\n        outputSize: 0,\n        writable: true,\n        _last: false,\n        chunkedEncoding: false,\n        shouldKeepAlive: true,\n        useChunkedEncodingByDefault: true,\n        sendDate: true,\n        _removedHeader: {},\n        _contentLength: null,\n        _hasBody: true,\n        _trailer: '',\n        finished: false,\n        _headerSent: false,\n        socket: [Circular],\n        connection: [Circular],\n        _header: null,\n        _headers: [Object],\n        _headerNames: [Object],\n        _onPendingData: [Function: updateOutgoingData],\n        req: [Circular],\n        locals: {} } },\n  _consuming: false,\n  _dumped: false,\n  next: [Function: next],\n  baseUrl: '',\n  originalUrl: '/entrar',\n  _parsedUrl:\n   Url {\n     protocol: null,\n     slashes: null,\n     auth: null,\n     host: null,\n     port: null,\n     hostname: null,\n     hash: null,\n     search: null,\n     query: null,\n     pathname: '/entrar',\n     path: '/entrar',\n     href: '/entrar',\n     _raw: '/entrar' },\n  params: {},\n  query: {},\n  res:\n   ServerResponse {\n     domain: null,\n     _events: { finish: [Function: resOnFinish] },\n     _eventsCount: 1,\n     _maxListeners: undefined,\n     output: [],\n     outputEncodings: [],\n     outputCallbacks: [],\n     outputSize: 0,\n     writable: true,\n     _last: false,\n     chunkedEncoding: false,\n     shouldKeepAlive: true,\n     useChunkedEncodingByDefault: true,\n     sendDate: true,\n     _removedHeader: {},\n     _contentLength: null,\n     _hasBody: true,\n     _trailer: '',\n     finished: false,\n     _headerSent: false,\n     socket:\n      Socket {\n        _connecting: false,\n        _hadError: false,\n        _handle: [Object],\n        _parent: null,\n        _host: null,\n        _readableState: [Object],\n        readable: true,\n        domain: null,\n        _events: [Object],\n        _eventsCount: 10,\n        _maxListeners: undefined,\n        _writableState: [Object],\n        writable: true,\n        allowHalfOpen: true,\n        destroyed: false,\n        _bytesDispatched: 0,\n        _sockname: null,\n        _pendingData: null,\n        _pendingEncoding: '',\n        server: [Object],\n        _server: [Object],\n        _idleTimeout: 120000,\n        _idleNext: [Object],\n        _idlePrev: [Object],\n        _idleStart: 9936,\n        parser: [Object],\n        on: [Function: socketOnWrap],\n        _paused: false,\n        read: [Function],\n        _consuming: true,\n        _httpMessage: [Circular] },\n     connection:\n      Socket {\n        _connecting: false,\n        _hadError: false,\n        _handle: [Object],\n        _parent: null,\n        _host: null,\n        _readableState: [Object],\n        readable: true,\n        domain: null,\n        _events: [Object],\n        _eventsCount: 10,\n        _maxListeners: undefined,\n        _writableState: [Object],\n        writable: true,\n        allowHalfOpen: true,\n        destroyed: false,\n        _bytesDispatched: 0,\n        _sockname: null,\n        _pendingData: null,\n        _pendingEncoding: '',\n        server: [Object],\n        _server: [Object],\n        _idleTimeout: 120000,\n        _idleNext: [Object],\n        _idlePrev: [Object],\n        _idleStart: 9936,\n        parser: [Object],\n        on: [Function: socketOnWrap],\n        _paused: false,\n        read: [Function],\n        _consuming: true,\n        _httpMessage: [Circular] },\n     _header: null,\n     _headers: { 'x-powered-by': 'Express' },\n     _headerNames: { 'x-powered-by': 'X-Powered-By' },\n     _onPendingData: [Function: updateOutgoingData],\n     req: [Circular],\n     locals: {} },\n  route: Route { path: '/entrar', stack: [ [Object] ], methods: { post: true } } }\nhola",
+			"=\"",
+			"usuario",
+			"avion",
+			">\n",
+			"mama",
+			"UTF",
+			"f",
+			"hola"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"utf"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ahor",
+				"ahorcado.js"
+			],
+			[
+				"clase",
+				"curso basico/canvas/clase7.html"
+			],
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 183.0,
+	"status_bar_visible": true
+}

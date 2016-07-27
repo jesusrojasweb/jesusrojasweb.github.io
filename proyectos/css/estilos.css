@@ -1,0 +1,69 @@
+@import url("/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+@media screen (max-width: 480px){
+
+	a:link{
+		color: #a2a2a2;
+	}
+	a:visited{
+		color: #a2a2a2;
+	}
+	.informacion{
+		margin-left: 30px;
+		border-top: 1px solid;
+		margin-right: 30px;
+	}
+	
+	.img{
+		overflow: hidden;
+		margin-left: 0;
+		border-radius: 0.35em;
+		width: 80%;
+	}
+	
+}
+@media screen (min-width: 480px){
+	a:link{
+		color: #a2a2a2;
+	}
+	a:visited{
+		color: #a2a2a2;
+	}
+	.img{
+		overflow: hidden;
+		margin-left: 0;
+		border-radius: 0.35em;
+		width: 80%;
+	}
+	
+}
+@media screen (min-width: 767px){
+	a:link{
+		color: #a2a2a2;
+	}
+	a:visited{
+		color: #a2a2a2;
+	}
+	.img{
+		overflow: hidden;
+		margin-left: 0;
+		border-radius: 0.35em;
+		width: 80%;
+	}
+	
+}
+@media screen (min-width: 950px){
+	a:link{
+		color: #a2a2a2;
+	}
+	a:visited{
+		color: #a2a2a2;
+	}
+	.img{
+		overflow: hidden;
+		margin-left: 0;
+		border-radius: 0.35em;
+		width: 80%;
+	}
+}
