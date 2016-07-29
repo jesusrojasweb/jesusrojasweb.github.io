@@ -5,19 +5,75 @@
 		[
 			[
 				"margin",
+				"margin"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"border-bo",
+				"border-bottom-color"
+			],
+			[
+				"mar",
 				"margin-left"
 			],
 			[
+				"barra",
+				"barra__ocupacion"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"fot",
+				"font-weight"
+			],
+			[
+				"boder-bott",
+				"border-bottom-color"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
 				"tex",
-				"text-transform"
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"padi",
+				"padding"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"di",
+				"display"
 			],
 			[
 				"font",
 				"font-size"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"te",
@@ -30,14 +86,6 @@
 			[
 				"inl",
 				"inline-block"
-			],
-			[
-				"margi",
-				"margin-bottom"
-			],
-			[
-				"fot",
-				"font-size"
 			],
 			[
 				"i",
@@ -56,10 +104,6 @@
 				"background-color"
 			],
 			[
-				"min",
-				"min-height"
-			],
-			[
 				"bo",
 				"bottom"
 			],
@@ -76,16 +120,8 @@
 				"padding"
 			],
 			[
-				"border",
-				"border-top"
-			],
-			[
 				"font-",
 				"font-weight"
-			],
-			[
-				"fon",
-				"font-style"
 			],
 			[
 				"blo",
@@ -102,10 +138,6 @@
 			[
 				"padd",
 				"padding-bottom"
-			],
-			[
-				"border-bo",
-				"border-bottom"
 			],
 			[
 				"marg",
@@ -134,10 +166,6 @@
 			[
 				"cur",
 				"cursor"
-			],
-			[
-				"bac",
-				"background-color"
 			],
 			[
 				"padding",
@@ -288,10 +316,6 @@
 				"confirmarBola"
 			],
 			[
-				"fo",
-				"fondoURL"
-			],
-			[
 				"fren",
 				"frenteOK"
 			],
@@ -342,10 +366,6 @@
 			[
 				"le",
 				"length"
-			],
-			[
-				"di",
-				"dibujar"
 			],
 			[
 				"pie",
@@ -494,36 +514,32 @@
 			[
 				"gana",
 				"ganaste"
-			],
-			[
-				"pu",
-				"puntosMaquina"
-			],
-			[
-				"punto",
-				"puntosUsuario"
-			],
-			[
-				"pun",
-				"puntosUsuario"
-			],
-			[
-				"puntos",
-				"puntosMaquina"
-			],
-			[
-				"op",
-				"opcionMaquina"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "/C/Users/Administrador.Sitio-laptop-PC/Desktop/prueba.html",
 			"settings":
 			{
-				"buffer_size": 2864,
+				"buffer_size": 795,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<snippet>\n	<content><![CDATA[\nHello, ${1:this} is a ${2:snippet}.\n]]></content>\n	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->\n	<!-- <tabTrigger>hello</tabTrigger> -->\n	<!-- Optional: Set a scope to limit where the snippet will trigger -->\n	<!-- <scope>source.python</scope> -->\n</snippet>\n",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrador.Sitio-laptop-PC/Desktop/prueba.css",
+			"settings":
+			{
+				"buffer_size": 1459,
 				"line_ending": "Windows"
 			}
 		}
@@ -576,18 +592,25 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Pagina Isabel/index.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Pagina Isabel/css/estilos.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Pagina Alfredo/index.html",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/default.php",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/estilo.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Paguina Alfredo/css/estilos.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/index.html",
+		"/C/inetpub/wwwroot/css/estilos.css",
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Paguina Alfredo/index.html",
+		"/C/inetpub/wwwroot/index.html",
+		"/C/inetpub/wwwroot/informacion/index.html",
 		"/E/proyecto/css/estilos.css",
 		"/E/proyecto/index.html",
-		"/C/inetpub/wwwroot/index.html",
 		"/C/inetpub/wwwroot/proyectos/index.html",
-		"/C/inetpub/wwwroot/css/estilos.css",
 		"/C/inetpub/wwwroot/proyectos/css/estilos.css",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/game.html",
 		"/C/inetpub/wwwroot/proyectos/juego-de-la-serpiente/index.html",
 		"/C/inetpub/wwwroot/proyectos/juego-de-la-serpiente/css/estilos.css",
 		"/C/inetpub/wwwroot/proyectos/juego-de-la-serpiente/game.js",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/estilo.css",
-		"/C/inetpub/wwwroot/informacion/index.html",
 		"/C/inetpub/wwwroot/informacion/css/estilos.css",
 		"/C/inetpub/wwwroot/informacion/liderazgo-ignaciano/index.html",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/liderazgo.html",
@@ -600,7 +623,6 @@
 		"/E/CursoHTML/css/estilos.css",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/style.css",
 		"/E/proyecto/img/facebook.png",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/index.html",
 		"/E/CursoHTML/css/vendor/normalize.css",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/slambook-form.html",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/style(4).css",
@@ -612,7 +634,6 @@
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/style-final.css",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/formularios.html",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/google15b32889703ab3ff.html",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/default.php",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/index.php",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Advertencia.html",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/Juego.js",
@@ -698,12 +719,7 @@
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/practica2.html",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/practica2.js",
 		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/clase5.html",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/codigo5.js",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/js/codigo4-document.js",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/clase3-arrays.html",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/js/codigo4-matriz.js",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/Practica/practica.js",
-		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/cursos/curso basico/Practica/practica.html"
+		"/C/Users/Administrador.Sitio-laptop-PC/Desktop/codigo5.js"
 	],
 	"find":
 	{
@@ -752,23 +768,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "/C/Users/Administrador.Sitio-laptop-PC/Desktop/prueba.html",
 					"settings":
 					{
-						"buffer_size": 2864,
+						"buffer_size": 795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								526,
+								526
 							]
 						],
 						"settings":
@@ -777,7 +793,67 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								317,
+								317
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\Users\\Administrador.Sitio-laptop-PC\\AppData\\Roaming\\Sublime Text 2\\Packages\\User",
+							"default_extension": "sublime-snippet",
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/C/Users/Administrador.Sitio-laptop-PC/Desktop/prueba.css",
+					"settings":
+					{
+						"buffer_size": 1459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1187,
+								1187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 777.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -802,11 +878,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.465625,
 			1.0
 		],
 		"rows":
@@ -853,6 +936,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 183.0,
+	"side_bar_width": 233.0,
 	"status_bar_visible": true
 }
