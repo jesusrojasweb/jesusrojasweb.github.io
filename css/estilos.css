@@ -152,6 +152,9 @@
 	.pagina{
 		opacity: 0;
 	}
+	.palagras-1 span{
+		font-size: 48px;
+	}
 	.palabras-1 span{
 		animation: rotateWordsFirst 18s linear 1 0s;
 	}
