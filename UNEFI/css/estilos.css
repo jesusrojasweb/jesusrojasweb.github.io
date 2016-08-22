@@ -1,0 +1,19 @@
+.clases{
+	margin-top: 15px;
+	text-align: center;
+}
+.materias{
+
+	padding: 10px;
+}
+.materias:link{
+	color: black;
+}
+.materias:visited{
+	color: black;
+}
+.materias:hover{
+	border-radius: 20px;
+	background-color: gray;
+	color: white;
+}

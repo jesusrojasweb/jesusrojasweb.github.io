@@ -1,0 +1,25 @@
+.nav{
+	margin-top: 5px;
+	padding-top: 0.5em;
+	text-align: center;
+	background-color: #727272;
+	height: 35px;
+}
+.a2{
+	margin-left: 2%;
+}
+
+#a:visited{
+	color: black;
+}
+#a:link{
+	color: black;
+}
+
+#a:hover{
+	padding: 5px;
+	border-radius: 20px;
+	color: white;
+	background-color: #2E2E2E;
+
+}
