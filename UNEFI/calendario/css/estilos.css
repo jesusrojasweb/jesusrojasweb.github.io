@@ -9,6 +9,14 @@
 	margin-left: 2%;
 }
 
+.lapsos{
+	text-align: center;
+}
+.objetivos{
+	margin-top: 10px;
+	text-align: center;
+}
+
 #a:visited{
 	color: black;
 }
