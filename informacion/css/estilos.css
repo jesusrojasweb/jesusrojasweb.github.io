@@ -1,6 +1,39 @@
 @import url("/css/font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
+.preguntas{
+	margin-left: 8%;
+	margin-right: 52%;
+	position: relative;
+}
+.correccion{
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+	color: white;
+	padding: 0.5em;
+
+	border-radius: 20px;
+
+}
+.ingles{
+	margin-bottom: 4%;
+}
+
+#boton3{
+	margin-left: 8%;
+}
+.corregido{
+	margin-left: 8%;
+	color: white;
+	padding: 0.5em;
+	border-radius: 20px;
+	width: 15.3%;
+
+}
+
+
+
 @media screen and (max-width: 480px){
 	*{
 		box-sizing: border-box;
