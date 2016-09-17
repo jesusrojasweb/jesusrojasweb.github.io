@@ -3,6 +3,46 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
+
+
+
+/*.cabecera__foto:hover{
+	transform: rotate(360deg);
+}
+
+.cabecera__imagen, .cabecera__foto{
+	transition: 1s transform;
+}
+
+.blog__li{
+	transition: 1s transform;
+}
+.blog__li:hover{
+	transform: scale(1.2,1.2);
+	opacity: .93;
+}*/
+
+.cabecera__foto{
+	animation-name: prueba;
+	animation-duration: 1.5s;
+}
+
+@keyframes prueba{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+.blog{
+	animation-name: pruebaz;
+	animation-duration: 3s;
+	animation-delay: 0s;
+}
+@keyframes pruebaz{
+	from { opacity: 0; transform: translate(0, -100px);}
+	to {opacity: .99; transform: translate(0,0);}
+}
+
+
 @media screen and (max-width: 480px){
 	*{
 		box-sizing: border-box;
@@ -13,7 +53,7 @@
 	}
 
 	.cabecera{
-		background-color: black;
+		background-color: #18BC9C;
 		width: 100%;
 		height: 230px;
 		margin-top: 0;
@@ -68,7 +108,7 @@
 	}
 	.social{
 		padding: 2px 24px 36px 24px;
-		background-color: black;
+		background-color: #18BC9C;
 		width: 100%;
 	}
 	.social__li,.info{
@@ -107,6 +147,7 @@
 		white-space: nowrap;
 
 	}
+
 	.boton:hover{
 		transition: 0.3s;
 		border-color: gray;
@@ -118,71 +159,22 @@
 	h1{
 		font-weight: 300;
 	}
-	.info__personal:hover{
+	.info__personal{
 		color: white;
 	}
-	.Bienvenida{
-		width: 80%;
-		position: relative;
-		font-family: 'Bree Serif';
-		padding: 10px;
+	.info__personal:link{
+		color: white;
 	}
-	.oraciones{
-		margin: 0;
-		text-align: left;
-		text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	.info__personal:visited{
+		color: white;
 	}
-	.oraciones span{
-		color: #444;
-		white-space: nowrap;
-		font-size: 200%;
-		font-weight: normal;
+	.info__personal:hover{
+		color: black;
 	}
-	.palabras{
-		display: inline;
-		text-indent: 10px;
+	.info{
+		color: white;
 	}
-	.palabras span{
-		position: absolute;
-		opacity: 0;
-		overflow: hidden;
-		width: 100%;
-		color: #6b969d;
-	}
-	.pagina{
-		opacity: 0;
-	}
-	.palagras-1 span{
-		font-size: 48px;
-	}
-	.palabras-1 span{
-		animation: rotateWordsFirst 18s linear 1 0s;
-	}
-	.pagina{
-		animation: rotateWordsSecond 18s linear 1 0s;
-		 animation-fill-mode: forwards;
-	}
-	.palabras span:nth-child(2) { 
-		animation-delay: 3s; 
-		color: #6b889d;
-	}
-	.palabras span:nth-child(3) { 
-		animation-delay: 6s; 
-		color: #6b739d;	
-	}
-
-	/*@keyframes rotateWordsFirst {
-	    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
-	    10% { opacity: 0.3; width: 0px; }
-		20% { opacity: 1; width: 100%; }
-	    27% { opacity: 0; width: 100%; }
-	    100% { opacity: 0; }
-	}
-	@keyframes rotateWordsSecond {
-	    0% { opacity: 0; animation-timing-function: step-end; width: 0px; }
-	    50% {opacity: 0; width: 100%;}
-	    100% { opacity: 1;}
-	}*/
+	
 
 }
 
@@ -197,7 +189,7 @@
 	}
 
 	.cabecera{
-		background-color: black;
+		background-color: #18BC9C;
 		width: 100%;
 		height: 230px;
 		margin-top: 0;
@@ -251,7 +243,7 @@
 	}
 	.social{
 		padding: 2px 24px 20px 24px;
-		background-color: black;
+		background-color: #18BC9C;
 		width: 100%;
 		margin-bottom: 0;
 		position: relative;
@@ -317,71 +309,24 @@
 		width: 47%;
 		display: inline-block;
 	}
-	.info__personal:hover{
+	.info__personal{
 		color: white;
 	}
-	.Bienvenida{
-		width: 80%;
-		position: relative;
-		font-family: 'Bree Serif';
-		padding: 10px;
+	.info__personal:link{
+		color: white;
 	}
-	.oraciones{
-		margin: 0;
-		text-align: left;
-		text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	.info__personal:visited{
+		color: white;
 	}
-	.oraciones span{
-		color: #444;
-		white-space: nowrap;
-		font-size: 200%;
-		font-weight: normal;
+	.info__personal:hover{
+		color: black;
 	}
-	.palabras{
-		display: inline;
-		text-indent: 10px;
-	}
-	.palabras span{
-		position: absolute;
-		opacity: 0;
-		overflow: hidden;
-		width: 100%;
-		color: #6b969d;
-	}
-	.pagina{
-		opacity: 0;
-	}
-	.palabras-1 span{
-		animation: rotateWordsFirst 18s linear 1 0s;
-	}
-	.pagina{
-		animation: rotateWordsSecond 18s linear 1 0s;
-		 animation-fill-mode: forwards;
-	}
-	.palabras span:nth-child(2) { 
-		animation-delay: 3s; 
-		color: #6b889d;
-	}
-	.palabras span:nth-child(3) { 
-		animation-delay: 6s; 
-		color: #6b739d;	
-	}
-
-	/*@keyframes rotateWordsFirst {
-	    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
-	    10% { opacity: 0.3; width: 0px; }
-		20% { opacity: 1; width: 100%; }
-	    27% { opacity: 0; width: 100%; }
-	    100% { opacity: 0; }
-	}
-	@keyframes rotateWordsSecond {
-	    0% { opacity: 0; animation-timing-function: step-end; width: 0px; }
-	    50% {opacity: 0; width: 100%;}
-	    100% { opacity: 1;}
-	}*/
 	.preguntas{
-	margin-left: 100px;
-}
+		margin-left: 100px;
+	}
+	.info{
+		color: white;
+	}
 
 	
 }
@@ -396,7 +341,7 @@
 	}
 
 	.cabecera{
-		background-color: black;
+		background-color: #18BC9C;
 		width: 100%;
 		height: 370px;
 		margin-top: 0;
@@ -455,7 +400,7 @@
 	}
 	.social{
 		padding: 40px 24px 40px 24px;
-		background-color: black;
+		background-color: #18BC9C;
 		width: 100%;
 		margin-bottom: 0;
 	}
@@ -518,67 +463,13 @@
 		width: 47%;
 		display: inline-block;
 	}
-	.info__personal:hover{
+	.info__personal{
 		color: white;
-	.Bienvenida{
-		width: 80%;
-		position: relative;
-		font-family: 'Bree Serif';
-		padding: 10px;
 	}
-	.oraciones{
-		margin: 0;
-		text-align: left;
-		text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	.info__personal:hover{
+		color: black;
 	}
-	.oraciones span{
-		color: #444;
-		white-space: nowrap;
-		font-size: 200%;
-		font-weight: normal;
-	}
-	.palabras{
-		display: inline;
-		text-indent: 10px;
-	}
-	.palabras span{
-		position: absolute;
-		opacity: 0;
-		overflow: hidden;
-		width: 100%;
-		color: #6b969d;
-	}
-	.pagina{
-		opacity: 0;
-	}
-	.palabras-1 span{
-		animation: rotateWordsFirst 18s linear 1 0s;
-	}
-	.pagina{
-		animation: rotateWordsSecond 18s linear 1 0s;
-		 animation-fill-mode: forwards;
-	}
-	.palabras span:nth-child(2) { 
-		animation-delay: 3s; 
-		color: #6b889d;
-	}
-	.palabras span:nth-child(3) { 
-		animation-delay: 6s; 
-		color: #6b739d;	
-	}
-
-	/*@keyframes rotateWordsFirst {
-	    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
-	    10% { opacity: 0.3; width: 0px; }
-		20% { opacity: 1; width: 100%; }
-	    27% { opacity: 0; width: 100%; }
-	    100% { opacity: 0; }
-	}
-	@keyframes rotateWordsSecond {
-	    0% { opacity: 0; animation-timing-function: step-end; width: 0px; }
-	    50% {opacity: 0; width: 100%;}
-	    100% { opacity: 1;}
-	}*/
+	
 
 }
 @media screen and (min-width: 950px){
@@ -588,7 +479,7 @@
   		font-family: "Source Sans Pro", Helvetica, sans-serif;
 	}
 	.cabecera{
-		background-color: black;
+		background-color: #18BC9C;
 		width: 30.2%;
 		height: 100%;
 		position: fixed;
@@ -637,128 +528,11 @@
 	.social__red,.copyright{
 		text-align: right;
 	}
-	.info__personal:hover{
+	.info__personal{
 		color: white;
 	}
-	.Bienvenida{
-		width: 80%;
-		position: relative;
-		font-family: 'Bree Serif';
-		padding: 10px;
-	}
-	.oraciones{
-		margin: 0;
-		text-align: left;
-		text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-	}
-	.oraciones span{
-		color: #444;
-		white-space: nowrap;
-		font-size: 200%;
-		font-weight: normal;
-	}
-	.palabras{
-		display: inline;
-		text-indent: 10px;
-	}
-	.palabras span{
-		position: absolute;
-		opacity: 0;
-		overflow: hidden;
-		width: 100%;
-		color: #6b969d;
-	}
-	.pagina{
-		opacity: 0;
-	}
-	.palabras-1 span{
-		animation: rotateWordsFirst 18s linear 1 0s;
-	}
-	.pagina{
-		animation: rotateWordsSecond 18s linear 1 0s;
-		 animation-fill-mode: forwards;
-	}
-	.palabras span:nth-child(2) { 
-		animation-delay: 3s; 
-		color: #6b889d;
-	}
-	.palabras span:nth-child(3) { 
-		animation-delay: 6s; 
-		color: #6b739d;	
+	.info__personal:hover{
+		color: black;
 	}
 
-	/*@keyframes rotateWordsFirst {
-	    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
-	    10% { opacity: 0.3; width: 0px; }
-		20% { opacity: 1; width: 100%; }
-	    27% { opacity: 0; width: 100%; }
-	    100% { opacity: 0; }
-	}
-	@keyframes rotateWordsSecond {
-	    0% { opacity: 0; animation-timing-function: step-end; width: 0px; }
-	    50% {opacity: 0; width: 100%;}
-	    100% { opacity: 1;}
-	}*/
-
 }
-
-
-/*.Bienvenida{
-	width: 80%;
-	position: relative;
-	font-family: 'Bree Serif';
-	padding: 10px;
-}
-.oraciones{
-	margin: 0;
-	text-align: left;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-}
-.oraciones span{
-	color: #444;
-	white-space: nowrap;
-	font-size: 200%;
-	font-weight: normal;
-}
-.palabras{
-	display: inline;
-	text-indent: 10px;
-}
-.palabras span{
-	position: absolute;
-	opacity: 0;
-	overflow: hidden;
-	width: 100%;
-	color: #6b969d;
-}
-.pagina{
-	opacity: 0;
-}
-.palabras-1 span{
-	animation: rotateWordsFirst 18s linear 1 0s;
-}
-.pagina{
-	animation: rotateWordsSecond 18s linear 1 0s;
-	 animation-fill-mode: forwards;
-}
-.palabras span:nth-child(2) { 
-	animation-delay: 3s; 
-	color: #6b889d;
-}
-.palabras span:nth-child(3) { 
-	animation-delay: 6s; 
-	color: #6b739d;	
-}
-
-@keyframes rotateWordsFirst {
-    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
-    10% { opacity: 0.3; width: 0px; }
-	20% { opacity: 1; width: 100%; }
-    27% { opacity: 0; width: 100%; }
-    100% { opacity: 0; }
-}
-@keyframes rotateWordsSecond {
-    0% { opacity: 0; animation-timing-function: step-end; width: 0px; }
-    50% {opacity: 0; width: 100%;}
-    100% { opacity: 1;}
-}*/
