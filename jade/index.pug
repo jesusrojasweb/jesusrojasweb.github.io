@@ -6,6 +6,7 @@ head
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 	link(rel="stylesheet", href="css/normalize.css")
 	link(rel="stylesheet", href="css/bootstrap.min.css")
+	link(rel="stylesheet", href="css/font-awesome.min.css")
 	link(rel="stylesheet", href="css/estilos")
 body
 	section.JesusHero
@@ -78,7 +79,7 @@ body
 					a(href="")
 						img(src="", alt="proyecto")
 						.JesusPortafolio-item-head-hover
-							span
+							span.fa.fa-plus
 				.JesusPortafolio-item-footer
 					h3.JesusPortafolio-item-footer-title  Lorem ipsum dolor.
 					p.JesusPortafolio-item-footer-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, saepe.
@@ -87,7 +88,7 @@ body
 					a(href="")
 						img(src="", alt="proyecto")
 						.JesusPortafolio-item-head-hover
-							span
+							span.fa.fa-plus
 				.JesusPortafolio-item-footer
 					h3.JesusPortafolio-item-footer-title  Lorem ipsum dolor.
 					p.JesusPortafolio-item-footer-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nemo?
@@ -96,7 +97,7 @@ body
 					a(href="")
 						img(src="", alt="proyecto")
 						.JesusPortafolio-item-head-hover
-							span
+							span.fa.fa-plus
 				.JesusPortafolio-item-footer
 					h3.JesusPortafolio-item-footer-title  Lorem ipsum dolor.
 					p.JesusPortafolio-item-footer-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, placeat.
@@ -105,7 +106,7 @@ body
 					a(href="")
 						img(src="", alt="proyecto")
 						.JesusPortafolio-item-head-hover
-							span
+							span.fa.fa-plus
 				.JesusPortafolio-item-footer
 					h3.JesusPortafolio-item-footer-title  Lorem ipsum dolor.
 					p.JesusPortafolio-item-footer-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, repudiandae.
@@ -113,7 +114,7 @@ body
 		h2.JesusPrecios-title.title Plan de Precios
 
 		.JesusPrecios-planes.u-Grid
-			JesusPrecios-planes-plan.u-Grid-column
+			.JesusPrecios-planes-plan.u-Grid-column
 				h3.JesusPrecios-planes-plan-title!= "Pagina Basica / <span>XXX.XXX Bsf</span>"
 				p.JesusPrecios-planes-plan-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, doloremque.
 				.JesusPrecios-planes-plan-item
@@ -126,7 +127,7 @@ body
 					h4.JesusPrecios-planes-plan-item-article Soporte
 					p.JesusPrecios-planes-plan-item-number 1 Mes
 				a.JesusPrecios-planes-plan-boton.btn(href="#") Registrar Ahora
-			JesusPrecios-planes-plan.u-Grid-column
+			.JesusPrecios-planes-plan.u-Grid-column
 				h3.JesusPrecios-planes-plan-title!= "Pagina Profesional / <span>XXX.XXX Bsf</span>"
 				p.JesusPrecios-planes-plan-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ab.
 				.JesusPrecios-planes-plan-item
@@ -139,6 +140,32 @@ body
 					h4.JesusPrecios-planes-plan-item-article Soporte
 					p.JesusPrecios-planes-plan-item-number 1 Año
 				a.JesusPrecios-planes-plan-boton.btn(href="#") Registrar Ahora
+
+	section.JesusContacto
+		h2.JesusContacto-title Contactame
+
+		ul.JesusContacto-informacion
+			li.JesusContacto-infromacion-item
+				h3.JesusContacto-informacion-item-title Localización
+				p.Jesuscontacto-infromacion-item-info Maturín, Monagas, Venezuela
+			li.JesusContacto-infromacion-item
+				h3.JesusContacto-informacion-item-title Contacto
+				p.Jesuscontacto-infromacion-item-info jesusrojas.frontend@gmail.com
+				p.Jesuscontacto-infromacion-item-info +58 424-934-7744
+			li.JesusContacto-informacion-item
+				ul.JesusContacto-informacion-item-red
+					li.JesusContacto-informacion-item-red-icono
+						a.JesusContacto-informacion-item-red-icono-social(href="#")
+							span.fa.fa-linkedin
+					li.JesusContacto-informacion-item-red-icono
+						a.JesusContacto-informacion-item-red-icono-social(href="#")
+							span.fa.fa-github
+		form.JesusContacto-formulario.form-group
+			input.JesusContacto-formulario-input.form-control(type="text" required id="nombre" name="nombre")
+			input.JesusContacto-formulario-input.form-control(type="email" id="email" name="email")
+			input.JesusContacto-formulario-input.form-control(type="text" id="mensaje" name="mensaje")
+			textarea.JesusContacto-formulario-input--textarea.form-control(name="comentarios", cols="30", rows="10")
+			input(type="submit", value="Enviar").JesusContacto-formulario-btn.btn
 
 
 	script(src="js/jquery.js")
