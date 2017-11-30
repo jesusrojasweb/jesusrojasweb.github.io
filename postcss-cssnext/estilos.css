@@ -1,0 +1,72 @@
+:root{
+	--FuenteP: 'Exo', sans-serif;
+	--FuenteS: 'Nunito', sans-serif;
+
+	--colorTitle: #484848;
+	--colorAzul: #3971ff;
+	--colorTexto: #545454;
+
+	--colorBack: #f3f3f3;
+}
+
+
+
+.Jesus{
+	display: none;
+}
+.JesusHero{
+	&-header{
+		padding: 6em 4em 8em 4em;
+		background: url('../img/fondo.png') no-repeat scroll center center;
+		background-size: cover;
+		display: flex;
+		justify-content: flex-end;
+		&-container{
+			width: 50%;
+		}
+		&-caption{
+			color: var(--colorTexto);
+			font-family: var(--FuenteP)
+		}
+		&-titulo{
+			color: var(--colorTitle);
+			font-family: var(--FuenteP);
+			font-weight: medium;
+			font-size: 3rem;
+			b{
+				font-weight: medium;
+				color: var(--colorAzul);
+			}
+		}
+		&-subtitle{
+			color: var(--colorAzul);
+			font-family: var(--FuenteS);
+			text-transform: uppercase;
+			font-size: 1em;
+			border-top: 1.4px solid #636363;
+			border-bottom: 1.4px solid #636363;
+			padding: .8em;
+			width: 50%;
+			margin-top: 1.5em;
+		}
+		&-informacion{
+			margin-top: 3.5em;
+			color: var(--colorTexto);
+			font-family: var(--FuenteS);
+			font-size: 1.1rem;
+		}
+		&-buttons{
+			margin-top: 2.5em;
+			font-family: var(--FuenteS);
+			text-transform: uppercase;
+			&-btn{
+				font-weight: bold;
+				color: var(--colorTitle);
+				transition: .3s;
+				&:hover{
+					color: var(--colorAzul);
+				}
+			}
+		}
+	}
+}

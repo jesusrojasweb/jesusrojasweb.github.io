@@ -7,17 +7,33 @@ head
 	link(rel="stylesheet", href="css/normalize.css")
 	link(rel="stylesheet", href="css/bootstrap.min.css")
 	link(rel="stylesheet", href="css/font-awesome.min.css")
-	link(rel="stylesheet", href="css/estilos")
+	link(rel="stylesheet", href="css/estilos.css")
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,500|Nunito:400,600,700" rel="stylesheet">
 body
+	.Jesus
+		.Jesus-nombre
+			h1.Jesus-nombre-title Jesús Rojas
+			.Jesus-nombre-subtilte Junior Frontend Dev
+		nav.Jesus-navbar
+			ul.Jesus-navbar-menu
+				li.Jesus-navbar-menu-item
+					a(href="#") Habilidades
+				li.Jesus-navbar-menu-item
+					a(href="#") Educacion
+				li.Jesus-navbar-menu-item
+					a(href="#") Precios
+				li.Jesus-navbar-menu-item
+					a(href="#") Contacto
 	section.JesusHero
 		header.JesusHero-header
-			h2.JesusHero-header-caption Hola Soy
-			h1.JesusHero-header-titulo.title Jesús Rojas
-			h3.JesusHero-header-subtitle Junior Frontend Developer
-			p.JesusHero-header-information!= "Hola, soy un Desarrollador Frontend Junior y por ahora estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Soy graduado en secundaria, pero todos los días aprendo sobre programación."
-			.JesusHero-header-buttons
-				a.JesusHero-header-buttons-btn.btn(href="#portafolio") Portafolio
-				a.JesusHero-header-buttons-btn.btn(href="#info") Información
+			.JesusHero-header-container
+				h2.JesusHero-header-caption Hola Soy
+				h1.JesusHero-header-titulo.title!= "Jesús <b>Rojas</b>"
+				h3.JesusHero-header-subtitle Junior Frontend Developer
+				p.JesusHero-header-informacion!= "Hola, soy un Desarrollador Frontend Junior y por ahora estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Soy graduado en secundaria, pero todos los días aprendo sobre programación."
+				.JesusHero-header-buttons
+					a.JesusHero-header-buttons-btn.btn(href="#portafolio") Portafolio
+					a.JesusHero-header-buttons-btn.btn(href="#info") Información
 	section.JesusHabili
 		h2.JesusHabili-title.title Habilidades Profecionales
 
