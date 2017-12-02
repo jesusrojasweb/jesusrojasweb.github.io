@@ -15,7 +15,12 @@
 	lost-center: 800px;
 	lost-utility: clearfix;
 }
-
+.title{
+	font-family: var(--FuenteP);
+	color: var(--colorTitle);
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
 .Jesus{
 	display: none;
@@ -84,12 +89,6 @@
 /* ---------- Habilidades ----------*/
 .JesusHabili{
 	padding: 7em 6em;
-	&-title{
-		color: var(--colorTitle);
-		font-family: var(--FuenteP);
-		text-transform: uppercase;
-		font-weight: bold;
-	}
 	.u-Grid{
 		display: flex;
 		max-width: 100%;
@@ -153,4 +152,59 @@
 		}
 	}
 
+}
+/* ---------- Educacion ----------*/
+.JesusEdu{
+	background: var(--colorBack);
+	padding: 5em 7em;
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+			padding-bottom: 2em;
+		}
+	}
+	&-list{
+		counter-reset: li;
+		list-style: none;
+		*list-style: decimal-leading-zero;
+		font: 2em var(--FuenteP);
+		margin-bottom: 4em;
+		text-shadow: 0 1px 0 rgba(255,255,255,.5);
+		position: relative;
+	    padding: .4em;
+	    margin: 3em 0 .5em 2em;
+	    text-decoration: none;
+	    &-item{
+	    	position: relative;
+
+	    	&:before{
+	    		content: '0' counter(li);
+	    		counter-increment: li;
+	    		position: absolute;
+	    		left: -2.5em;
+	    	}
+	    	&-link{
+	    		color: var(--colorTexto);
+	    		transition: .3s;
+	    		&:hover{
+	    			color: var(--colorAzul);
+	    			text-decoration: none;
+	    		}
+	    		&-title{
+	    			font-family: var(--FuenteS);
+	    			text-transform: uppercase;
+	    			font-size: 1.5rem;
+	    			font-weight: 600;
+	    		}
+	    	}
+	    	&-time{
+		    	font-family: var(--FuenteS);
+		    	color: var(--colorTexto);
+		    	font-size: 1.3rem;
+		    }
+	    }
+
+	}
 }

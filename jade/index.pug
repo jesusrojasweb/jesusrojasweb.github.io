@@ -28,7 +28,7 @@ body
 		header.JesusHero-header
 			.JesusHero-header-container
 				h2.JesusHero-header-caption Hola Soy
-				h1.JesusHero-header-titulo.title!= "Jesús <b>Rojas</b>"
+				h1.JesusHero-header-titulo!= "Jesús <b>Rojas</b>"
 				h3.JesusHero-header-subtitle Junior Frontend Developer
 				p.JesusHero-header-informacion!= "Hola, soy un Desarrollador Frontend Junior y por ahora estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Soy graduado en secundaria, pero todos los días aprendo sobre programación."
 				.JesusHero-header-buttons
@@ -76,23 +76,27 @@ body
 					.JesusHabili-items-item-bar-porcent
 	section.JesusEdu
 		h2.JesusEdu-title.title Educación
-		ol.JesusEdu-list
-			li.JesusEdu-list-item
+		ol.JesusEdu-list.u-Grid
+			.u-Grid-column
 				a.JesusEdu-list-item-link(href="https://platzi.com/@jesusenriquerojas/curso/html5-css3/diploma/", target="_blank")
-					h3.JesusEdu-list-item-link-title Curso de Desarollo Web Online
-				p.Jesus-list-item-time sep de 2017 - sep de 2018
-			li.JesusEdu-list-item
+					li.JesusEdu-list-item
+						h3.JesusEdu-list-item-link-title Curso de Desarollo Web Online
+				p.JesusEdu-list-item-time sep de 2017 - sep de 2018
+			.u-Grid-column
 				a.JesusEdu-list-item-link(href="https://platzi.com/@jesusenriquerojas/curso/fundamentos-javascript/diploma/", target="_blank")
-					h3.JesusEdu-list-item-link-title Fundamentos de JavaScript
-				p.Jesus-list-item-time nov de 2017 - nov de 2018
-			li.JesusEdu-list-item
+					li.JesusEdu-list-item
+						h3.JesusEdu-list-item-link-title Fundamentos de JavaScript
+				p.JesusEdu-list-item-time nov de 2017 - nov de 2018
+			.u-Grid-column
 				a.JesusEdu-list-item-link(href="https://platzi.com/@jesusenriquerojas/curso/responsive-design/diploma/", target="_blank")
-					h3.JesusEdu-list-item-link-title Curso de Responsive Design
-				p.Jesus-list-item-time oct de 2017 - oct de 2018
-			li.JesusEdu-list-item
+					li.JesusEdu-list-item
+						h3.JesusEdu-list-item-link-title Curso de Responsive Design
+				p.JesusEdu-list-item-time oct de 2017 - oct de 2018
+			.u-Grid-column
 				a.JesusEdu-list-item-link(href="https://platzi.com/@jesusenriquerojas/curso/git-github/diploma/", target="_blank")
-					h3.JesusEdu-list-item-link-title Curso profesional de Git y Github
-				p.Jesus-list-item-time oct de 2017 - oct de 2018
+					li.JesusEdu-list-item
+						h3.JesusEdu-list-item-link-title Curso profesional de Git y Github
+				p.JesusEdu-list-item-time oct de 2017 - oct de 2018
 	section.JesusPortafolio
 		h2.JesusPortafolio-title.title Proyectos
 		.JesusPortafolio-items
@@ -164,7 +168,7 @@ body
 				a.JesusPrecios-planes-plan-boton.btn(href="#") Registrar Ahora
 
 	section.JesusContacto
-		h2.JesusContacto-title Contactame
+		h2.JesusContacto-title.title Contactame
 
 		ul.JesusContacto-informacion
 			li.JesusContacto-infromacion-item

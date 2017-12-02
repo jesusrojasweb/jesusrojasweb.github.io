@@ -20,6 +20,13 @@
 	clear: both;
 }
 
+.title{
+	font-family: 'Exo', sans-serif;
+	color: #484848;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 .Jesus{
 	display: none;
 }
@@ -105,13 +112,6 @@
 	padding: 7em 6em;
 
 }
-
-.JesusHabili-title{
-		color: #484848;
-		font-family: 'Exo', sans-serif;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
 
 .JesusHabili .u-Grid{
 		display: -webkit-box;
@@ -203,3 +203,90 @@
 					font-size: 16px;
 					font-size: 1rem;
 				}
+
+/* ---------- Educacion ----------*/
+
+.JesusEdu{
+	background: #f3f3f3;
+	padding: 5em 7em;
+}
+
+.JesusEdu .u-Grid{
+		display: -webkit-box;
+		display: flex;
+		max-width: 100%;
+	}
+
+.JesusEdu .u-Grid-column{
+			-webkit-box-flex: 0;
+			        flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: calc(49.95% - 15px);
+			max-width: calc(49.95% - 15px);
+			width: calc(49.95% - 15px);
+			padding-bottom: 2em;
+		}
+
+.JesusEdu .u-Grid-column:nth-child(1n){
+			margin-right: 30px;
+			margin-left: 0;
+		}
+
+.JesusEdu .u-Grid-column:last-child{
+			margin-right: 0;
+		}
+
+.JesusEdu .u-Grid-column:nth-child(2n){
+			margin-right: 0;
+			margin-left: auto;
+		}
+
+.JesusEdu-list{
+		counter-reset: li;
+		list-style: none;
+		*list-style: decimal-leading-zero;
+		font: 2em 'Exo', sans-serif;
+		margin-bottom: 4em;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+		position: relative;
+	    padding: .4em;
+	    margin: 3em 0 .5em 2em;
+	    text-decoration: none;
+
+	}
+
+.JesusEdu-list-item{
+	    	position: relative;
+	    }
+
+.JesusEdu-list-item:before{
+	    		content: '0' counter(li);
+	    		counter-increment: li;
+	    		position: absolute;
+	    		left: -2.5em;
+	    	}
+
+.JesusEdu-list-item-link{
+	    		color: #545454;
+	    		transition: .3s;
+	    	}
+
+.JesusEdu-list-item-link:hover{
+	    			color: #3971ff;
+	    			text-decoration: none;
+	    		}
+
+.JesusEdu-list-item-link-title{
+	    			font-family: 'Nunito', sans-serif;
+	    			text-transform: uppercase;
+	    			font-size: 24px;
+	    			font-size: 1.5rem;
+	    			font-weight: 600;
+	    		}
+
+.JesusEdu-list-item-time{
+		    	font-family: 'Nunito', sans-serif;
+		    	color: #545454;
+		    	font-size: 20.8px;
+		    	font-size: 1.3rem;
+		    }
