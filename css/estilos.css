@@ -1,8 +1,30 @@
+.u-Grid{
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-flow: row wrap;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.u-Grid:before{
+	content: '';
+	display: table;
+}
+
+.u-Grid:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
 .Jesus{
 	display: none;
 }
 
-
+/* ---------- Header ----------*/
 
 .JesusHero-header{
 		padding: 6em 4em 8em 4em;
@@ -14,20 +36,14 @@
 		        justify-content: flex-end;
 	}
 
-
-
 .JesusHero-header-container{
 			width: 50%;
 		}
-
-
 
 .JesusHero-header-caption{
 			color: #545454;
 			font-family: 'Exo', sans-serif
 		}
-
-
 
 .JesusHero-header-titulo{
 			color: #484848;
@@ -37,14 +53,10 @@
 			font-size: 3rem;
 		}
 
-
-
 .JesusHero-header-titulo b{
 				font-weight: medium;
 				color: #3971ff;
 			}
-
-
 
 .JesusHero-header-subtitle{
 			color: #3971ff;
@@ -58,17 +70,18 @@
 			margin-top: 1.5em;
 		}
 
-
-
 .JesusHero-header-informacion{
 			margin-top: 3.5em;
 			color: #545454;
 			font-family: 'Nunito', sans-serif;
 			font-size: 17.6px;
 			font-size: 1.1rem;
+			font-weight: 600;
 		}
 
-
+.JesusHero-header-informacion strong{
+				color: #5b84fb;
+			}
 
 .JesusHero-header-buttons{
 			margin-top: 2.5em;
@@ -76,16 +89,117 @@
 			text-transform: uppercase;
 		}
 
-
-
 .JesusHero-header-buttons-btn{
 				font-weight: bold;
 				color: #484848;
 				transition: .3s;
 			}
 
-
-
 .JesusHero-header-buttons-btn:hover{
 					color: #3971ff;
+				}
+
+/* ---------- Habilidades ----------*/
+
+.JesusHabili{
+	padding: 7em 6em;
+
+}
+
+.JesusHabili-title{
+		color: #484848;
+		font-family: 'Exo', sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+.JesusHabili .u-Grid{
+		display: -webkit-box;
+		display: flex;
+		max-width: 100%;
+
+	}
+
+.JesusHabili .u-Grid-column{
+			-webkit-box-flex: 0;
+			        flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: calc(49.95% - 15px);
+			max-width: calc(49.95% - 15px);
+			width: calc(49.95% - 15px);
+		}
+
+.JesusHabili .u-Grid-column:nth-child(1n){
+			margin-right: 30px;
+			margin-left: 0;
+		}
+
+.JesusHabili .u-Grid-column:last-child{
+			margin-right: 0;
+		}
+
+.JesusHabili .u-Grid-column:nth-child(2n){
+			margin-right: 0;
+			margin-left: auto;
+		}
+
+.JesusHabili-items{
+		margin: 8em 0 0 0;
+		width: 100%;
+	}
+
+.JesusHabili-items-item{
+			margin-bottom: 3.5em;
+				
+		}
+
+.JesusHabili-items-item:nth-child(3n) .JesusHabili-items-item-bar-porcent{
+						width: 60%;
+					}
+
+.JesusHabili-items-item:nth-child(4n) .JesusHabili-items-item-bar-porcent{
+						width: 80%;
+					}
+
+.JesusHabili-items-item:nth-child(6n) .JesusHabili-items-item-bar-porcent{
+						width: 90%;
+					}
+
+.JesusHabili-items-item-bar{
+				display: -webkit-box;
+				display: flex;
+				height: 4.8px;
+				height: .3rem;
+				overflow: hidden;
+				font-size: 12px;
+				font-size: .75rem;
+				background: #afc5fe;
+			}
+
+.JesusHabili-items-item-bar-porcent{
+					display: -webkit-box;
+					display: flex;
+					width: 90%;
+					-webkit-box-align: center;
+					        align-items: center;
+					-webkit-box-pack: center;
+					        justify-content: center;
+					background: #3971ff;
+					-webkit-clip-path: polygon(0 0,100% 0,98% 100%,0 100%);
+					        clip-path: polygon(0 0,100% 0,98% 100%,0 100%)
+				}
+
+.JesusHabili-items-item-contenedor{
+				display: -webkit-box;
+				display: flex;
+				-webkit-box-pack: justify;
+				        justify-content: space-between;
+			}
+
+.JesusHabili-items-item-contenedor-title,.JesusHabili-items-item-contenedor-porcent{
+					color: #545454;
+					font-family: 'Nunito', sans-serif;
+					text-transform: uppercase;
+					font-size: 16px;
+					font-size: 1rem;
 				}

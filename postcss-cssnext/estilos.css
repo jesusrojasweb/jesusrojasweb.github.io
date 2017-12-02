@@ -9,11 +9,18 @@
 	--colorBack: #f3f3f3;
 }
 
+@lost flexbox flex;
+
+.u-Grid{
+	lost-center: 800px;
+	lost-utility: clearfix;
+}
 
 
 .Jesus{
 	display: none;
 }
+/* ---------- Header ----------*/
 .JesusHero{
 	&-header{
 		padding: 6em 4em 8em 4em;
@@ -54,6 +61,10 @@
 			color: var(--colorTexto);
 			font-family: var(--FuenteS);
 			font-size: 1.1rem;
+			font-weight: 600;
+			strong{
+				color: #5b84fb;
+			}
 		}
 		&-buttons{
 			margin-top: 2.5em;
@@ -69,4 +80,77 @@
 			}
 		}
 	}
+}
+/* ---------- Habilidades ----------*/
+.JesusHabili{
+	padding: 7em 6em;
+	&-title{
+		color: var(--colorTitle);
+		font-family: var(--FuenteP);
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+		}
+
+	}
+	&-items{
+		margin: 8em 0 0 0;
+		width: 100%;
+		&-item{
+			margin-bottom: 3.5em;
+			&:nth-child(3n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
+						width: 60%;
+					}
+				}
+			}
+			&:nth-child(4n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
+						width: 80%;
+					}
+				}
+			}
+			&:nth-child(6n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
+						width: 90%;
+					}
+				}
+			}
+			&-bar{
+				display: flex;
+				height: .3rem;
+				overflow: hidden;
+				font-size: .75rem;
+				background: #afc5fe;
+				&-porcent{
+					display: flex;
+					width: 90%;
+					align-items: center;
+					justify-content: center;
+					background: var(--colorAzul);
+					clip-path: polygon(0 0,100% 0,98% 100%,0 100%)
+				}
+			}
+			&-contenedor{
+				display: flex;
+				justify-content: space-between;
+				&-title,&-porcent{
+					color: var(--colorTexto);
+					font-family: var(--FuenteS);
+					text-transform: uppercase;
+					font-size: 1rem;
+				}
+			}
+				
+		}
+	}
+
 }
