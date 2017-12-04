@@ -22,7 +22,7 @@
 	font-weight: bold;
 }
 .u-wrapp{
-	padding: 7em 6em;
+	padding: 7em;
 }
 
 .Jesus{
@@ -209,6 +209,7 @@
 
 	}
 }
+/* ---------- Portafolio ---------- */
 .JesusPortafolio{
 	.u-Grid{
 		display: flex;
@@ -270,6 +271,74 @@
 					font-family: var(--FuenteS);
 					color: var(--colorTexto);
 				}
+			}
+		}
+	}
+}
+/* ---------- Precios ---------- */
+.JesusPrecios{
+	background: var(--colorBack);
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+		}
+	}
+	&-planes{
+		margin-top: 5em;
+		&-plan{
+			background: white;
+			border-radius: 4px;
+			text-align: center;
+			padding-bottom: 2em;
+			transition: .3s;
+			box-shadow: 1px 4px 16px 1px #e0e0e0;
+			&-container{
+				padding: 4em 2em 2em 2em;
+				&-title{
+					text-align: left;
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+					font-weight: 600;
+					text-transform: uppercase;
+					span{
+						color: var(--colorAzul);
+						font-weight: bold;
+						text-transform: capitalize;
+					}
+				}
+				&-description{
+					text-align: left;
+					margin-top: 3em;
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+					font-weight: 600;
+				}
+			}
+			&-item{
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #afafaf;
+				padding: 1em 2em 0em 2em;
+				&-article,&-number{
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+					text-transform: uppercase;
+					font-size: 1rem;
+					font-weight: 600;
+				}
+				&:nth-child(4n){
+					border-bottom: none;
+				}
+			}
+			&-boton{
+				color: var(--colorAzul);
+				font-family: var(--FuenteS);
+
+			}
+			&:hover{
+				box-shadow: 1px 9px 16px 1px #d0d0d0;
 			}
 		}
 	}

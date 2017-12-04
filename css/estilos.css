@@ -28,7 +28,7 @@
 }
 
 .u-wrapp{
-	padding: 7em 6em;
+	padding: 7em;
 }
 
 .Jesus{
@@ -289,6 +289,8 @@
 		    	font-size: 1.3rem;
 		    }
 
+/* ---------- Portafolio ---------- */
+
 .JesusPortafolio .u-Grid{
 		display: -webkit-box;
 		display: flex;
@@ -387,3 +389,109 @@
 					font-family: 'Nunito', sans-serif;
 					color: #545454;
 				}
+
+/* ---------- Precios ---------- */
+
+.JesusPrecios{
+	background: #f3f3f3;
+}
+
+.JesusPrecios .u-Grid{
+		display: -webkit-box;
+		display: flex;
+		max-width: 100%;
+	}
+
+.JesusPrecios .u-Grid-column{
+			-webkit-box-flex: 0;
+			        flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: calc(49.95% - 15px);
+			max-width: calc(49.95% - 15px);
+			width: calc(49.95% - 15px);
+		}
+
+.JesusPrecios .u-Grid-column:nth-child(1n){
+			margin-right: 30px;
+			margin-left: 0;
+		}
+
+.JesusPrecios .u-Grid-column:last-child{
+			margin-right: 0;
+		}
+
+.JesusPrecios .u-Grid-column:nth-child(2n){
+			margin-right: 0;
+			margin-left: auto;
+		}
+
+.JesusPrecios-planes{
+		margin-top: 5em;
+	}
+
+.JesusPrecios-planes-plan{
+			background: white;
+			border-radius: 4px;
+			text-align: center;
+			padding-bottom: 2em;
+			transition: .3s;
+			box-shadow: 1px 4px 16px 1px #e0e0e0;
+		}
+
+.JesusPrecios-planes-plan-container{
+				padding: 4em 2em 2em 2em;
+			}
+
+.JesusPrecios-planes-plan-container-title{
+					text-align: left;
+					font-family: 'Nunito', sans-serif;
+					color: #545454;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+
+.JesusPrecios-planes-plan-container-title span{
+						color: #3971ff;
+						font-weight: bold;
+						text-transform: capitalize;
+					}
+
+.JesusPrecios-planes-plan-container-description{
+					text-align: left;
+					margin-top: 3em;
+					font-family: 'Nunito', sans-serif;
+					color: #545454;
+					font-weight: 600;
+				}
+
+.JesusPrecios-planes-plan-item{
+				display: -webkit-box;
+				display: flex;
+				-webkit-box-pack: justify;
+				        justify-content: space-between;
+				border-bottom: 1px solid #afafaf;
+				padding: 1em 2em 0em 2em;
+			}
+
+.JesusPrecios-planes-plan-item-article,.JesusPrecios-planes-plan-item-number{
+					font-family: 'Nunito', sans-serif;
+					color: #545454;
+					text-transform: uppercase;
+					font-size: 16px;
+					font-size: 1rem;
+					font-weight: 600;
+				}
+
+.JesusPrecios-planes-plan-item:nth-child(4n){
+					border-bottom: none;
+				}
+
+.JesusPrecios-planes-plan-boton{
+				color: #3971ff;
+				font-family: 'Nunito', sans-serif;
+
+			}
+
+.JesusPrecios-planes-plan:hover{
+				box-shadow: 1px 9px 16px 1px #d0d0d0;
+			}
