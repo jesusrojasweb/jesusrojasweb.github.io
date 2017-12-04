@@ -21,6 +21,9 @@
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.u-wrapp{
+	padding: 7em 6em;
+}
 
 .Jesus{
 	display: none;
@@ -88,7 +91,6 @@
 }
 /* ---------- Habilidades ----------*/
 .JesusHabili{
-	padding: 7em 6em;
 	.u-Grid{
 		display: flex;
 		max-width: 100%;
@@ -156,7 +158,6 @@
 /* ---------- Educacion ----------*/
 .JesusEdu{
 	background: var(--colorBack);
-	padding: 5em 7em;
 	.u-Grid{
 		display: flex;
 		max-width: 100%;
@@ -206,5 +207,70 @@
 		    }
 	    }
 
+	}
+}
+.JesusPortafolio{
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+		}
+	}
+	img{
+		width: 100%;
+		border-radius: 4px;
+
+	}
+	.JesusPortafolio-items{
+		margin-top: 7em;
+		.JesusPortafolio-item{
+			&-head{
+				a{
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					box-shadow: 1px 3px 4px 2px #ddd;
+    				border-radius: 4px;
+    				transition: .3s;
+					&:hover{
+						box-shadow: 0px 9px 11px 1px #d0d0d0;
+						.JesusPortafolio-item-head-hover{
+							opacity: 1;
+						}
+					}
+				}
+				&-hover{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: rgba(255,255,255,.5);
+					opacity: 0;
+					transition: .3s;
+					span{
+						color: var(--colorAzul);
+						font-size: 3rem;
+					}
+				}
+			}
+			&-footer{
+				padding: 4em 0 2em 0;
+				&-title{
+					font-family: var(--FuenteS);
+					text-transform: uppercase;
+					color: var(--colorTexto);
+					font-weight: 600;
+				}
+				&-description{
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+				}
+			}
+		}
 	}
 }
