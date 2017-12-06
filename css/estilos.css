@@ -31,13 +31,57 @@
 	padding: 7em;
 }
 
-.Jesus{
-	display: none;
-}
-
 /* ---------- Header ----------*/
 
 .JesusHero-header{
+		position: absolute;
+		top: 0;
+		left: 0;
+		//background: #f3f3f3;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
+		width: 100%;
+	}
+
+.JesusHero-header-logo{
+			padding: .5em .5em .5em 3em;
+		}
+
+.JesusHero-header-navbar-menu{
+				display: -webkit-box;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				        flex-direction: row;
+				-webkit-box-pack: justify;
+				        justify-content: space-between;
+				list-style: none;
+			}
+
+.JesusHero-header-navbar-menu-item{ 
+					padding: 2em 0;
+
+				}
+
+.JesusHero-header-navbar-menu-item a{
+						color: #bdbdbd;
+						padding: 1em;
+						font-family: 'Exo', sans-serif;
+						text-transform: uppercase;
+						transition: .3s;
+					}
+
+.JesusHero-header-navbar-menu-item a:hover{
+							color: #545454;
+							text-decoration: none;
+						}
+
+.JesusHero-copy{
 		padding: 6em 4em 8em 4em;
 		background: url('../img/fondo.png') no-repeat scroll center center;
 		background-size: cover;
@@ -47,16 +91,16 @@
 		        justify-content: flex-end;
 	}
 
-.JesusHero-header-container{
+.JesusHero-copy-container{
 			width: 50%;
 		}
 
-.JesusHero-header-caption{
+.JesusHero-copy-caption{
 			color: #545454;
 			font-family: 'Exo', sans-serif
 		}
 
-.JesusHero-header-titulo{
+.JesusHero-copy-titulo{
 			color: #484848;
 			font-family: 'Exo', sans-serif;
 			font-weight: medium;
@@ -64,12 +108,12 @@
 			font-size: 3rem;
 		}
 
-.JesusHero-header-titulo b{
+.JesusHero-copy-titulo b{
 				font-weight: medium;
 				color: #3971ff;
 			}
 
-.JesusHero-header-subtitle{
+.JesusHero-copy-subtitle{
 			color: #3971ff;
 			font-family: 'Nunito', sans-serif;
 			text-transform: uppercase;
@@ -81,7 +125,7 @@
 			margin-top: 1.5em;
 		}
 
-.JesusHero-header-informacion{
+.JesusHero-copy-informacion{
 			margin-top: 3.5em;
 			color: #545454;
 			font-family: 'Nunito', sans-serif;
@@ -90,23 +134,23 @@
 			font-weight: 600;
 		}
 
-.JesusHero-header-informacion strong{
+.JesusHero-copy-informacion strong{
 				color: #5b84fb;
 			}
 
-.JesusHero-header-buttons{
+.JesusHero-copy-buttons{
 			margin-top: 2.5em;
 			font-family: 'Nunito', sans-serif;
 			text-transform: uppercase;
 		}
 
-.JesusHero-header-buttons-btn{
+.JesusHero-copy-buttons-btn{
 				font-weight: bold;
 				color: #484848;
 				transition: .3s;
 			}
 
-.JesusHero-header-buttons-btn:hover{
+.JesusHero-copy-buttons-btn:hover{
 					color: #3971ff;
 				}
 

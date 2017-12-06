@@ -7,6 +7,7 @@
 	--colorTexto: #545454;
 
 	--colorBack: #f3f3f3;
+	--colorMenu: #f3f3f3;
 }
 
 @lost flexbox flex;
@@ -25,12 +26,45 @@
 	padding: 7em;
 }
 
-.Jesus{
-	display: none;
-}
 /* ---------- Header ----------*/
 .JesusHero{
 	&-header{
+		position: absolute;
+		top: 0;
+		left: 0;
+		//background: var(--colorMenu);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		&-logo{
+			padding: .5em .5em .5em 3em;
+		}
+		&-navbar{
+			&-menu{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				list-style: none;
+				&-item{ 
+					padding: 2em 0;
+					a{
+						color: #bdbdbd;
+						padding: 1em;
+						font-family: var(--FuenteP);
+						text-transform: uppercase;
+						transition: .3s;
+						&:hover{
+							color: var(--colorTexto);
+							text-decoration: none;
+						}
+					}
+
+				}
+			}
+		}
+	}
+	&-copy{
 		padding: 6em 4em 8em 4em;
 		background: url('../img/fondo.png') no-repeat scroll center center;
 		background-size: cover;
