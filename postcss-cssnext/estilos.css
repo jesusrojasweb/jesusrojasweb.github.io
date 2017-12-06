@@ -231,7 +231,7 @@
 					position: relative;
 					display: flex;
 					flex-direction: column;
-					box-shadow: 1px 3px 4px 2px #ddd;
+					box-shadow: 1px 1px 1px 1px #e0e0e0;
     				border-radius: 4px;
     				transition: .3s;
 					&:hover{
@@ -339,6 +339,98 @@
 			}
 			&:hover{
 				box-shadow: 1px 9px 16px 1px #d0d0d0;
+			}
+		}
+	}
+}
+.JesusContacto{
+	.u-Grid{
+		justify-content: space-between;
+		max-width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		&-column{
+			display: block;
+			&:first-child{
+				width: 40%;
+			}
+			&:last-child{
+				width: 60%;
+			}
+		}
+	}
+	&-grid{
+		margin-top: 5em;
+	}
+	&-informacion{
+		list-style: none;
+		padding: 0;
+	    &-item{
+	    	padding-bottom: 3em;
+	    	&-header{
+	    		display: flex;
+	    		color: var(--colorTexto);
+	    		.fa{
+	    			font-size: 2rem;
+	    		}
+	    		&-title{
+	    			padding-left: 1em;
+	    			font-family: var(--FuenteS);
+	    			text-transform: uppercase;
+	    		}
+	    	}
+	    	&-info{
+	    		color: var(--colorTexto);
+	    		font-family: var(--FuenteS);
+	    	}
+	    	&-red{
+	    		list-style: none;
+	    		padding: 0;
+	    		&-icono{
+	    			display: inline;
+					&-social{
+						padding: 1em;
+						font-size: 1.5rem;
+						color: var(--colorTexto);
+						transition: .3s;
+						&:hover{
+							color: var(--colorAzul);
+						}
+					}
+	    		}
+	    	}
+	    }
+	}
+	&-formulario{
+		.form-control{
+			border-radius: 0;
+			border: none;
+			border-bottom: 1.5px solid #cdcdcd;
+			padding: 1em;
+			margin-bottom: 1em;
+			font-family: var(--FuenteS);
+			color: var(--colorTexto);
+			transition: .5s;
+			&:focus{
+				box-shadow: none;
+				border-bottom: 1.5px solid var(--colorAzul);
+				font-weight: 600;
+			}
+		}
+		&-input{
+			&--textarea{
+				overflow: auto;
+			}
+		}
+		&-btn{
+			background: none;
+			color: var(--colorTexto);
+			font-family: var(--FuenteS);
+			font-weight: 600;
+			transition: .3s;
+			&:hover{
+				color: var(--colorAzul);
+				cursor: pointer;
 			}
 		}
 	}

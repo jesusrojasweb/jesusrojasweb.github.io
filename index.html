@@ -30,7 +30,7 @@
         <h2 class="JesusHero-header-caption">Hola Soy</h2>
         <h1 class="JesusHero-header-titulo">Jesús <b>Rojas</b></h1>
         <h3 class="JesusHero-header-subtitle">Junior Frontend Developer</h3>
-        <p class="JesusHero-header-informacion">Hola, soy un Desarrollador Frontend Junior y por ahora estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Soy graduado en secundaria, pero todos los días aprendo sobre programación.</p>
+        <p class="JesusHero-header-informacion">Hola, soy un Desarrollador Frontend Junior y hoy en día estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Estoy graduado en secundaria, pero todos los días aprendo sobre programación.</p>
         <div class="JesusHero-header-buttons"><a class="JesusHero-header-buttons-btn btn" href="#portafolio">Portafolio</a><a class="JesusHero-header-buttons-btn btn" href="#info">Información</a></div>
       </div>
     </header>
@@ -201,33 +201,38 @@
       </div>
     </div>
   </section>
-  <section class="JesusContacto u-wrapp">
+  <footer class="JesusContacto u-wrapp">
     <h2 class="JesusContacto-title title">Contactame</h2>
-    <ul class="JesusContacto-informacion">
-      <li class="JesusContacto-infromacion-item">
-        <h3 class="JesusContacto-informacion-item-title">Localización</h3>
-        <p class="Jesuscontacto-infromacion-item-info">Maturín, Monagas, Venezuela</p>
-      </li>
-      <li class="JesusContacto-infromacion-item">
-        <h3 class="JesusContacto-informacion-item-title">Contacto</h3>
-        <p class="Jesuscontacto-infromacion-item-info">jesusrojas.frontend@gmail.com</p>
-        <p class="Jesuscontacto-infromacion-item-info">+58 424-934-7744</p>
-      </li>
-      <li class="JesusContacto-informacion-item">
-        <ul class="JesusContacto-informacion-item-red">
-          <li class="JesusContacto-informacion-item-red-icono"><a class="JesusContacto-informacion-item-red-icono-social" href="#"><span class="fa fa-linkedin"></span></a></li>
-          <li class="JesusContacto-informacion-item-red-icono"><a class="JesusContacto-informacion-item-red-icono-social" href="#"><span class="fa fa-github"></span></a></li>
-        </ul>
-      </li>
-    </ul>
-    <form class="JesusContacto-formulario form-group">
-      <input class="JesusContacto-formulario-input form-control" type="text" required="required" id="nombre" name="nombre"/>
-      <input class="JesusContacto-formulario-input form-control" type="email" id="email" name="email"/>
-      <input class="JesusContacto-formulario-input form-control" type="text" id="mensaje" name="mensaje"/>
-      <textarea class="JesusContacto-formulario-input--textarea form-control" name="comentarios" cols="30" rows="10"></textarea>
-      <input class="JesusContacto-formulario-btn btn" type="submit" value="Enviar"/>
-    </form>
-  </section>
+    <div class="JesusContacto-grid u-Grid">
+      <ul class="JesusContacto-informacion u-Grid-column">
+        <li class="JesusContacto-informacion-item">
+          <div class="JesusContacto-informacion-item-header"><span class="fa fa-home"></span>
+            <h3 class="JesusContacto-informacion-item-header-title">Localización</h3>
+          </div>
+          <p class="Jesuscontacto-infromacion-item-info">Maturín, Monagas, Venezuela</p>
+        </li>
+        <li class="JesusContacto-informacion-item">
+          <div class="JesusContacto-informacion-item-header"><span class="fa fa-envelope-open-o"></span>
+            <h3 class="JesusContacto-informacion-item-header-title">Contacto</h3>
+          </div>
+          <p class="Jesuscontacto-infromacion-item-info">jesusrojas.frontend@gmail.com <br> +58 424-934-7744</p>
+        </li>
+        <li class="JesusContacto-informacion-item">
+          <ul class="JesusContacto-informacion-item-red">
+            <li class="JesusContacto-informacion-item-red-icono"><a class="JesusContacto-informacion-item-red-icono-social" href="#"><span class="fa fa-linkedin"></span></a></li>
+            <li class="JesusContacto-informacion-item-red-icono"><a class="JesusContacto-informacion-item-red-icono-social" href="#"><span class="fa fa-github"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="JesusContacto-formulario form-group u-Grid-column">
+        <input class="JesusContacto-formulario-input form-control" type="text" required="required" id="nombre" name="nombre" placeholder="Su Nombre"/>
+        <input class="JesusContacto-formulario-input form-control" type="email" id="email" name="email" placeholder="Su correo"/>
+        <input class="JesusContacto-formulario-input form-control" type="text" id="mensaje" name="mensaje" placeholder="El asunto"/>
+        <textarea class="JesusContacto-formulario-input--textarea form-control" name="comentarios" cols="30" rows="5" placeholder="Mensaje a dejar"></textarea>
+        <input class="JesusContacto-formulario-btn btn" type="submit" value="Enviar"/>
+      </form>
+    </div>
+  </footer>
   <script src="js/jquery.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

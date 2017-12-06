@@ -337,7 +337,7 @@
 					-webkit-box-orient: vertical;
 					-webkit-box-direction: normal;
 					        flex-direction: column;
-					box-shadow: 1px 3px 4px 2px #ddd;
+					box-shadow: 1px 1px 1px 1px #e0e0e0;
     				border-radius: 4px;
     				transition: .3s;
 				}
@@ -494,4 +494,114 @@
 
 .JesusPrecios-planes-plan:hover{
 				box-shadow: 1px 9px 16px 1px #d0d0d0;
+			}
+
+.JesusContacto .u-Grid{
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
+		max-width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+.JesusContacto .u-Grid-column{
+			display: block;
+		}
+
+.JesusContacto .u-Grid-column:first-child{
+				width: 40%;
+			}
+
+.JesusContacto .u-Grid-column:last-child{
+				width: 60%;
+			}
+
+.JesusContacto-grid{
+		margin-top: 5em;
+	}
+
+.JesusContacto-informacion{
+		list-style: none;
+		padding: 0;
+	}
+
+.JesusContacto-informacion-item{
+	    	padding-bottom: 3em;
+	    }
+
+.JesusContacto-informacion-item-header{
+	    		display: -webkit-box;
+	    		display: flex;
+	    		color: #545454;
+	    	}
+
+.JesusContacto-informacion-item-header .fa{
+	    			font-size: 32px;
+	    			font-size: 2rem;
+	    		}
+
+.JesusContacto-informacion-item-header-title{
+	    			padding-left: 1em;
+	    			font-family: 'Nunito', sans-serif;
+	    			text-transform: uppercase;
+	    		}
+
+.JesusContacto-informacion-item-info{
+	    		color: #545454;
+	    		font-family: 'Nunito', sans-serif;
+	    	}
+
+.JesusContacto-informacion-item-red{
+	    		list-style: none;
+	    		padding: 0;
+	    	}
+
+.JesusContacto-informacion-item-red-icono{
+	    			display: inline;
+	    		}
+
+.JesusContacto-informacion-item-red-icono-social{
+						padding: 1em;
+						font-size: 24px;
+						font-size: 1.5rem;
+						color: #545454;
+						transition: .3s;
+					}
+
+.JesusContacto-informacion-item-red-icono-social:hover{
+							color: #3971ff;
+						}
+
+.JesusContacto-formulario .form-control{
+			border-radius: 0;
+			border: none;
+			border-bottom: 1.5px solid #cdcdcd;
+			padding: 1em;
+			margin-bottom: 1em;
+			font-family: 'Nunito', sans-serif;
+			color: #545454;
+			transition: .5s;
+		}
+
+.JesusContacto-formulario .form-control:focus{
+				box-shadow: none;
+				border-bottom: 1.5px solid #3971ff;
+				font-weight: 600;
+			}
+
+.JesusContacto-formulario-input--textarea{
+				overflow: auto;
+			}
+
+.JesusContacto-formulario-btn{
+			background: none;
+			color: #545454;
+			font-family: 'Nunito', sans-serif;
+			font-weight: 600;
+			transition: .3s;
+		}
+
+.JesusContacto-formulario-btn:hover{
+				color: #3971ff;
+				cursor: pointer;
 			}

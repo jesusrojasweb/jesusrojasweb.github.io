@@ -30,7 +30,7 @@ body
 				h2.JesusHero-header-caption Hola Soy
 				h1.JesusHero-header-titulo!= "Jesús <b>Rojas</b>"
 				h3.JesusHero-header-subtitle Junior Frontend Developer
-				p.JesusHero-header-informacion!= "Hola, soy un Desarrollador Frontend Junior y por ahora estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Soy graduado en secundaria, pero todos los días aprendo sobre programación."
+				p.JesusHero-header-informacion!= "Hola, soy un Desarrollador Frontend Junior y hoy en día estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Estoy graduado en secundaria, pero todos los días aprendo sobre programación."
 				.JesusHero-header-buttons
 					a.JesusHero-header-buttons-btn.btn(href="#portafolio") Portafolio
 					a.JesusHero-header-buttons-btn.btn(href="#info") Información
@@ -169,31 +169,34 @@ body
 					p.JesusPrecios-planes-plan-item-number 1 Año
 				a.JesusPrecios-planes-plan-boton.btn(href="#") Registrar Ahora
 
-	section.JesusContacto.u-wrapp
+	footer.JesusContacto.u-wrapp
 		h2.JesusContacto-title.title Contactame
-
-		ul.JesusContacto-informacion
-			li.JesusContacto-infromacion-item
-				h3.JesusContacto-informacion-item-title Localización
-				p.Jesuscontacto-infromacion-item-info Maturín, Monagas, Venezuela
-			li.JesusContacto-infromacion-item
-				h3.JesusContacto-informacion-item-title Contacto
-				p.Jesuscontacto-infromacion-item-info jesusrojas.frontend@gmail.com
-				p.Jesuscontacto-infromacion-item-info +58 424-934-7744
-			li.JesusContacto-informacion-item
-				ul.JesusContacto-informacion-item-red
-					li.JesusContacto-informacion-item-red-icono
-						a.JesusContacto-informacion-item-red-icono-social(href="#")
-							span.fa.fa-linkedin
-					li.JesusContacto-informacion-item-red-icono
-						a.JesusContacto-informacion-item-red-icono-social(href="#")
-							span.fa.fa-github
-		form.JesusContacto-formulario.form-group
-			input.JesusContacto-formulario-input.form-control(type="text" required id="nombre" name="nombre")
-			input.JesusContacto-formulario-input.form-control(type="email" id="email" name="email")
-			input.JesusContacto-formulario-input.form-control(type="text" id="mensaje" name="mensaje")
-			textarea.JesusContacto-formulario-input--textarea.form-control(name="comentarios", cols="30", rows="10")
-			input(type="submit", value="Enviar").JesusContacto-formulario-btn.btn
+		.JesusContacto-grid.u-Grid
+			ul.JesusContacto-informacion.u-Grid-column
+				li.JesusContacto-informacion-item
+					.JesusContacto-informacion-item-header
+						span.fa.fa-home
+						h3.JesusContacto-informacion-item-header-title Localización
+					p.Jesuscontacto-infromacion-item-info Maturín, Monagas, Venezuela
+				li.JesusContacto-informacion-item
+					.JesusContacto-informacion-item-header
+						span.fa.fa-envelope-open-o
+						h3.JesusContacto-informacion-item-header-title Contacto
+					p.Jesuscontacto-infromacion-item-info!= "jesusrojas.frontend@gmail.com <br> +58 424-934-7744"
+				li.JesusContacto-informacion-item
+					ul.JesusContacto-informacion-item-red
+						li.JesusContacto-informacion-item-red-icono
+							a.JesusContacto-informacion-item-red-icono-social(href="#")
+								span.fa.fa-linkedin
+						li.JesusContacto-informacion-item-red-icono
+							a.JesusContacto-informacion-item-red-icono-social(href="#")
+								span.fa.fa-github
+			form.JesusContacto-formulario.form-group.u-Grid-column
+				input.JesusContacto-formulario-input.form-control(type="text" required id="nombre" name="nombre" placeholder="Su Nombre")
+				input.JesusContacto-formulario-input.form-control(type="email" id="email" name="email" placeholder="Su correo")
+				input.JesusContacto-formulario-input.form-control(type="text" id="mensaje" name="mensaje" placeholder="El asunto")
+				textarea.JesusContacto-formulario-input--textarea.form-control(name="comentarios", cols="30", rows="5" placeholder="Mensaje a dejar")
+				input(type="submit", value="Enviar").JesusContacto-formulario-btn.btn
 
 
 	script(src="js/jquery.js")
