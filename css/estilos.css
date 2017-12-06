@@ -649,3 +649,92 @@
 				color: #3971ff;
 				cursor: pointer;
 			}
+
+/* --------------------------------
+   ---------- Responsive ----------
+   ------------------------------*/
+
+@media (max-width: 768px){
+	.u-wrapp{
+		padding: 4em;
+	}
+			.JesusHero-copy-container{
+				width: 70%;
+			}
+			.JesusHero-copy-subtitle{
+				width: 70%;
+			}
+	.JesusEdu{
+
+	}
+}
+
+@media (max-width: 500px){
+	.title{
+		font-size: 1.8rem;
+	}
+	.u-wrapp{
+		padding: 3em 2em;
+	}
+					.JesusHero-header-navbar-menu-item{
+						display: none;
+					}
+						.JesusHero-header-navbar-menu-item:last-child{
+							display: block;
+							padding: 1em;
+							color: #545454;
+							font-size: 1.5rem;
+						}
+		.JesusHero-copy{
+			padding: 7em 2em 5em 2em;
+			-webkit-box-pack: center;
+			        justify-content: center;
+		}
+			.JesusHero-copy-container{
+				display: -webkit-box;
+				display: flex;
+				-webkit-box-pack: center;
+				        justify-content: center;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				        flex-direction: column;
+				-webkit-box-align: center;
+				        align-items: center;
+				text-align: center;
+				width: 90%;
+			}
+			.JesusHero-copy-informacion{
+				display: none;
+			}
+				.JesusHero-copy-buttons-btn{
+					font-size: 1.2rem;
+				}
+			.JesusHabili .u-Grid-column,.JesusEdu .u-Grid-column,.JesusPortafolio .u-Grid-column,.JesusPrecios .u-Grid-column,.JesusContacto .u-Grid-column{
+				-webkit-box-flex: 0;
+				        flex-grow: 0;
+				flex-shrink: 0;
+				flex-basis: 99.9%;
+				max-width: 99.9%;
+				width: 99.9%;
+			}
+			.JesusHabili .u-Grid-column:nth-child(1n),.JesusEdu .u-Grid-column:nth-child(1n),.JesusPortafolio .u-Grid-column:nth-child(1n),.JesusPrecios .u-Grid-column:nth-child(1n),.JesusContacto .u-Grid-column:nth-child(1n){
+				margin-right: 30px;
+				margin-left: 0;
+			}
+			.JesusHabili .u-Grid-column:last-child,.JesusEdu .u-Grid-column:last-child,.JesusPortafolio .u-Grid-column:last-child,.JesusPrecios .u-Grid-column:last-child,.JesusContacto .u-Grid-column:last-child{
+				margin-right: 0;
+			}
+			.JesusHabili .u-Grid-column:nth-child(NaNn),.JesusEdu .u-Grid-column:nth-child(NaNn),.JesusPortafolio .u-Grid-column:nth-child(NaNn),.JesusPrecios .u-Grid-column:nth-child(NaNn),.JesusContacto .u-Grid-column:nth-child(NaNn){
+				margin-right: 0;
+				margin-left: auto;
+			}
+				.JesusPortafolio-item-footer-title{
+					font-size: 1.5rem;
+				}
+			.JesusPrecios-planes-plan{
+				margin-bottom: 3em;
+			}
+				.JesusPrecios-planes-plan-boton{
+					font-size: 1.5rem;
+				}
+}
