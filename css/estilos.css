@@ -68,6 +68,10 @@
 
 				}
 
+.JesusHero-header-navbar-menu-item:last-child{
+						display: none;
+					}
+
 .JesusHero-header-navbar-menu-item a{
 						color: #bdbdbd;
 						padding: 1em;

@@ -51,6 +51,9 @@
 				list-style: none;
 				&-item{ 
 					padding: 2em 0;
+					&:last-child{
+						display: none;
+					}
 					a{
 						color: #bdbdbd;
 						padding: 1em;
