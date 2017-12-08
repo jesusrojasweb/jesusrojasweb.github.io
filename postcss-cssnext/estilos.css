@@ -556,16 +556,46 @@
 	}
 	.JesusHero{
 		&-header{
+			&.active{
+				position: absolute;
+			}
 			&-navbar{
+				&-menu--burguer{
+					display: block;
+					position: fixed;
+					right: .5em;
+					top: .5em;
+					padding: 1em;
+					color: var(--colorTexto);
+					font-size: 1.5rem;
+					border-radius: 50%;
+					z-index: 1000;
+					&.active{
+						background: #f3f3f3;
+					}
+				}
 				&-menu{
+					transition: .4s;
+					position: fixed;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					background: #f3f3f3e0;
+					height: 100vh;
+					z-index: 500;
+					top: 0;
+					left: 0;
+					width: 100%;
+					padding: 0;
+					transform: translateX(100%);
 					&-item{
-						display: none;
-						&:last-child{
-							display: block;
-							padding: 1em;
+						a{
 							color: var(--colorTexto);
-							font-size: 1.5rem;
 						}
+					}
+					&.active{
+						transform: translateX(0%);
 					}
 				}
 			}

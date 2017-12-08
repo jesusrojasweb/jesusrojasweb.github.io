@@ -16,7 +16,8 @@ body#top
 			figure.JesusHero-header-logo
 				img(src="img/logo.png", alt="logo")
 			nav.JesusHero-header-navbar
-				ul.JesusHero-header-navbar-menu
+				span.JesusHero-header-navbar-menu--burguer.fa.fa-bars#burguer
+				ul.JesusHero-header-navbar-menu#menu
 					li.JesusHero-header-navbar-menu-item
 						a(href="#habilidades") Habilidades
 					li.JesusHero-header-navbar-menu-item
@@ -27,8 +28,7 @@ body#top
 						a(href="#") Precios
 					li.JesusHero-header-navbar-menu-item
 						a(href="#contacto") Contacto
-					li.JesusHero-header-navbar-menu-item
-						span.JesusHero-header-btn.fa.fa-bars
+						
 		header.JesusHero-copy
 			.JesusHero-copy-container
 				h2.JesusHero-copy-caption Hola Soy
@@ -188,4 +188,5 @@ body#top
 	script(src="js/jquery.js")
 	script(src="js/popper.min.js")
 	script(src="js/bootstrap.min.js")
+	script(src="js/hammer.min.js")
 	script(src="js/app.js")

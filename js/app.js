@@ -1,15 +1,12 @@
+/* ---------- Scroll ----------*/
+
 $(window).scroll(function() {
   	var topOfWindow = $(window).scrollTop();
   	$('#top').each(function(){
     var imagePos = $(this).offset().top;
     var topOfWindow = $(window).scrollTop();
       if (imagePos < topOfWindow) {
-        $('#navbar').addClass('active');
-        console.log("Se cumplio")
-      }
-      if(topOfWindow == 0){
-        $('#navbar').removeClass('active');
-        
+        $('#burguer').addClass('active');
       }
     });
   	$('#habilidades').each(function(){
@@ -24,3 +21,35 @@ $(window).scroll(function() {
 	      }
   	})
 })
+/* ---------- Menu ----------*/
+var consulta = window.matchMedia('(max-width: 500px)');
+var $burguerButton = document.getElementById('burguer');
+  var $menu = document.getElementById('menu');
+  function toggleMenu(){
+    $menu.classList.toggle('active')
+  };
+  function showMenu(){
+    $menu.classList.add('active');
+  };
+  function hideMenu(){
+    $menu.classList.remove('active');
+  };
+
+  function mediaQuery() {
+    if (consulta.matches) {
+      // si se cumple hagamos esto
+      console.log('se cumplió la condicion');
+      $burguerButton.addEventListener('touchstart', toggleMenu);
+    } else {
+      $burguerButton.removeEventListener('touchstart', toggleMenu);
+      // si no se cumple hagamos esto
+      console.log('no se cumplió la condicion');
+    }
+  }
+  mediaQuery();
+  /* ---------- Hammer ----------*/
+  var $body = document.body;
+
+  var gestos = new Hammer($body);
+  gestos.on('swipeleft', showMenu);
+  gestos.on('swiperight', hideMenu);
