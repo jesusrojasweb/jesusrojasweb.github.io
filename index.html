@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="css/estilos.css"/><link href="https://fonts.googleapis.com/css?family=Exo:400,500|Nunito:400,600,700" rel="stylesheet">
+  <style>
+    .title{font-family:'Exo',sans-serif;color:#484848;text-transform:uppercase;font-weight:700;position:relative}.title:before{position:absolute;top:150%;left:0;content:'';border-bottom:2.5px solid #3971ff;width:10%}.u-wrapp{padding:7em}.btn{position:relative}.btn:before{position:absolute;bottom:5px;left:10%;content:'';border-bottom:2px solid #3971ff;width:0}.JesusHero-header{position:absolute;top:0;left:0;display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;justify-content:space-between;width:100%;z-index:1000}.JesusHero-header-logo{padding:.5em .5em .5em 3em}.JesusHero-header-navbar-menu{display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;justify-content:space-between;list-style:none}.JesusHero-header-navbar-menu--burguer{display:none}.JesusHero-header-navbar-menu-item{padding:2em 0}.JesusHero-header-navbar-menu-item:last-child{display:none}.JesusHero-header-navbar-menu-item a{color:#bdbdbd;padding:1em;font-family:'Exo',sans-serif;text-transform:uppercase}.JesusHero-copy{padding:6em 4em 8em;background:url(../img/fondo.png) no-repeat scroll center center;background-size:cover;display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end}.JesusHero-copy-container{width:50%}.JesusHero-copy-caption{color:#545454;font-family:'Exo',sans-serif}.JesusHero-copy-titulo{color:#484848;font-family:'Exo',sans-serif;font-weight:medium;font-size:48px;font-size:3rem}.JesusHero-copy-titulo b{font-weight:medium;color:#3971ff}.JesusHero-copy-subtitle{color:#3971ff;font-family:'Nunito',sans-serif;text-transform:uppercase;font-size:1em;border-top:1.4px solid #636363;border-bottom:1.4px solid #636363;padding:.8em;width:50%;margin-top:1.5em}.JesusHero-copy-informacion{margin-top:3.5em;color:#545454;font-family:'Nunito',sans-serif;font-size:17.6px;font-size:1.1rem;font-weight:600}.JesusHero-copy-informacion strong{color:#5b84fb}.JesusHero-copy-buttons{margin-top:2.5em;font-family:'Nunito',sans-serif;text-transform:uppercase}.JesusHero-copy-buttons-btn{font-weight:700;color:#484848}@media (max-width: 768px){.u-wrapp{padding:4em}.JesusHero-copy-container{width:70%}.JesusHero-copy-subtitle{width:70%}}@media (max-width: 500px){.title{font-size:1.8rem}.u-wrapp{padding:3em 2em}.JesusHero-header-navbar-menu--burguer{display:block;position:fixed;right:.5em;top:.5em;padding:1em;color:#545454;font-size:1.5rem;border-radius:50%;z-index:1000}.JesusHero-header-navbar-menu{position:fixed;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:-webkit-box;display:flex;background:#f3f3f3;background:rgba(243,243,243,0.87843);height:100vh;z-index:500;top:0;left:0;width:100%;padding:0;-webkit-transform:translateX(100%);transform:translateX(100%)}.JesusHero-header-navbar-menu-item a{color:#545454}.JesusHero-copy{padding:7em 2em 5em;-webkit-box-pack:center;justify-content:center}.JesusHero-copy-container{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center;text-align:center;width:90%}.JesusHero-copy-informacion{display:none}.JesusHero-copy-buttons-btn{font-size:1.2rem}}
+    
+  </style>
 </head>
 <body id="top">
   <section class="JesusHero" id="JesusHero">
@@ -126,7 +129,7 @@
     <h2 class="JesusPortafolio-title title">Proyectos</h2>
     <div class="JesusPortafolio-items u-Grid">
       <div class="JesusPortafolio-item u-Grid-column">
-        <div class="JesusPortafolio-item-head"><a href="/"><img src="img/mi-pagina.png" alt="proyecto"/>
+        <div class="JesusPortafolio-item-head"><a href="/"><img data-src="img/mi-pagina.png" alt="proyecto"/>
             <div class="JesusPortafolio-item-head-hover"><span class="fa fa-search"></span></div></a></div>
         <div class="JesusPortafolio-item-footer">
           <h3 class="JesusPortafolio-item-footer-title"> Mi pagina web.</h3>
@@ -134,7 +137,7 @@
         </div>
       </div>
       <div class="JesusPortafolio-item u-Grid-column">
-        <div class="JesusPortafolio-item-head"><a href="http://labsantateresadelosandes.com.ve" target="_blank"><img src="img/laboratorio.png" alt="proyecto"/>
+        <div class="JesusPortafolio-item-head"><a href="http://labsantateresadelosandes.com.ve" target="_blank"><img data-src="img/laboratorio.png" alt="proyecto"/>
             <div class="JesusPortafolio-item-head-hover"><span class="fa fa-search"></span></div></a></div>
         <div class="JesusPortafolio-item-footer">
           <h3 class="JesusPortafolio-item-footer-title">Laboratorio Santa teresa</h3>
@@ -213,5 +216,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/hammer.min.js"></script>
+  <script src="js/blazy.min.js"></script>
   <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/estilos.css"/><link href="https://fonts.googleapis.com/css?family=Exo:400,500|Nunito:400,600,700" rel="stylesheet">
 </body>

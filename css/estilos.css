@@ -116,6 +116,10 @@
 				list-style: none;
 			}
 
+.JesusHero-header-navbar-menu--burguer{
+					display: none;
+				}
+
 .JesusHero-header-navbar-menu-item{ 
 					padding: 2em 0;
 

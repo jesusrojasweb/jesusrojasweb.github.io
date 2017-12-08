@@ -53,3 +53,7 @@ var $burguerButton = document.getElementById('burguer');
   var gestos = new Hammer($body);
   gestos.on('swipeleft', showMenu);
   gestos.on('swiperight', hideMenu);
+/* ---------- Blazy ----------*/
+ var bLazy = new Blazy({
+          selector: 'img'
+      });

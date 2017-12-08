@@ -95,6 +95,9 @@
 				flex-direction: row;
 				justify-content: space-between;
 				list-style: none;
+				&--burguer{
+					display: none;
+				}
 				&-item{ 
 					padding: 2em 0;
 					&:last-child{
