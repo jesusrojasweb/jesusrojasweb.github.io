@@ -24,9 +24,37 @@
 	color: var(--colorTitle);
 	text-transform: uppercase;
 	font-weight: bold;
+	position: relative;
+	&:before{
+		position: absolute;
+		top: 150%;
+		left: 0;
+		content: '';
+		border-bottom: 2.5px solid var(--colorAzul);
+		width: 10%;
+	}
 }
 .u-wrapp{
 	padding: 7em;
+}
+.btn{
+	position: relative;
+	transition: .3s;
+	&:before{
+		position: absolute;
+		bottom: 5px;
+		left: 10%;
+		content: '';
+		border-bottom: 2px solid var(--colorAzul);
+		transition: .3s;
+		width: 0%;
+	}
+	&:hover{
+		color: var(--colorAzul);
+		&:before{
+			width: 80%;
+		}
+	}
 }
 
 /* ---------- Header ----------*/
@@ -40,6 +68,24 @@
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
+		transition: .3s;
+		z-index: 1000;
+		&.active{
+			position: fixed;
+			background: #f3f3f3;
+			.JesusHero-header{
+				&-logo{
+					padding: 0 0 0 3em;
+					margin: 0;
+				}
+				&-navbar-menu-item{
+					padding: 1em 0 0 0;
+					a{
+						padding: 0 1em;
+					}
+				}
+			}
+		}
 		&-logo{
 			padding: .5em .5em .5em 3em;
 		}
@@ -56,7 +102,7 @@
 					}
 					a{
 						color: #bdbdbd;
-						padding: 1em;
+						padding: 1em 1em;
 						font-family: var(--FuenteP);
 						text-transform: uppercase;
 						transition: .3s;
@@ -121,10 +167,8 @@
 			&-btn{
 				font-weight: bold;
 				color: var(--colorTitle);
-				transition: .3s;
 				&:hover{
-					color: var(--colorAzul);
-				}
+					color: var(--colorAzul);				}
 			}
 		}
 	}
@@ -144,7 +188,7 @@
 		width: 100%;
 		&-item{
 			margin-bottom: 3.5em;
-			&:nth-child(3n){
+			/*&:nth-child(3n){
 				.JesusHabili-items-item-bar{
 					&-porcent{
 						width: 60%;
@@ -164,7 +208,7 @@
 						width: 90%;
 					}
 				}
-			}
+			}*/
 			&-bar{
 				display: flex;
 				height: .3rem;
@@ -177,7 +221,10 @@
 					align-items: center;
 					justify-content: center;
 					background: var(--colorAzul);
-					clip-path: polygon(0 0,100% 0,98% 100%,0 100%)
+					clip-path: polygon(0 0,100% 0,98% 100%,0 100%);
+					transition: 1s;
+					width: 0%;
+
 				}
 			}
 			&-contenedor{

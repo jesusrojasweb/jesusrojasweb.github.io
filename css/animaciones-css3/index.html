@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Pack de animaciones CSS3</title>
+
+  	<link rel="stylesheet" href="css/reset.css">
+  	<link rel="stylesheet" href="css/animations.css">
+  	<link rel="stylesheet" href="css/style.css">
+
+  	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+
+	<header class="header">
+	  <h1 id="logo-type"><a href="index.html">Pack de Animaciones CSS3</a></h1>
+		<nav class="nav">
+			<ul>
+				<li class="hide"><a href="index.html#how">Todos los Ejemplos</a></li>
+				<li><a href="scrolling.html">Ejemplos con Scroll</a></li>
+				
+				
+			</ul>
+		</nav>
+	</header>
+
+	<section id="animation">
+
+		<div class="animation-container">
+		  <div id="object" class="animate tossing"></div>
+		</div>
+
+	
+
+	</section>
+
+
+<section id="actions">
+
+		<div class="container">
+			<h2>Entradas</h2>
+			<a href="#" id="slideUpBtn" class="button">Slide Up &#8593;</a>
+			<a href="#" id="slideDownBtn" class="button">Slide Down &#8595;</a>
+			<a href="#" id="slideLeftBtn" class="button">Slide Left &#8592;</a>			
+			<a href="#" id="slideRightBtn" class="button">Slide Right &#8594;</a>
+			<a href="#" id="slideExpandUpBtn" class="button">Slide Expand Up &#8593;</a>
+			<a href="#" id="expandUpBtn" class="button">Expand Up &#8593;</a>		
+			<a href="#" id="fadeInBtn" class="button">Fade In</a>
+			<a href="#" id="expandOpenBtn" class="button">Expand Open</a>			
+			<a href="#" id="bigEntranceBtn" class="button">Big Entrance</a>	
+			<a href="#" id="hatchBtn" class="button">Hatch</a>									
+
+			<h2>Otras</h2>
+			<a href="#" id="bounceBtn" class="button">Bounce</a>
+			<a href="#" id="pulseBtn" class="button">Pulse</a>		
+			<a href="#" id="floatBtn" class="button">Floating</a>		
+			<a href="#" id="tossingBtn" class="button">Tossing</a>
+			<a href="#" id="pullUpBtn" class="button">Pull Up &#8593;</a>	
+			<a href="#" id="pullDownBtn" class="button">Pull Down &#8595;</a>							
+			<a href="#" id="stretchLeftBtn" class="button">Stretch Left &#8592;</a>	
+			<a href="#" id="stretchRightBtn" class="button">Stretch Right &#8594;</a>					
+
+		</div>
+
+	</section>
+<section id="download"></section>
+<script>
+
+	$(window).scroll(function() {
+		$('#examples-cta').each(function(){
+		var imagePos = $(this).offset().top;
+		
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+
+</script>
+
+<script>
+
+		/*
+		ENTRANCES
+		*/
+		$('#slideUpBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();	
+					$('#object').addClass("slideUp");
+				});
+		});
+
+		$('#slideDownBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("slideDown");
+				});
+		});	
+
+		$('#slideLeftBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("slideLeft");
+				});
+		});		
+
+		$('#slideRightBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("slideRight");
+				});
+		});	
+
+		$('#slideExpandUpBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("slideExpandUp");
+				});
+		});	
+
+		$('#expandUpBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("expandUp");
+				});
+		});
+
+		$('#fadeInBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("fadeIn");
+				});
+		});
+
+		$('#expandOpenBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("expandOpen");
+				});
+		});		
+
+		$('#bigEntranceBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("bigEntrance");
+				});
+		});		
+
+		$('#hatchBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("hatch");
+				});	
+		});		
+
+
+		/*
+		MISC
+		*/
+
+		$('#bounceBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("bounce");
+				});	
+		});	
+
+		$('#pulseBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("pulse");
+				});	
+		});		
+
+		$('#floatBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("floating");
+				});	
+		});
+
+		$('#tossingBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("tossing");
+				});	
+		});		
+
+		$('#pullUpBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("pullUp");
+				});	
+		});
+
+		$('#pullDownBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("pullDown");
+				});	
+		});
+
+		$('#stretchLeftBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("stretchLeft");
+				});	
+		});
+
+		$('#stretchRightBtn').click(function() {
+			$(this).each(function(){
+					$('#object').removeClass();				
+					$('#object').addClass("stretchRight");
+				});	
+		});
+
+
+</script>
+
+</body>
+
+</html>

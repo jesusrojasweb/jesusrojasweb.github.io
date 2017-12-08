@@ -25,11 +25,44 @@
 	color: #484848;
 	text-transform: uppercase;
 	font-weight: bold;
+	position: relative;
 }
+
+.title:before{
+		position: absolute;
+		top: 150%;
+		left: 0;
+		content: '';
+		border-bottom: 2.5px solid #3971ff;
+		width: 10%;
+	}
 
 .u-wrapp{
 	padding: 7em;
 }
+
+.btn{
+	position: relative;
+	transition: .3s;
+}
+
+.btn:before{
+		position: absolute;
+		bottom: 5px;
+		left: 10%;
+		content: '';
+		border-bottom: 2px solid #3971ff;
+		transition: .3s;
+		width: 0%;
+	}
+
+.btn:hover{
+		color: #3971ff;
+	}
+
+.btn:hover:before{
+			width: 80%;
+		}
 
 /* ---------- Header ----------*/
 
@@ -46,7 +79,27 @@
 		-webkit-box-pack: justify;
 		        justify-content: space-between;
 		width: 100%;
+		transition: .3s;
+		z-index: 1000;
 	}
+
+.JesusHero-header.active{
+			position: fixed;
+			background: #f3f3f3;
+		}
+
+.JesusHero-header.active .JesusHero-header-logo{
+					padding: 0 0 0 3em;
+					margin: 0;
+				}
+
+.JesusHero-header.active .JesusHero-header-navbar-menu-item{
+					padding: 1em 0 0 0;
+				}
+
+.JesusHero-header.active .JesusHero-header-navbar-menu-item a{
+						padding: 0 1em;
+					}
 
 .JesusHero-header-logo{
 			padding: .5em .5em .5em 3em;
@@ -74,7 +127,7 @@
 
 .JesusHero-header-navbar-menu-item a{
 						color: #bdbdbd;
-						padding: 1em;
+						padding: 1em 1em;
 						font-family: 'Exo', sans-serif;
 						text-transform: uppercase;
 						transition: .3s;
@@ -151,12 +204,10 @@
 .JesusHero-copy-buttons-btn{
 				font-weight: bold;
 				color: #484848;
-				transition: .3s;
 			}
 
 .JesusHero-copy-buttons-btn:hover{
-					color: #3971ff;
-				}
+					color: #3971ff;				}
 
 /* ---------- Habilidades ----------*/
 
@@ -200,17 +251,27 @@
 				
 		}
 
-.JesusHabili-items-item:nth-child(3n) .JesusHabili-items-item-bar-porcent{
+/*&:nth-child(3n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
 						width: 60%;
 					}
-
-.JesusHabili-items-item:nth-child(4n) .JesusHabili-items-item-bar-porcent{
+				}
+			}
+			&:nth-child(4n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
 						width: 80%;
 					}
-
-.JesusHabili-items-item:nth-child(6n) .JesusHabili-items-item-bar-porcent{
+				}
+			}
+			&:nth-child(6n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
 						width: 90%;
 					}
+				}
+			}*/
 
 .JesusHabili-items-item-bar{
 				display: -webkit-box;
@@ -233,7 +294,10 @@
 					        justify-content: center;
 					background: #3971ff;
 					-webkit-clip-path: polygon(0 0,100% 0,98% 100%,0 100%);
-					        clip-path: polygon(0 0,100% 0,98% 100%,0 100%)
+					        clip-path: polygon(0 0,100% 0,98% 100%,0 100%);
+					transition: 1s;
+					width: 0%;
+
 				}
 
 .JesusHabili-items-item-contenedor{
