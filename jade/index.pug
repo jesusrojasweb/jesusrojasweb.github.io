@@ -11,22 +11,22 @@ head
 	<link href="https://fonts.googleapis.com/css?family=Exo:400,500|Nunito:400,600,700" rel="stylesheet">
 body
 	
-	section.JesusHero
+	section.JesusHero#JesusHero
 		.JesusHero-header
 			figure.JesusHero-header-logo
 				img(src="img/logo.png", alt="logo")
 			nav.JesusHero-header-navbar
 				ul.JesusHero-header-navbar-menu
 					li.JesusHero-header-navbar-menu-item
-						a(href="#") Habilidades
+						a(href="#habilidades") Habilidades
 					li.JesusHero-header-navbar-menu-item
-						a(href="#") Educacion
+						a(href="#educacion") Educacion
 					li.JesusHero-header-navbar-menu-item
-						a(href="#") Proyectos
-					li.JesusHero-header-navbar-menu-item
+						a(href="#portafolio") Proyectos
+					//li.JesusHero-header-navbar-menu-item
 						a(href="#") Precios
 					li.JesusHero-header-navbar-menu-item
-						a(href="#") Contacto
+						a(href="#contacto") Contacto
 					li.JesusHero-header-navbar-menu-item
 						span.JesusHero-header-btn.fa.fa-bars
 		header.JesusHero-copy
@@ -37,8 +37,8 @@ body
 				p.JesusHero-copy-informacion!= "Hola, soy un Desarrollador Frontend Junior y hoy en día estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Estoy graduado en secundaria, pero todos los días aprendo sobre programación."
 				.JesusHero-copy-buttons
 					a.JesusHero-copy-buttons-btn.btn(href="#portafolio") Portafolio
-					a.JesusHero-copy-buttons-btn.btn(href="#info") Información
-	section.JesusHabili.u-wrapp
+					a.JesusHero-copy-buttons-btn.btn(href="#contacto") Contaco
+	section.JesusHabili.u-wrapp#habilidades
 		h2.JesusHabili-title.title Habilidades Profecionales
 
 		.JesusHabili-items.u-Grid
@@ -78,7 +78,7 @@ body
 					p.JesusHabili-items-itemcontenedor--porcent 90%
 				.JesusHabili-items-item-bar
 					.JesusHabili-items-item-bar-porcent
-	section.JesusEdu.u-wrapp
+	section.JesusEdu.u-wrapp#educacion
 		h2.JesusEdu-title.title Educación
 		ol.JesusEdu-list.u-Grid
 			.u-Grid-column
@@ -101,12 +101,12 @@ body
 					li.JesusEdu-list-item
 						h3.JesusEdu-list-item-link-title Curso profesional de Git y Github
 				p.JesusEdu-list-item-time oct de 2017 - oct de 2018
-	section.JesusPortafolio.u-wrapp
+	section.JesusPortafolio.u-wrapp#portafolio
 		h2.JesusPortafolio-title.title Proyectos
 		.JesusPortafolio-items.u-Grid
 			.JesusPortafolio-item.u-Grid-column
 				.JesusPortafolio-item-head
-					a(href="")
+					a(href="/")
 						img(src="img/mi-pagina.png", alt="proyecto")
 						.JesusPortafolio-item-head-hover
 							span.fa.fa-search
@@ -115,32 +115,14 @@ body
 					p.JesusPortafolio-item-footer-description  Esta es la pagina web profesional de mi persona.
 			.JesusPortafolio-item.u-Grid-column
 				.JesusPortafolio-item-head
-					a(href="")
-						img(src="img/mi-pagina.png", alt="proyecto")
+					a(href="http://labsantateresadelosandes.com.ve", target="_blank")
+						img(src="img/laboratorio.png", alt="proyecto")
 						.JesusPortafolio-item-head-hover
 							span.fa.fa-search
 				.JesusPortafolio-item-footer
-					h3.JesusPortafolio-item-footer-title  Lorem ipsum dolor.
-					p.JesusPortafolio-item-footer-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nemo?
-			.JesusPortafolio-item.u-Grid-column
-				.JesusPortafolio-item-head
-					a(href="")
-						img(src="img/mi-pagina.png", alt="proyecto")
-						.JesusPortafolio-item-head-hover
-							span.fa.fa-search
-				.JesusPortafolio-item-footer
-					h3.JesusPortafolio-item-footer-title  Lorem ipsum dolor.
-					p.JesusPortafolio-item-footer-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, placeat.
-			.JesusPortafolio-item.u-Grid-column
-				.JesusPortafolio-item-head
-					a(href="")
-						img(src="img/mi-pagina.png", alt="proyecto")
-						.JesusPortafolio-item-head-hover
-							span.fa.fa-search
-				.JesusPortafolio-item-footer
-					h3.JesusPortafolio-item-footer-title  Lorem ipsum dolor.
-					p.JesusPortafolio-item-footer-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, repudiandae.
-	section.JesusPrecios.u-wrapp
+					h3.JesusPortafolio-item-footer-title Laboratorio Santa teresa
+					p.JesusPortafolio-item-footer-description Pagína del laboratorio Santa Tersa de Los Andes que necesitaba subir su información a un sitio web.
+	//section.JesusPrecios.u-wrapp
 		h2.JesusPrecios-title.title Plan de Precios
 
 		.JesusPrecios-planes.u-Grid
@@ -173,7 +155,7 @@ body
 					p.JesusPrecios-planes-plan-item-number 1 Año
 				a.JesusPrecios-planes-plan-boton.btn(href="#") Registrar Ahora
 
-	footer.JesusContacto.u-wrapp
+	footer.JesusContacto.u-wrapp#contacto
 		h2.JesusContacto-title.title Contactame
 		.JesusContacto-grid.u-Grid
 			ul.JesusContacto-informacion.u-Grid-column

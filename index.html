@@ -10,16 +10,17 @@
   <link rel="stylesheet" href="css/estilos.css"/><link href="https://fonts.googleapis.com/css?family=Exo:400,500|Nunito:400,600,700" rel="stylesheet">
 </head>
 <body>
-  <section class="JesusHero">
+  <section class="JesusHero" id="JesusHero">
     <div class="JesusHero-header">
       <figure class="JesusHero-header-logo"><img src="img/logo.png" alt="logo"/></figure>
       <nav class="JesusHero-header-navbar">
         <ul class="JesusHero-header-navbar-menu">
-          <li class="JesusHero-header-navbar-menu-item"><a href="#">Habilidades</a></li>
-          <li class="JesusHero-header-navbar-menu-item"><a href="#">Educacion</a></li>
-          <li class="JesusHero-header-navbar-menu-item"><a href="#">Proyectos</a></li>
-          <li class="JesusHero-header-navbar-menu-item"><a href="#">Precios</a></li>
-          <li class="JesusHero-header-navbar-menu-item"><a href="#">Contacto</a></li>
+          <li class="JesusHero-header-navbar-menu-item"><a href="#habilidades">Habilidades</a></li>
+          <li class="JesusHero-header-navbar-menu-item"><a href="#educacion">Educacion</a></li>
+          <li class="JesusHero-header-navbar-menu-item"><a href="#portafolio">Proyectos</a></li>
+          <!--li.JesusHero-header-navbar-menu-itema(href="#") Precios
+          -->
+          <li class="JesusHero-header-navbar-menu-item"><a href="#contacto">Contacto</a></li>
           <li class="JesusHero-header-navbar-menu-item"><span class="JesusHero-header-btn fa fa-bars"></span></li>
         </ul>
       </nav>
@@ -30,11 +31,11 @@
         <h1 class="JesusHero-copy-titulo">Jesús <b>Rojas</b></h1>
         <h3 class="JesusHero-copy-subtitle">Junior Frontend Developer</h3>
         <p class="JesusHero-copy-informacion">Hola, soy un Desarrollador Frontend Junior y hoy en día estoy trabajando como <strong>freelancer</strong>. Puedo construir sitios web responsive que funcionen independientemente del navegador y dispositivo que tengas. Soy muy curioso, decidido y proactivo, muy bueno trabajando con equipos. Estoy graduado en secundaria, pero todos los días aprendo sobre programación.</p>
-        <div class="JesusHero-copy-buttons"><a class="JesusHero-copy-buttons-btn btn" href="#portafolio">Portafolio</a><a class="JesusHero-copy-buttons-btn btn" href="#info">Información</a></div>
+        <div class="JesusHero-copy-buttons"><a class="JesusHero-copy-buttons-btn btn" href="#portafolio">Portafolio</a><a class="JesusHero-copy-buttons-btn btn" href="#contacto">Contaco</a></div>
       </div>
     </header>
   </section>
-  <section class="JesusHabili u-wrapp">
+  <section class="JesusHabili u-wrapp" id="habilidades">
     <h2 class="JesusHabili-title title">Habilidades Profecionales</h2>
     <div class="JesusHabili-items u-Grid">
       <div class="JesusHabili-items-item u-Grid-column">
@@ -93,7 +94,7 @@
       </div>
     </div>
   </section>
-  <section class="JesusEdu u-wrapp">
+  <section class="JesusEdu u-wrapp" id="educacion">
     <h2 class="JesusEdu-title title">Educación</h2>
     <ol class="JesusEdu-list u-Grid">
       <div class="u-Grid-column"><a class="JesusEdu-list-item-link" href="https://platzi.com/@jesusenriquerojas/curso/html5-css3/diploma/" target="_blank">
@@ -122,11 +123,11 @@
       </div>
     </ol>
   </section>
-  <section class="JesusPortafolio u-wrapp">
+  <section class="JesusPortafolio u-wrapp" id="portafolio">
     <h2 class="JesusPortafolio-title title">Proyectos</h2>
     <div class="JesusPortafolio-items u-Grid">
       <div class="JesusPortafolio-item u-Grid-column">
-        <div class="JesusPortafolio-item-head"><a href=""><img src="img/mi-pagina.png" alt="proyecto"/>
+        <div class="JesusPortafolio-item-head"><a href="/"><img src="img/mi-pagina.png" alt="proyecto"/>
             <div class="JesusPortafolio-item-head-hover"><span class="fa fa-search"></span></div></a></div>
         <div class="JesusPortafolio-item-footer">
           <h3 class="JesusPortafolio-item-footer-title"> Mi pagina web.</h3>
@@ -134,73 +135,50 @@
         </div>
       </div>
       <div class="JesusPortafolio-item u-Grid-column">
-        <div class="JesusPortafolio-item-head"><a href=""><img src="img/mi-pagina.png" alt="proyecto"/>
+        <div class="JesusPortafolio-item-head"><a href="http://labsantateresadelosandes.com.ve" target="_blank"><img src="img/laboratorio.png" alt="proyecto"/>
             <div class="JesusPortafolio-item-head-hover"><span class="fa fa-search"></span></div></a></div>
         <div class="JesusPortafolio-item-footer">
-          <h3 class="JesusPortafolio-item-footer-title"> Lorem ipsum dolor.</h3>
-          <p class="JesusPortafolio-item-footer-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nemo?</p>
-        </div>
-      </div>
-      <div class="JesusPortafolio-item u-Grid-column">
-        <div class="JesusPortafolio-item-head"><a href=""><img src="img/mi-pagina.png" alt="proyecto"/>
-            <div class="JesusPortafolio-item-head-hover"><span class="fa fa-search"></span></div></a></div>
-        <div class="JesusPortafolio-item-footer">
-          <h3 class="JesusPortafolio-item-footer-title"> Lorem ipsum dolor.</h3>
-          <p class="JesusPortafolio-item-footer-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, placeat.</p>
-        </div>
-      </div>
-      <div class="JesusPortafolio-item u-Grid-column">
-        <div class="JesusPortafolio-item-head"><a href=""><img src="img/mi-pagina.png" alt="proyecto"/>
-            <div class="JesusPortafolio-item-head-hover"><span class="fa fa-search"></span></div></a></div>
-        <div class="JesusPortafolio-item-footer">
-          <h3 class="JesusPortafolio-item-footer-title"> Lorem ipsum dolor.</h3>
-          <p class="JesusPortafolio-item-footer-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, repudiandae.</p>
+          <h3 class="JesusPortafolio-item-footer-title">Laboratorio Santa teresa</h3>
+          <p class="JesusPortafolio-item-footer-description">Pagína del laboratorio Santa Tersa de Los Andes que necesitaba subir su información a un sitio web.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="JesusPrecios u-wrapp">
-    <h2 class="JesusPrecios-title title">Plan de Precios</h2>
-    <div class="JesusPrecios-planes u-Grid">
-      <div class="JesusPrecios-planes-plan u-Grid-column">
-        <div class="JesusPrecios-planes-plan-container">
-          <h3 class="JesusPrecios-planes-plan-container-title">Pagina Basica / <span>XXX.XXX Bsf</span></h3>
-          <p class="JesusPrecios-planes-plan-container-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, doloremque.</p>
-        </div>
-        <div class="JesusPrecios-planes-plan-item">
-          <h4 class="JesusPrecios-planes-plan-item-article">Paginas</h4>
-          <p class="JesusPrecios-planes-plan-item-number">3</p>
-        </div>
-        <div class="JesusPrecios-planes-plan-item">
-          <h4 class="JesusPrecios-planes-plan-item-article">Espacio</h4>
-          <p class="JesusPrecios-planes-plan-item-number">XXGB</p>
-        </div>
-        <div class="JesusPrecios-planes-plan-item">
-          <h4 class="JesusPrecios-planes-plan-item-article">Soporte</h4>
-          <p class="JesusPrecios-planes-plan-item-number">1 Mes</p>
-        </div><a class="JesusPrecios-planes-plan-boton btn" href="#">Registrar Ahora</a>
-      </div>
-      <div class="JesusPrecios-planes-plan u-Grid-column">
-        <div class="JesusPrecios-planes-plan-container">
-          <h3 class="JesusPrecios-planes-plan-container-title">Pagina Profesional / <span>XXX.XXX Bsf</span></h3>
-          <p class="JesusPrecios-planes-plan-container-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ab.</p>
-        </div>
-        <div class="JesusPrecios-planes-plan-item">
-          <h4 class="JesusPrecios-planes-plan-item-article">Paginas</h4>
-          <p class="JesusPrecios-planes-plan-item-number">+7</p>
-        </div>
-        <div class="JesusPrecios-planes-plan-item">
-          <h4 class="JesusPrecios-planes-plan-item-article">Espacio</h4>
-          <p class="JesusPrecios-planes-plan-item-number">XXGB</p>
-        </div>
-        <div class="JesusPrecios-planes-plan-item">
-          <h4 class="JesusPrecios-planes-plan-item-article">Soporte</h4>
-          <p class="JesusPrecios-planes-plan-item-number">1 Año</p>
-        </div><a class="JesusPrecios-planes-plan-boton btn" href="#">Registrar Ahora</a>
-      </div>
-    </div>
-  </section>
-  <footer class="JesusContacto u-wrapp">
+  <!--section.JesusPrecios.u-wrapp
+  h2.JesusPrecios-title.title Plan de Precios
+  
+  .JesusPrecios-planes.u-Grid
+  	.JesusPrecios-planes-plan.u-Grid-column
+  		.JesusPrecios-planes-plan-container
+  			h3.JesusPrecios-planes-plan-container-title!= "Pagina Basica / <span>XXX.XXX Bsf</span>"
+  			p.JesusPrecios-planes-plan-container-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, doloremque.
+  		.JesusPrecios-planes-plan-item
+  			h4.JesusPrecios-planes-plan-item-article Paginas
+  			p.JesusPrecios-planes-plan-item-number 3
+  		.JesusPrecios-planes-plan-item
+  			h4.JesusPrecios-planes-plan-item-article Espacio
+  			p.JesusPrecios-planes-plan-item-number XXGB
+  		.JesusPrecios-planes-plan-item
+  			h4.JesusPrecios-planes-plan-item-article Soporte
+  			p.JesusPrecios-planes-plan-item-number 1 Mes
+  		a.JesusPrecios-planes-plan-boton.btn(href="#") Registrar Ahora
+  	.JesusPrecios-planes-plan.u-Grid-column
+  		.JesusPrecios-planes-plan-container
+  			h3.JesusPrecios-planes-plan-container-title!= "Pagina Profesional / <span>XXX.XXX Bsf</span>"
+  			p.JesusPrecios-planes-plan-container-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ab.
+  		.JesusPrecios-planes-plan-item
+  			h4.JesusPrecios-planes-plan-item-article Paginas
+  			p.JesusPrecios-planes-plan-item-number +7
+  		.JesusPrecios-planes-plan-item
+  			h4.JesusPrecios-planes-plan-item-article Espacio
+  			p.JesusPrecios-planes-plan-item-number XXGB
+  		.JesusPrecios-planes-plan-item
+  			h4.JesusPrecios-planes-plan-item-article Soporte
+  			p.JesusPrecios-planes-plan-item-number 1 Año
+  		a.JesusPrecios-planes-plan-boton.btn(href="#") Registrar Ahora
+  
+  -->
+  <footer class="JesusContacto u-wrapp" id="contacto">
     <h2 class="JesusContacto-title title">Contactame</h2>
     <div class="JesusContacto-grid u-Grid">
       <ul class="JesusContacto-informacion u-Grid-column">

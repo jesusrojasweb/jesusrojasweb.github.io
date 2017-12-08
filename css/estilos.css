@@ -544,6 +544,10 @@
 				box-shadow: 1px 9px 16px 1px #d0d0d0;
 			}
 
+.JesusContacto{
+	background: #f3f3f3;
+}
+
 .JesusContacto .u-Grid{
 		-webkit-box-pack: justify;
 		        justify-content: space-between;
@@ -621,6 +625,9 @@
 						}
 
 .JesusContacto-formulario .form-control{
+			/* Sin background*/
+			background: none;
+			/* Sin background*/
 			border-radius: 0;
 			border: none;
 			border-bottom: 1.5px solid #cdcdcd;

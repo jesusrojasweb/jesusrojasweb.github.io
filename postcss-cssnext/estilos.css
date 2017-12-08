@@ -384,6 +384,7 @@
 	}
 }
 .JesusContacto{
+	background: var(--colorBack);
 	.u-Grid{
 		justify-content: space-between;
 		max-width: 100%;
@@ -443,6 +444,9 @@
 	}
 	&-formulario{
 		.form-control{
+			/* Sin background*/
+			background: none;
+			/* Sin background*/
 			border-radius: 0;
 			border: none;
 			border-bottom: 1.5px solid #cdcdcd;
