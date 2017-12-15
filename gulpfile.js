@@ -28,7 +28,7 @@ gulp.task('css', ()=>{
     rucksack(),
     cssnext({browsers: ['> 5%', 'ie 8']}),
     mqpacker(),
-    //csswring()
+    csswring()
   ]
   return gulp.src('./postcss-cssnext/estilos.css')
     .pipe(sourcemaps.init())
