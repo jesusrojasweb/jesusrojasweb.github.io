@@ -56,7 +56,9 @@
 		}
 	}
 }
-
+.oculto{
+	display: none;
+}
 /* ---------- Header ----------*/
 .JesusHero{
 	&-header{
@@ -269,6 +271,7 @@
 	    text-decoration: none;
 	    &-item{
 	    	position: relative;
+	    	width: 90%;
 
 	    	&:before{
 	    		content: '0' counter(li);
@@ -295,6 +298,9 @@
 		    	color: var(--colorTexto);
 		    	font-size: 1.3rem;
 		    }
+	    }
+	    &-mas{
+	    	color: var(--colorTexto);
 	    }
 
 	}

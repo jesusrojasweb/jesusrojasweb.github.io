@@ -57,3 +57,15 @@ var $burguerButton = document.getElementById('burguer');
  var bLazy = new Blazy({
           selector: 'img'
       });
+ //Ver mas
+$('#JesusEdu-list-mas').on('click', function(e){
+   e.preventDefault();
+   console.log(this);
+
+   verMas(this);
+})
+ function verMas(a) {
+   $('.oculto').removeClass('oculto');
+   $('#'+a.id).addClass('oculto');
+
+ }
