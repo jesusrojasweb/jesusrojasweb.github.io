@@ -65,7 +65,7 @@ $('#JesusEdu-list-mas').on('click', function(e){
    verMas(this);
 })
  function verMas(a) {
-   $('.oculto').removeClass('oculto');
+   $('.oculto').removeClass('oculto').addClass('aparecer');
    $('#'+a.id).addClass('oculto');
 
  }
