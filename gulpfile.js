@@ -46,7 +46,7 @@ gulp.task('watch', ()=>{
 gulp.task('pug', ()=>{
   gulp.src('./jade/*.pug')
   .pipe(pug({
-    pretty: true
+    pretty: false
   }))
   .pipe(gulp.dest('./'))
 })
