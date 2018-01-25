@@ -512,6 +512,13 @@
 	&-grid{
 		margin-top: 5em;
 	}
+	&-parrafo{
+		color: var(--colorTexto);
+	    font-family: var(--FuenteS);
+	    font-size: 1.2rem;
+	    margin-top: 4em;
+	    height: 46vh;
+	}
 	&-informacion{
 		list-style: none;
 		padding: 0;

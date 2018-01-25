@@ -171,12 +171,12 @@ body#top
 					.JesusContacto-informacion-item-header
 						span.fa.fa-home
 						h3.JesusContacto-informacion-item-header-title Localización
-					p.Jesuscontacto-infromacion-item-info Maturín, Monagas, Venezuela
+					p.JesusContacto-infromacion-item-info Maturín, Monagas, Venezuela
 				li.JesusContacto-informacion-item
 					.JesusContacto-informacion-item-header
 						span.fa.fa-envelope-open-o
 						h3.JesusContacto-informacion-item-header-title Contacto
-					p.Jesuscontacto-infromacion-item-info!= "jesusrojas.frontend@gmail.com <br> +58 424-934-7744"
+					p.JesusContacto-infromacion-item-info!= "jesusrojas.frontend@gmail.com <br> +58 424-934-7744"
 				li.JesusContacto-informacion-item
 					ul.JesusContacto-informacion-item-red
 						li.JesusContacto-informacion-item-red-icono
@@ -185,11 +185,11 @@ body#top
 						li.JesusContacto-informacion-item-red-icono
 							a.JesusContacto-informacion-item-red-icono-social(href="https://github.com/jesusrojas-frontend" target="_blank")
 								span.fa.fa-github
-			form.JesusContacto-formulario.form-group.u-Grid-column
+			form.JesusContacto-formulario.form-group.u-Grid-column(action="enviar.php", method="post")
 				input.JesusContacto-formulario-input.form-control(type="text" required id="nombre" name="nombre" placeholder="Su Nombre")
-				input.JesusContacto-formulario-input.form-control(type="email" id="email" name="email" placeholder="Su correo")
-				input.JesusContacto-formulario-input.form-control(type="text" id="mensaje" name="mensaje" placeholder="El asunto")
-				textarea.JesusContacto-formulario-input--textarea.form-control(name="comentarios", cols="30", rows="5" placeholder="Mensaje a dejar")
+				input.JesusContacto-formulario-input.form-control(type="email" id="email" required name="email" placeholder="Su correo")
+				input.JesusContacto-formulario-input.form-control(type="text" id="mensaje" required name="mensaje" placeholder="El asunto")
+				textarea.JesusContacto-formulario-input--textarea.form-control(name="comentarios", cols="30", rows="5" required placeholder="Mensaje a dejar")
 				input(type="submit", value="Enviar").JesusContacto-formulario-btn.btn
 
 
