@@ -26,7 +26,7 @@ var consulta = window.matchMedia('(max-width: 500px)');
 var $burguerButton = document.getElementById('burguer');
   var $menu = document.getElementById('menu');
   function toggleMenu(){
-    $menu.classList.toggle('active')
+    $menu.classList.toggle('active');
   };
   function showMenu(){
     $menu.classList.add('active');

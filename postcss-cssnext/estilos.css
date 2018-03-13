@@ -546,7 +546,7 @@
 	    		&-icono{
 	    			display: inline;
 					&-social{
-						padding: 1em;
+						padding: .8em;
 						font-size: 1.5rem;
 						color: var(--colorTexto);
 						transition: .3s;
