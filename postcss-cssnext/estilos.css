@@ -71,8 +71,9 @@
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;
 	visibility: visible !important;	
-
+	
 	animation-fill-mode: forwards;
+	z-index: 500;
 }
 
 @keyframes aparecer {
@@ -325,6 +326,7 @@
 	    	position: relative;
 	    	width: 90%;
 
+	    	z-index: 800;
 	    	&:before{
 	    		content: '0' counter(li);
 	    		counter-increment: li;
@@ -337,6 +339,11 @@
 	    		&:hover{
 	    			color: var(--colorAzul);
 	    			text-decoration: none;
+	    			.JesusEdu-list-item-certificado{
+	    				opacity: 1;
+	    				visibility: visible;
+	    				z-index: 1000;
+	    			}
 	    		}
 	    		&-title{
 	    			font-family: var(--FuenteS);
@@ -349,6 +356,23 @@
 		    	font-family: var(--FuenteS);
 		    	color: var(--colorTexto);
 		    	font-size: 1.3rem;
+		    }
+		    &-certificado{
+		    	width: 500px;
+		    	background: color(white a(90%));
+		    	padding: .5em;
+		    	box-sizing: border-box;
+		    	border-radius: .5rem;
+		    	position: absolute;
+		    	opacity: 0;
+		    	transition: .3s;
+		    	z-index: 1000;
+		    	visibility: hidden;
+		    	top: -25%;
+		    	img{
+		    		width: 100%;
+		    		vertical-align: top;
+		    	}
 		    }
 	    }
 	    &-mas{
