@@ -183,8 +183,8 @@
 	padding: 3em 4em;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	&-description{
-
 		&-title{
 			color: var(--colorTitle);
 			font-family: var(--FuenteP);
@@ -210,4 +210,10 @@
 			}
 		}
 	}
+}
+.JesusFooter{
+	background: var(--colorTitle);
+	padding: 2em 2em 1em 2em;
+	color: white;
+	font-family: var(--FuenteP);
 }
