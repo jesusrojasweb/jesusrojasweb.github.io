@@ -159,3 +159,55 @@
 
 	}
 }
+.JesusCursos{
+	background: var(--colorBack);
+	padding: 3em 0;
+	&-title{
+		font-size: 1.8rem;
+		text-align: center;
+		&:before{
+			left: inherit;
+		}
+	}
+	&-container{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		width: 80%;
+		margin: 3em auto;
+		img{
+			width: 100%;
+		}
+	}
+}
+.JesusCall{
+	padding: 3em 4em;
+	display: flex;
+	justify-content: space-between;
+	&-description{
+
+		&-title{
+			color: var(--colorTitle);
+			font-family: var(--FuenteP);
+			font-size: 2rem;
+		}
+		&-call{
+			font-family: var(--FuenteS);
+			color: var(--colorTexto);
+			font-size: 1.4rem;
+		}
+	}
+	&-boton{
+		&-btn{
+			background: var(--colorAzul);
+			color: white;
+			font-family: var(--FuenteP);
+			padding: 1em 2em;
+			font-size: 2rem;
+			border-radius: .5rem;
+			&:hover{
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+}
