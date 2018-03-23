@@ -116,3 +116,46 @@
 		}
 	}
 }
+.JesusPaciones{
+	padding-top: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&-title{
+		font-size: 2rem;
+		text-align: center;
+		&:before{
+			left: inherit;
+			width: 50%;
+		}
+	}
+	&-container{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		width: 80%;
+		margin-top: 4em;
+		&-item{
+			padding: 2em;
+			&-title{
+				font-size: 1.5rem;
+				margin-bottom: 2em;
+			}
+			&-parrafo{
+				font-family: var(--FuenteS);
+				color: var(--colorTexto);
+				strong{
+					color: var(--colorAzul);
+				}
+				i{
+					color: var(--colorAzul);
+					font-size: 1.4rem;
+					padding-right: .5em;
+				}
+			}
+		}
+		img{
+			width: 100%;
+		}
+
+	}
+}
