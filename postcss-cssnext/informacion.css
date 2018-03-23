@@ -1,1 +1,118 @@
 @import './estilos.css';
+
+:root{
+	--FuenteP: 'Exo', sans-serif;
+	--FuenteS: 'Nunito', sans-serif;
+
+	--colorTitle: #484848;
+	--colorAzul: #3971ff;
+	--colorTexto: #545454;
+
+	--colorBack: #f3f3f3;
+	--colorMenu: #f3f3f3;
+}
+
+@custom-media --mobile (max-width: 500px);
+@custom-media --tablet (max-width: 768px);
+.JesusHero{
+	&-cabecera{
+		background: var(--colorMenu);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 2em;
+		&-precentacion{
+			width: 80%;
+			margin-top: 7em;
+			box-shadow: 0px 8px 20px 5px #d2d2d2;
+			box-sizing: border-box;
+			border-radius: .5em;
+			overflow: hidden;
+			&-portada{
+				&-imagen{
+					padding: 0;
+					margin: 0;
+					background: var(--colorTitle);
+					padding: .8em .8em 0;
+					img{
+						width: 100%;
+					}
+				}
+			}
+			&-cuerpo{
+				display: flex;
+				justify-content: space-between;
+				background: white;
+				padding: 1em 3em;
+				position: relative;
+				align-items: flex-end;
+				height: 200px;
+				&-imagen{
+					position: absolute;
+					left: 40%;
+					top: -50%;
+					overflow: hidden;
+					width: 200px;
+					border-radius: 50%;
+					border: .5em solid white;
+					&-img{
+						width: 100%;
+					}
+				}
+				&-estudios{
+					&-title{
+						font-family: var(--FuenteP);
+						color: var(--colorTitle);
+					}
+				}
+				&-informacion{
+					&-title{
+						font-family: var(--FuenteP);
+						color: var(--colorTitle);
+						text-align: center;
+					}
+					&-subtitle{
+						font-family: var(--FuenteS);
+						text-transform: uppercase;
+						font-weight: lighter;
+						font-size: 1.2rem;
+						color: var(--colorAzul);
+					}
+				}
+				&-sociales{
+					width: 15%;
+					box-sizing: border-box;
+					&-title{
+						font-family: var(--FuenteP);
+						color: var(--colorTitle);
+					}
+					&-menu{
+						display: flex;
+						box-sizing: border-box;
+						&-item{
+							list-style: none;
+							a{
+								padding: .5em;
+								transition: .3s;
+								color: var(--colorAzul);
+								&:hover{
+									color: var(--colorTexto);
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+		&-soy{
+			width: 80%;
+			padding-top: 3em;
+			font-family: var(--FuenteS);
+			color: var(--colorTexto);
+			strong{
+				color: var(--colorAzul);
+			}
+		}
+	}
+}
