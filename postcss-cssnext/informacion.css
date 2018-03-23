@@ -211,3 +211,9 @@
 		}
 	}
 }
+.JesusFooter{
+	background: var(--colorTitle);
+	padding: 2em 2em 1em 2em;
+	color: white;
+	font-family: var(--FuenteP);
+}
