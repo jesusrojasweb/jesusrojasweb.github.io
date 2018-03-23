@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Información
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	link(rel="stylesheet", href="css/font-awesome.min.css")
+	link(rel="stylesheet", href="css/bootstrap.min.css")
+	link(rel="stylesheet", href="css/informacion.css")
+body
+	section.JesusHero#JesusHero
+		.JesusHero-header#navbar
+			a(href="/")
+				figure.JesusHero-header-logo
+					img(src="img/logo.png", alt="logo")
+			nav.JesusHero-header-navbar
+				span.JesusHero-header-navbar-menu--burguer.fa.fa-bars#burguer
+				ul.JesusHero-header-navbar-menu#menu
+					li.JesusHero-header-navbar-menu-item
+						a(href="#habilidades") Sobre mí
+					li.JesusHero-header-navbar-menu-item
+						a(href="#habilidades") Habilidades
+					li.JesusHero-header-navbar-menu-item
+						a(href="#educacion") Educacion
+					li.JesusHero-header-navbar-menu-item
+						a(href="#portafolio") Proyectos
+					//li.JesusHero-header-navbar-menu-item
+						a(href="#") Precios
+					li.JesusHero-header-navbar-menu-item
+						a(href="#contacto") Contacto
+		header.JesusHero-cabecera
+			.JesusHero-cabecera-precentacion
+				.JesusHero-cabecera-precentacion-portada
+					figure.JesusHero-cabecera-precentacion-portada-imagen
+						img(src="img/fondo.png", alt="fondo")
+				.JesusHero-cabecera-precentacion-cuerpo
+					.JesusHero-cabecera-precentacion-cuerpo-estudios
+						h3.JesusHero-cabecera-precentacion-cuerpo-estudios-title Estudio en
+						a(href="https://platzi.com/@jesusrojasweb").JesusHero-cabecera-precentacion-cuerpo-estudios-item Platzi
+					.JesusHero-cabecera-precentacion-cuerpo-informacion
+						h2.JesusHero-cabecera-precentacion-cuerpo-informacion-title Jesús Rojas
+						h3.JesusHero-cabecera-precentacion-cuerpo-informacion-subtitle Junior frontend developer
+				.JesusHero-cabecera-precentacion-cuerpo-sociales
+					h3.JesusHero-cabecera-precentacion-cuerpo-sociales-title Contactame
+					ul.JesusHero-cabecera-precentacion-cuerpo-sociales-menu
+						li.JesusHero-cabecera-precentacion-cuerpo-sociales-menu-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.JesusHero-cabecera-precentacion-cuerpo-sociales-menu-item
+							a(href="#")
+								i.fa.fa-twitter
+						li.JesusHero-cabecera-precentacion-cuerpo-sociales-menu-item
+							a(href="#")
+								i.fa.fa-linkedin
+						li.JesusHero-cabecera-precentacion-cuerpo-sociales-menu-item
+							a(href="#")
+								i.fa.fa-github
+						li.JesusHero-cabecera-precentacion-cuerpo-sociales-menu-item
+							a(href="#")
+								i.fa.fa-youtube
+			.JesusHero-cabesera-soy
+				p.JesusHero-cabesera-soy-parrafo!= "Soy un <strong>joven</strong> emprendedor Venezolano <strong>amante del conocimiento</strong>. A pesar de mi crecimiento exponencial en los últimos meses, aún tengo demasiado por aprender." 
+				p.JesusHero-cabesera-soy-parrafo!= "Me encanta aprender todos los días más  en el área del <strong>desarrollo web</strong>, y me apasiona mejorar todos los días mis habilidades; así enriquezco mis proyectos y mi vida."
+				p.JesusHero-cabesera-soy-parrafo!= "Mis fortalezas son el desarrollo con <strong>HTML5, CSS3, Responsive Design, JavaScript, Git y Github</strong>. Puedo transformar cualquier diseño a código, para crear una <strong>página increíble</strong>."

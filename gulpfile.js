@@ -30,7 +30,7 @@ gulp.task('css', ()=>{
     mqpacker(),
     csswring()
   ]
-  return gulp.src('./postcss-cssnext/estilos.css')
+  return gulp.src('./postcss-cssnext/*.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processor))
     .pipe(gulp.dest('./css'))
