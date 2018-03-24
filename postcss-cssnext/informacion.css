@@ -49,14 +49,21 @@
 				height: 200px;
 				&-imagen{
 					position: absolute;
-					left: 40%;
+					left: 0;
+					right: 0;
 					top: -50%;
-					overflow: hidden;
-					width: 200px;
-					border-radius: 50%;
-					border: .5em solid white;
-					&-img{
-						width: 100%;
+					display: flex;
+					justify-content: center;
+					&-figure{
+						overflow: hidden;
+						border-radius: 50%;
+						border: .5em solid white;
+						margin: 0;
+						padding: 0;
+						width: 200px;
+						&-img{
+							width: 100%;
+						}
 					}
 				}
 				&-estudios{
@@ -80,15 +87,13 @@
 					}
 				}
 				&-sociales{
-					width: 15%;
-					box-sizing: border-box;
 					&-title{
 						font-family: var(--FuenteP);
 						color: var(--colorTitle);
 					}
 					&-menu{
 						display: flex;
-						box-sizing: border-box;
+						padding: 0;
 						&-item{
 							list-style: none;
 							a{
