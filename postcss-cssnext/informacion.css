@@ -155,6 +155,7 @@
 					color: var(--colorAzul);
 					font-size: 1.4rem;
 					padding-right: .5em;
+					animation: flotar 1.5s infinite;
 				}
 			}
 		}
@@ -179,6 +180,12 @@
 		grid-template-columns: repeat(4,1fr);
 		width: 80%;
 		margin: 3em auto;
+		&-item{
+			transition: .3s;
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
 		img{
 			width: 100%;
 		}
@@ -202,6 +209,11 @@
 		}
 	}
 	&-boton{
+		transition: .3s;
+		&:hover{
+
+			transform: scale(.95);
+		}
 		&-btn{
 			background: var(--colorAzul);
 			color: white;
@@ -209,6 +221,7 @@
 			padding: 1em 2em;
 			font-size: 2rem;
 			border-radius: .5rem;
+			transition: .3s;
 			&:hover{
 				color: white;
 				text-decoration: none;
@@ -221,4 +234,19 @@
 	padding: 2em 2em 1em 2em;
 	color: white;
 	font-family: var(--FuenteP);
+}
+
+@keyframes flotar {
+	0% {
+		transform: translateY(0%);	
+	}
+	25% {
+		transform: translateY(8%);	
+	}
+	75% {
+		transform: translateY(-8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
 }
