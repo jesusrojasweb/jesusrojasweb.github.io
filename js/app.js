@@ -69,3 +69,15 @@ $('#JesusEdu-list-mas').on('click', function(e){
    $('#'+a.id).addClass('oculto');
 
  }
+ /*----------------------------------------------------*/
+ /*setInterval(()=>{
+  console.log("Hola")
+  if($('b-loaded')){
+    console.log('Cargo');
+  }  
+ },500,)
+*/
+function imagen() {
+  $('.load').removeClass('load')
+  $('.img-load').removeClass('img-load')
+}
