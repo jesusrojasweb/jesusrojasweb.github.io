@@ -14,7 +14,47 @@
 @custom-media --tablet (max-width: 768px);
 
 @lost flexbox flex;
+body{
+	overflow-x: hidden;
+}
 
+.load{	
+	height: 265px;
+	background: var(--colorBack);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.loader{
+		width: 80px;
+		height: 80px;
+		background: ;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		.circulo{
+			width: 100%;
+			height: 100%;
+			border: 8px solid #757575;
+			border-radius: 50%;
+			position: absolute;
+			box-sizing: border-box;
+		}
+		.movimiento{
+			clip: rect(0px, 80px, 40px, 40px);
+			width: 100%;
+			height: 100%;
+			border: 8px solid #bbbbbb;
+			border-radius: 50%;
+			position: absolute;
+			box-sizing: border-box;
+			transform: rotate(-45deg);
+			animation: rotar 1s ease-in-out infinite;
+		}
+	}
+}
+.img-load{
+	visibility: hidden;
+}
 .u-Grid{
 	lost-center: 800px;
 	lost-utility: clearfix;
@@ -407,43 +447,6 @@
 					box-shadow: 1px 1px 1px 1px #e0e0e0;
     				border-radius: 4px;
     				transition: .3s;
-    				&.load{	
-    					height: 265px;
-    					background: var(--colorBack);
-    					display: flex;
-    					justify-content: center;
-    					align-items: center;
-    					.loader{
-    						width: 80px;
-    						height: 80px;
-    						background: ;
-    						border-radius: 50%;
-    						overflow: hidden;
-    						position: relative;
-    						.circulo{
-    							width: 100%;
-    							height: 100%;
-    							border: 8px solid #757575;
-    							border-radius: 50%;
-    							position: absolute;
-    							box-sizing: border-box;
-    						}
-    						.movimiento{
-    							clip: rect(0px, 80px, 40px, 40px);
-    							width: 100%;
-    							height: 100%;
-    							border: 8px solid #bbbbbb;
-    							border-radius: 50%;
-    							position: absolute;
-    							box-sizing: border-box;
-    							transform: rotate(-45deg);
-    							animation: rotar 1s ease-in-out infinite;
-    						}
-    					}
-    				}
-    				.img-load{
-    					visibility: hidden;
-    				}
     				.active{
     					visibility: visible;
     				}

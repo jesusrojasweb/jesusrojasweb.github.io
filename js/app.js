@@ -81,3 +81,12 @@ function imagen() {
   $('.load').removeClass('load')
   $('.img-load').removeClass('img-load')
 }
+
+function imagenPaciones(){
+  $('.JesusPaciones .load').removeClass('load')
+  $('.img-load').removeClass('img-load')
+}
+function imagenCursos(){
+  $('.JesusCursos .load').removeClass('load')
+  $('.img-load').removeClass('img-load')
+}

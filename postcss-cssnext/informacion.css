@@ -14,6 +14,19 @@
 
 @custom-media --mobile (max-width: 500px);
 @custom-media --tablet (max-width: 769px);
+body{
+	overflow-x: hidden;
+}
+.load{
+	height: 475px;
+}
+.JesusCursos{
+	.load{
+		height: 207px;
+		position: absolute;
+		width: 100%;
+	}
+}
 .JesusHero{
 	&-cabecera{
 		background: var(--colorMenu);
@@ -182,6 +195,7 @@
 		margin: 3em auto;
 		&-item{
 			transition: .3s;
+			position: relative;
 			&:hover{
 				transform: scale(1.1);
 			}
