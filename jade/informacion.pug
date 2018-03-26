@@ -77,17 +77,15 @@ body
 				p.JesusPaciones-container-item-parrafo!= "Primero aprendí un pseudocódigo en mi liceo. Después fui autodidacta y empecé con C++, Java, hasta aprender <strong>JavaScript</strong>. "
 				p.JesusPaciones-container-item-parrafo!= "Ahora gracias a la <strong>beca</strong> de <strong>Platzi</strong> para venezolanos; he podido aprobar 11 cursos y una carrera."
 				p.JesusPaciones-container-item-parrafo!= "Todavía voy en búsqueda de aprender todo lo que pueda, en el tiempo que pueda."
-			.JesusPaciones-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusPaciones-container-item-img(data-src="img/desarrollo.jpg", alt="desrrollo" onload="imagenPaciones()").img-load
-			.JesusPaciones-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
+			.JesusPaciones-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusPaciones-container-item-img(data-src="img/desarrollo.jpg", alt="desrrollo").img-load
+			.JesusPaciones-container-item.load
+				.loader
+					.circulo
+					.movimiento
 				img.JesusPaciones-container-item-img(data-src="img/musica.jpg", alt="desrrollo").img-load
 			.JesusPaciones-container-item
 				h3.JesusPaciones-container-item-title.title La música
@@ -99,78 +97,66 @@ body
 	section.JesusCursos
 		h1.JesusCursos-title.title Cursos y carreras aprobadas
 		.JesusCursos-container
-			a(href="https://platzi.com//@jesusrojasweb/curso/html5-css3/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
+			a(href="https://platzi.com//@jesusrojasweb/curso/html5-css3/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
 				img.JesusCursos-container-item-img(data-src="img/desarrollo-web-online.png", alt="Desarrollo web").img-load
-			a(href="https://platzi.com/@jesusrojasweb/curso/responsive-design/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
+			a(href="https://platzi.com/@jesusrojasweb/curso/responsive-design/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
 				img.JesusCursos-container-item-img(data-src="img/responsive-design.png", alt="Responsive Design").img-load
-			a(href="https://platzi.com/@jesusrojasweb/curso/css-grid-layout/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
+			a(href="https://platzi.com/@jesusrojasweb/curso/css-grid-layout/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
 				img.JesusCursos-container-item-img(data-src="img/curso-css-grid-layout.png", alt="Css Grid")
-			a(href="https://platzi.com/@jesusrojasweb/curso/postcss-2016/diploma" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/postcss-cssnext.png", alt="PostCss" onload="imagenCursos()").img-load
-			a(href="https://platzi.com/@jesusrojasweb/curso/programacion-basica/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/programacion-basica.png", alt="programación" onload="imagenCursos()").img-load
-			a(href="https://platzi.com/@jesusrojasweb/curso/git-github/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/git-github.png", alt="Git Github" onload="imagenCursos()").img-load
-			a(href="https://platzi.com//@jesusrojasweb/curso/ingenieria/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/ingenieria-software.png", alt="Ingenieria" onload="imagenCursos()").img-load
-			a(href="https://platzi.com/@jesusrojasweb/carrera/fundamentos-programacion/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/carrera-programacion.png", alt="Carrera Programacion" onload="imagenCursos()").img-load
-			a(href="https://platzi.com//@jesusrojasweb/curso/branding/diploma" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/construccion-marca.png", alt="Marca" onload="imagenCursos()").img-load
-			a(href="https://platzi.com/@jesusrojasweb/curso/marca-personal/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/marca-personal.png", alt="Marca Personal" onload="imagenCursos()").img-load
-			a(href="https://platzi.com/@jesusrojasweb/curso/creacion-de-empresas/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/empresas-startups.png", alt="Empresas" onload="imagenCursos()").img-load
-			a(href="https://platzi.com/@jesusrojasweb/curso/fundamentos-javascript/diploma/" target="_blank").JesusCursos-container-item
-				.load
-					.loader
-						.circulo
-						.movimiento
-				img.JesusCursos-container-item-img(data-src="img/fundamentos-javascript.png", alt="JavaScript" onload="imagenCursos()").img-load
+			a(href="https://platzi.com/@jesusrojasweb/curso/postcss-2016/diploma" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/postcss-cssnext.png", alt="PostCss").img-load
+			a(href="https://platzi.com/@jesusrojasweb/curso/programacion-basica/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/programacion-basica.png", alt="programación").img-load
+			a(href="https://platzi.com/@jesusrojasweb/curso/git-github/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/git-github.png", alt="Git Github").img-load
+			a(href="https://platzi.com//@jesusrojasweb/curso/ingenieria/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/ingenieria-software.png", alt="Ingenieria").img-load
+			a(href="https://platzi.com/@jesusrojasweb/carrera/fundamentos-programacion/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/carrera-programacion.png", alt="Carrera Programacion").img-load
+			a(href="https://platzi.com//@jesusrojasweb/curso/branding/diploma" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/construccion-marca.png", alt="Marca").img-load
+			a(href="https://platzi.com/@jesusrojasweb/curso/marca-personal/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/marca-personal.png", alt="Marca Personal").img-load
+			a(href="https://platzi.com/@jesusrojasweb/curso/creacion-de-empresas/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/empresas-startups.png", alt="Empresas").img-load
+			a(href="https://platzi.com/@jesusrojasweb/curso/fundamentos-javascript/diploma/" target="_blank").JesusCursos-container-item.load
+				.loader
+					.circulo
+					.movimiento
+				img.JesusCursos-container-item-img(data-src="img/fundamentos-javascript.png", alt="JavaScript").img-load
 	section.JesusCall
 		.JesusCall-description
 			h1.JesusCall-description-title ¿Quieres una pagina web propia o para tu empesa?
