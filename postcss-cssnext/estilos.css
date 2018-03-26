@@ -56,7 +56,7 @@ body{
 }
 .b-loaded{
 	opacity: 1;
-	z-index: 2;
+	animation: aparecer 1s ease-out;
 }
 .u-Grid{
 	lost-center: 800px;
@@ -679,6 +679,9 @@ body{
 @media (--tablet){
 	.u-wrapp{
 		padding: 4em;
+	}
+	.load{
+		height: 150px;
 	}
 	.JesusHero{
 		&-copy{
