@@ -14,7 +14,7 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		text-decoration: none;
-		border: 1px solid gray;
+		border: 2px solid gray;
 	};
 	--margen: {
 		margin: 0 4.6em;
@@ -116,7 +116,7 @@ body{
 }
 
 .servicios{
-	padding-top: 4.6em;
+	padding: 4.6em 0;
 	& .container{
 		@apply --margen;
 		& .title{
@@ -146,6 +146,84 @@ body{
 				}
 				& .text{
 					grid-column: 1/3;
+				}
+			}
+		}
+	}
+}
+.call{
+	background: url('../img/call.jpg') center center no-repeat;
+	background-size: cover;
+	& .contenedor{
+		background: color(var(--colorFondo) a(50%));
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1em 4.6rem;
+		& .action{
+			color: white;
+			font-family: var(--FuenteP);
+			font-size: 1.7rem;
+		}
+		& .btn{
+			@apply --btn;
+			background: transparent;
+			border-color: var(--colorSecundario);
+			color: var(--colorSecundario);
+		}
+	}
+}
+
+.portafolio{
+	& .container{
+		@apply --margen;
+		padding: 4.6em 0;
+		& .title{
+			@apply --title;
+		}
+		& .categorias{
+			margin-top: 2.8em;
+			display: flex;
+			list-style: none;
+			justify-content: center;
+			& .item{
+				padding: 1em;
+				& a{
+					color: var(--colorSecundario);
+					text-transform: uppercase;
+					font-weight: 600;
+					text-decoration: none;
+				}
+			}
+		}
+		& .contenedor{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 1.7em;
+			margin-top: 1.7em;
+			& .item{
+				position: relative;
+				border-radius: 10px;
+				overflow: hidden;
+				& .hover{
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					background: color(var(--colorFondo) a(30%));
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					& span{
+						color: white;
+						font-size: 2.8rem;
+						opacity: 0;
+					}
+				}
+				& .img{
+					width: 100%;
+					vertical-align: top;
 				}
 			}
 		}
