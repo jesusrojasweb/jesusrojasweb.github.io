@@ -91,19 +91,24 @@ body
 		.contenedor
 			h2.title Contacto
 			form.formulario
-				.grupo
-					span.far.fa-user
-					input#nombre.input(type="text", placeholder="Nombre")
-				.grupo
-					span.far.fa-envelope
-					input#email.input(type="email", name="email", placeholder="Correo")
-				.grupo
-					span.fas.fa-paperclip
-					input#asunto.input(type="text", name="asunto", placeholder="asunto")
-				.grupo
-					span.far.fa-file
-					textarea#mensaje.textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje")
-				input(type="submit", value="Enviar")
+				span.far.fa-user.icono
+
+				input#nombre.input(type="text", placeholder="Nombre")
+
+				span.far.fa-envelope.icono
+
+				input#email.input(type="email", name="email", placeholder="Correo")
+
+				span.fas.fa-paperclip.icono
+
+				input#asunto.input(type="text", name="asunto", placeholder="Asunto")
+
+				span.far.fa-file.icono
+
+				textarea#mensaje.textarea(name="mensaje", cols="30", rows="5", placeholder="Mensaje")
+
+				button(type="submit").btn
+					span.far.fa-paper-plane
 	footer.footer
 		p.right &copy; Todos los Derechos Reservados 2018
 		ul.social

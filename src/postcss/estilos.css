@@ -229,3 +229,53 @@ body{
 		}
 	}
 }
+
+.contacto{
+	background: url('../img/bg-contacto.jpg') center center no-repeat;
+	background-size: cover;
+	& .contenedor{
+		background: color(var(--colorFondo) a(50%));
+		padding: 4.6em;
+		& .title{
+			@apply --title;
+			color: white;
+			margin-bottom: 1em;
+		}
+		& .formulario{
+			margin: 0 auto;
+			width: 60%;
+			display: grid;
+			grid-template-columns: 1fr 10fr;
+			grid-row-gap: 1.7em;
+			& .icono,& .input, & .textarea{
+				background: color(white a(40%));
+				border: 0;
+				color: white;
+				font-size: 1.7rem;
+				padding: .5em;
+			}
+			& .icono{
+				padding: .8em;
+				border-radius: 50px 0 0 50px;
+			}
+			& .input::placeholder, & .textarea::placeholder{
+				color: white;
+			}
+			& .input, & .textarea{
+				font-family: var(--FuenteS);
+				border-radius: 0 50px 50px 0;
+				&:focus{
+					outline: none;
+				}
+			}
+			& .btn{
+				@apply --btn;
+				background: white;
+				border: none;
+				color: var(--colorSecundario);
+				font-size: 1.7rem;
+				padding: .5em 1em;
+			}
+		}
+	}
+}
