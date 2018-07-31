@@ -84,7 +84,23 @@ body
 				.hover
 					span.fa.fa-search
 				img.img(src="img/vigilante.jpg", alt="vigilante")
-
+	section.contacto
+		.contenedor
+			h2.title Contacto
+			form.formulario
+				.grupo
+					span.far.fa-user
+					input#nombre.input(type="text", placeholder="Nombre")
+				.grupo
+					span.far.fa-envelope
+					input#email.input(type="email", name="email", placeholder="Correo")
+				.grupo
+					span.fas.fa-paperclip
+					input#asunto.input(type="text", name="asunto", placeholder="asunto")
+				.grupo
+					span.far.fa-file
+					textarea#mensaje.textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje")
+				input(type="submit", value="Enviar")
 	script(src="js/jquery.js")
 	script(src="js/popper.min.js")
 	script(src="js/hammer.min.js")
