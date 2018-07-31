@@ -5,7 +5,8 @@ Recibe los datos ingresados
 ****************************************************************/
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
-$comentario = $_POST['mensaje'];
+$asunto = $_POST['mensaje'];
+$comentario = $_POST['comentario'];
 
 if( empty($nombre) || empty($email) || empty($comentario) ) {
 
@@ -17,7 +18,7 @@ if( empty($nombre) || empty($email) || empty($comentario) ) {
 /****************************************************************
 Aquí debes ingresar el asunto del mail
 ****************************************************************/
-$subject = 'Contacto desde tu pagina de: ' . $nombre ;
+$subject = 'Contacto: ' . $asunto ;
 $comentario = stripcslashes($comentario);
 
 
