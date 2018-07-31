@@ -1,0 +1,798 @@
+:root{
+	--FuenteP: 'Exo', sans-serif;
+	--FuenteS: 'Nunito', sans-serif;
+
+	--colorTitle: #484848;
+	--colorAzul: #3971ff;
+	--colorTexto: #545454;
+
+	--colorBack: #f3f3f3;
+	--colorMenu: #f3f3f3;
+}
+
+@custom-media --mobile (max-width: 500px);
+@custom-media --tablet (max-width: 768px);
+
+@lost flexbox flex;
+body{
+	overflow-x: hidden;
+}
+
+.load{	
+	height: 265px;
+	background: var(--colorBack);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.loader{
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		.circulo{
+			width: 100%;
+			height: 100%;
+			border: 8px solid #757575;
+			border-radius: 50%;
+			position: absolute;
+			box-sizing: border-box;
+		}
+		.movimiento{
+			clip: rect(0px, 80px, 40px, 40px);
+			width: 100%;
+			height: 100%;
+			border: 8px solid #bbbbbb;
+			border-radius: 50%;
+			position: absolute;
+			box-sizing: border-box;
+			transform: rotate(-45deg);
+			animation: rotar 1s ease-in-out infinite;
+		}
+	}
+}
+.img-load{
+	opacity: 0;
+}
+.b-loaded{
+	opacity: 1;
+	animation: aparecer 1s ease-out;
+}
+.u-Grid{
+	lost-center: 800px;
+	lost-utility: clearfix;
+}
+.title{
+	font-family: var(--FuenteP);
+	color: var(--colorTitle);
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	&:before{
+		position: absolute;
+		top: 150%;
+		left: 0;
+		content: '';
+		border-bottom: 2.5px solid var(--colorAzul);
+		width: 10%;
+	}
+}
+.u-wrapp{
+	padding: 7em;
+}
+.btn{
+	position: relative;
+	transition: .3s;
+	&:before{
+		position: absolute;
+		bottom: 5px;
+		left: 10%;
+		content: '';
+		border-bottom: 2px solid var(--colorAzul);
+		transition: .3s;
+		width: 0%;
+	}
+	&:hover{
+		color: var(--colorAzul);
+		&:before{
+			width: 80%;
+		}
+	}
+}
+.oculto{
+	display: none;
+}
+
+.aparecer{
+	opacity: 0.0;
+	animation-name: aparecer;
+	-webkit-animation-name: aparecer;	
+	
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+	visibility: visible !important;	
+	
+	animation-fill-mode: forwards;
+	z-index: 500;
+}
+
+@keyframes aparecer {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes aparecer {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+/* ---------- Header ----------*/
+.JesusHero{
+	&-header{
+		position: absolute;
+		top: 0;
+		left: 0;
+		//background: var(--colorMenu);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		transition: .3s;
+		z-index: 1000;
+		&.active{
+			position: fixed;
+			background: #f3f3f3;
+			.JesusHero-header{
+				&-logo{
+					padding: 0 0 0 3em;
+					margin: 0;
+				}
+				&-navbar-menu-item{
+					padding: 1em 0 0 0;
+					a{
+						padding: 0 1em;
+					}
+				}
+			}
+		}
+		&-logo{
+			padding: .5em .5em .5em 3em;
+		}
+		&-navbar{
+			&-menu{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				list-style: none;
+				&--burguer{
+					display: none;
+				}
+				&-item{ 
+					padding: 2em 0;
+					&:last-child{
+						display: none;
+					}
+					a{
+						color: #bdbdbd;
+						padding: 1em 1em;
+						font-family: var(--FuenteP);
+						text-transform: uppercase;
+						transition: .3s;
+						&:hover{
+							color: var(--colorTexto);
+							text-decoration: none;
+						}
+					}
+
+				}
+			}
+		}
+	}
+	&-copy{
+		padding: 6em 4em 8em 4em;
+		background: url('../img/fondo.png') no-repeat scroll center center;
+		background-size: cover;
+		display: flex;
+		justify-content: flex-end;
+		&-container{
+			width: 50%;
+		}
+		&-caption{
+			color: var(--colorTexto);
+			font-family: var(--FuenteP)
+		}
+		&-titulo{
+			color: var(--colorTitle);
+			font-family: var(--FuenteP);
+			font-weight: medium;
+			font-size: 3rem;
+			b{
+				font-weight: medium;
+				color: var(--colorAzul);
+			}
+		}
+		&-subtitle{
+			color: var(--colorAzul);
+			font-family: var(--FuenteS);
+			text-transform: uppercase;
+			font-size: 1em;
+			border-top: 1.4px solid #636363;
+			border-bottom: 1.4px solid #636363;
+			padding: .8em;
+			width: 50%;
+			margin-top: 1.5em;
+		}
+		&-informacion{
+			margin-top: 3.5em;
+			color: var(--colorTexto);
+			font-family: var(--FuenteS);
+			font-size: 1.1rem;
+			font-weight: 600;
+			strong{
+				color: #5b84fb;
+			}
+		}
+		&-buttons{
+			margin-top: 2.5em;
+			font-family: var(--FuenteS);
+			text-transform: uppercase;
+			&-btn{
+				font-weight: bold;
+				color: var(--colorTitle);
+				&:hover{
+					color: var(--colorAzul);				}
+			}
+		}
+	}
+}
+/* ---------- Habilidades ----------*/
+.JesusHabili{
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+		}
+
+	}
+	&-items{
+		margin: 8em 0 0 0;
+		width: 100%;
+		&-item{
+			margin-bottom: 3.5em;
+			/*&:nth-child(3n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
+						width: 60%;
+					}
+				}
+			}
+			&:nth-child(4n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
+						width: 80%;
+					}
+				}
+			}
+			&:nth-child(6n){
+				.JesusHabili-items-item-bar{
+					&-porcent{
+						width: 90%;
+					}
+				}
+			}*/
+			&-bar{
+				display: flex;
+				height: .3rem;
+				overflow: hidden;
+				font-size: .75rem;
+				background: #afc5fe;
+				&-porcent{
+					display: flex;
+					width: 90%;
+					align-items: center;
+					justify-content: center;
+					background: var(--colorAzul);
+					clip-path: polygon(0 0,100% 0,98% 100%,0 100%);
+					transition: 1s;
+					width: 0%;
+
+				}
+			}
+			&-contenedor{
+				display: flex;
+				justify-content: space-between;
+				&-title,&-porcent{
+					color: var(--colorTexto);
+					font-family: var(--FuenteS);
+					text-transform: uppercase;
+					font-size: 1rem;
+				}
+			}
+				
+		}
+	}
+
+}
+/* ---------- Educacion ----------*/
+.JesusEdu{
+	background: var(--colorBack);
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+			padding-bottom: 2em;
+		}
+	}
+	&-list{
+		counter-reset: li;
+		list-style: none;
+		*list-style: decimal-leading-zero;
+		font: 2em var(--FuenteP);
+		margin-bottom: 4em;
+		text-shadow: 0 1px 0 rgba(255,255,255,.5);
+		position: relative;
+	    padding: .4em;
+	    margin: 3em 0 .5em 2em;
+	    text-decoration: none;
+	    &-item{
+	    	position: relative;
+	    	width: 90%;
+
+	    	z-index: 800;
+	    	&:before{
+	    		content: '0' counter(li);
+	    		counter-increment: li;
+	    		position: absolute;
+	    		left: -2.5em;
+	    	}
+	    	&-link{
+	    		color: var(--colorTexto);
+	    		transition: .3s;
+	    		&:hover{
+	    			color: var(--colorAzul);
+	    			text-decoration: none;
+	    			.JesusEdu-list-item-certificado{
+	    				opacity: 1;
+	    				visibility: visible;
+	    				z-index: 1000;
+	    			}
+	    		}
+	    		&-title{
+	    			font-family: var(--FuenteS);
+	    			text-transform: uppercase;
+	    			font-size: 1.5rem;
+	    			font-weight: 600;
+	    		}
+	    	}
+	    	&-time{
+		    	font-family: var(--FuenteS);
+		    	color: var(--colorTexto);
+		    	font-size: 1.3rem;
+		    }
+		    &-certificado{
+		    	width: 500px;
+		    	background: color(white a(90%));
+		    	padding: .5em;
+		    	box-sizing: border-box;
+		    	border-radius: .5rem;
+		    	position: absolute;
+		    	opacity: 0;
+		    	transition: .3s;
+		    	z-index: 1000;
+		    	visibility: hidden;
+		    	top: -25%;
+		    	img{
+		    		width: 100%;
+		    		vertical-align: top;
+		    	}
+		    }
+	    }
+	    &-mas{
+	    	color: var(--colorTexto);
+	    }
+
+	}
+}
+/* ---------- Portafolio ---------- */
+.JesusPortafolio{
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+		}
+	}
+	img{
+		width: 100%;
+		border-radius: 4px;
+		height: auto;
+
+	}
+	.JesusPortafolio-items{
+		margin-top: 7em;
+		.JesusPortafolio-item{
+			&-head{
+				a{
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					box-shadow: 1px 1px 1px 1px #e0e0e0;
+    				border-radius: 4px;
+    				transition: .3s;
+    				.active{
+    					visibility: visible;
+    				}
+					&:hover{
+						box-shadow: 0px 9px 11px 1px #d0d0d0;
+						.JesusPortafolio-item-head-hover{
+							opacity: 1;
+						}
+					}
+				}
+				&-hover{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: rgba(255,255,255,.5);
+					opacity: 0;
+					transition: .3s;
+					span{
+						color: var(--colorAzul);
+						font-size: 3rem;
+					}
+				}
+			}
+			&-footer{
+				padding: 4em 0 2em 0;
+				&-title{
+					font-family: var(--FuenteS);
+					text-transform: uppercase;
+					color: var(--colorTexto);
+					font-weight: 600;
+				}
+				&-description{
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+				}
+			}
+		}
+	}
+}
+/* ---------- Precios ---------- */
+.JesusPrecios{
+	background: var(--colorBack);
+	.u-Grid{
+		display: flex;
+		max-width: 100%;
+		&-column{
+			lost-column: 1/2;
+		}
+	}
+	&-planes{
+		margin-top: 5em;
+		&-plan{
+			background: white;
+			border-radius: 4px;
+			text-align: center;
+			padding-bottom: 2em;
+			transition: .3s;
+			box-shadow: 1px 4px 16px 1px #e0e0e0;
+			&-container{
+				padding: 4em 2em 2em 2em;
+				&-title{
+					text-align: left;
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+					font-weight: 600;
+					text-transform: uppercase;
+					span{
+						color: var(--colorAzul);
+						font-weight: bold;
+						text-transform: capitalize;
+					}
+				}
+				&-description{
+					text-align: left;
+					margin-top: 3em;
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+					font-weight: 600;
+				}
+			}
+			&-item{
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #afafaf;
+				padding: 1em 2em 0em 2em;
+				&-article,&-number{
+					font-family: var(--FuenteS);
+					color: var(--colorTexto);
+					text-transform: uppercase;
+					font-size: 1rem;
+					font-weight: 600;
+				}
+				&:nth-child(4n){
+					border-bottom: none;
+				}
+			}
+			&-boton{
+				color: var(--colorAzul);
+				font-family: var(--FuenteS);
+
+			}
+			&:hover{
+				box-shadow: 1px 9px 16px 1px #d0d0d0;
+			}
+		}
+	}
+}
+.JesusContacto{
+	background: var(--colorBack);
+	.u-Grid{
+		justify-content: space-between;
+		max-width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		&-column{
+			display: block;
+			&:first-child{
+				width: 40%;
+			}
+			&:last-child{
+				width: 60%;
+			}
+		}
+	}
+	&-grid{
+		margin-top: 5em;
+	}
+	&-parrafo{
+		color: var(--colorTexto);
+	    font-family: var(--FuenteS);
+	    font-size: 1.2rem;
+	    margin-top: 4em;
+	    height: 46vh;
+	}
+	&-informacion{
+		list-style: none;
+		padding: 0;
+	    &-item{
+	    	padding-bottom: 3em;
+	    	&-header{
+	    		display: flex;
+	    		color: var(--colorTexto);
+	    		.fa{
+	    			font-size: 2rem;
+	    		}
+	    		&-title{
+	    			padding-left: 1em;
+	    			font-family: var(--FuenteS);
+	    			text-transform: uppercase;
+	    		}
+	    	}
+	    	&-info{
+	    		color: var(--colorTexto);
+	    		font-family: var(--FuenteS);
+	    	}
+	    	&-red{
+	    		list-style: none;
+	    		padding: 0;
+	    		&-icono{
+	    			display: inline;
+					&-social{
+						padding: .8em;
+						font-size: 1.5rem;
+						color: var(--colorTexto);
+						transition: .3s;
+						&:hover{
+							color: var(--colorAzul);
+						}
+					}
+	    		}
+	    	}
+	    }
+	}
+	&-formulario{
+		.form-control{
+			/* Sin background*/
+			background: none;
+			/* Sin background*/
+			border-radius: 0;
+			border: none;
+			border-bottom: 1.5px solid #cdcdcd;
+			padding: 1em;
+			margin-bottom: 1em;
+			font-family: var(--FuenteS);
+			color: var(--colorTexto);
+			transition: .5s;
+			&:focus{
+				box-shadow: none;
+				border-bottom: 1.5px solid var(--colorAzul);
+				font-weight: 600;
+			}
+		}
+		&-input{
+			&--textarea{
+				overflow: auto;
+			}
+		}
+		&-btn{
+			background: none;
+			color: var(--colorTexto);
+			font-family: var(--FuenteS);
+			font-weight: 600;
+			transition: .3s;
+			&:hover{
+				color: var(--colorAzul);
+				cursor: pointer;
+			}
+		}
+	}
+}
+@keyframes rotar{
+	0%{
+		transform: rotate(-45deg);
+	}
+	100%{
+		transform: rotate(315deg);
+	}
+}
+/* --------------------------------
+   ---------- Responsive ----------
+   ------------------------------*/
+@media (--tablet){
+	.u-wrapp{
+		padding: 4em;
+	}
+	.JesusHero{
+		&-copy{
+			&-container{
+				width: 70%;
+			}
+			&-subtitle{
+				width: 70%;
+			}
+		}
+	}
+	.JesusEdu{
+
+	}
+}
+@media (--mobile){
+	.title{
+		font-size: 1.8rem;
+	}
+	.u-wrapp{
+		padding: 3em 2em;
+	}
+	.JesusHero{
+		&-header{
+			&.active{
+				position: absolute;
+			}
+			&-navbar{
+				&-menu--burguer{
+					display: block;
+					position: fixed;
+					right: .5em;
+					top: .5em;
+					padding: 1em;
+					color: var(--colorTexto);
+					font-size: 1.5rem;
+					border-radius: 50%;
+					z-index: 1000;
+					&.active{
+						background: #f3f3f3;
+					}
+				}
+				&-menu{
+					transition: .4s;
+					position: fixed;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					background: #f3f3f3e0;
+					height: 100vh;
+					z-index: 500;
+					top: 0;
+					left: 0;
+					width: 100%;
+					padding: 0;
+					transform: translateX(100%);
+					&-item{
+						a{
+							color: var(--colorTexto);
+						}
+					}
+					&.active{
+						transform: translateX(0%);
+					}
+				}
+			}
+		}
+		&-copy{
+			padding: 7em 2em 5em 2em;
+			justify-content: center;
+			&-container{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				width: 90%;
+			}
+			&-informacion{
+				display: none;
+			}
+			&-buttons{
+				&-btn{
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	.JesusHabili,.JesusEdu,.JesusPortafolio,.JesusPrecios,.JesusContacto{
+		.u-Grid{
+			&-column{
+				lost-column: 1;
+			}
+
+		}
+	}
+	.JesusPortafolio{
+		&-item{
+			&-footer{
+				&-title{
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+	.JesusPrecios{
+		&-planes{
+			&-plan{
+				margin-bottom: 3em;
+				&-boton{
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
