@@ -6,7 +6,28 @@
 	--colorPrincipal: #004fe5;
 	--colorSecundario: #00e3c1;
 	--colorTexto: #4c596b;
-
+	--btn: {
+		color: white;
+		background: gray;
+		border-radius: 10px;
+		padding: 1em 2em;
+		text-transform: uppercase;
+		font-weight: 600;
+		text-decoration: none;
+		border: 1px solid gray;
+	};
+	--margen: {
+		margin: 0 4.6em;
+	};
+	--title: {
+		font-size: 4.6rem;
+		color: var(--colorPrincipal);
+		font-family: var(--FuenteP);
+	};
+	--text: {
+		color: var(--colorTexto);
+		font-size: 1.1rem;
+	};
 }
 ul,figure,h1,h2{
 	margin: 0;
@@ -29,7 +50,7 @@ body{
 		background: color(var(--colorFondo) a(50%));
 		height: 110vh;
 		& .header{
-			margin: 0 5em;
+			@apply --margen;
 			padding-top: 2em;
 			display: flex;
 			justify-content: space-between;
@@ -61,7 +82,8 @@ body{
 			}
 		}
 		& .copy{
-			margin: 6.4em 4em;
+			@apply --margen;
+			margin-top: 6.4em;
 			& .caption{
 				font-size: 2rem;
 				color: white;
@@ -70,7 +92,7 @@ body{
 			& .nombre{
 				font-family: var(--FuenteP);
 				color: white;
-				font-size: 5rem;
+				font-size: 4.6rem;
 			}
 			& .subtitle{
 				color: var(--colorSecundario);
@@ -84,15 +106,48 @@ body{
 				margin-bottom: 3em;
 			}
 			& .btn{
+				@apply --btn;
 				color: white;
 				background: var(--colorPrincipal);
-				border-radius: 10px;
-				padding: 1em 2em;
-				text-transform: uppercase;
-				font-weight: 600;
-				text-decoration: none;
+				border-color: var(--colorPrincipal);
 			}
 		}
 	}
 }
 
+.servicios{
+	padding-top: 4.6em;
+	& .container{
+		@apply --margen;
+		& .title{
+			@apply --title;
+		}
+		& .text{
+			@apply --text;
+		}
+		& .contenedor{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap: 2.8em;
+			margin-top: 2.8rem;
+			& .item.informacion{
+				display: grid;
+				grid-template-columns: 1fr 4fr;
+				grid-column-gap: 1.7em;
+				& .icon{
+					& .img{
+						width: 100%;
+					}
+				}
+				& .subtitle{
+					@apply --title;
+					font-size: 2.7rem;
+					color: var(--colorSecundario);
+				}
+				& .text{
+					grid-column: 1/3;
+				}
+			}
+		}
+	}
+}
