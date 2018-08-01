@@ -57,6 +57,14 @@ var $burguerButton = document.getElementById('burguer');
 var bLazy = new Blazy({
   selector: 'img'
 });
+
+var $burger = document.getElementById("burger");
+var $menu = document.getElementById("menu");
+
+$burger.addEventListener('click', mostrar)
+function mostrar() {
+  $menu.classList.toggle('active');
+}
  //Ver mas
 /*$('#JesusEdu-list-mas').on('click', function(e){
    e.preventDefault();

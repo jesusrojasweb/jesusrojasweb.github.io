@@ -20,14 +20,14 @@ body
 				figure.logo
 					img(src="img/logo-blanco.png", alt="logo")
 				nav.navbar
-					ul.menu
+					ul.menu#menu
 						li.item
 							a(href="#") Información
 						li.item
-							a(href="#") Proyectos
+							a(href="#proyectos") Proyectos
 						li.item
-							a(href="#") Contacto
-				button.burger
+							a(href="#contacto") Contacto
+				button.burger#burger
 					span.fa.fa-bars
 			.copy
 				.container
@@ -64,7 +64,7 @@ body
 		.contenedor
 			h3.action Contactame para empezar el proyecto de tus sueños
 			a.btn(href="#") Contactame
-	section.portafolio
+	section.portafolio#proyectos
 		.container
 			h2.title Portafolio
 			ul.categorias
@@ -98,7 +98,7 @@ body
 					.hover
 						span.fa.fa-search
 					img.img.b-lazy(data-src="img/vigilante.jpg", alt="vigilante")
-	section.contacto
+	section.contacto#contacto
 		.contenedor
 			h2.title Contacto
 			form.formulario
