@@ -1,5 +1,5 @@
 /* ---------- Scroll ----------*/
-
+/*
 $(window).scroll(function() {
   	var topOfWindow = $(window).scrollTop();
   	$('#top').each(function(){
@@ -20,9 +20,9 @@ $(window).scroll(function() {
 
 	      }
   	})
-})
+})*/
 /* ---------- Menu ----------*/
-var consulta = window.matchMedia('(max-width: 500px)');
+/*var consulta = window.matchMedia('(max-width: 500px)');
 var $burguerButton = document.getElementById('burguer');
   var $menu = document.getElementById('menu');
   function toggleMenu(){
@@ -48,17 +48,17 @@ var $burguerButton = document.getElementById('burguer');
   }
   mediaQuery();
   /* ---------- Hammer ----------*/
-  var $body = document.body;
+  /*var $body = document.body;
 
   var gestos = new Hammer($body);
   gestos.on('swipeleft', showMenu);
   gestos.on('swiperight', hideMenu);
 /* ---------- Blazy ----------*/
- var bLazy = new Blazy({
-          selector: 'img'
-      });
+var bLazy = new Blazy({
+  selector: 'img'
+});
  //Ver mas
-$('#JesusEdu-list-mas').on('click', function(e){
+/*$('#JesusEdu-list-mas').on('click', function(e){
    e.preventDefault();
    console.log(this);
 
@@ -68,4 +68,4 @@ $('#JesusEdu-list-mas').on('click', function(e){
    $('.oculto').removeClass('oculto').addClass('aparecer');
    $('#'+a.id).addClass('oculto');
 
- }
+ }*/

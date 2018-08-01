@@ -10,8 +10,9 @@ head
 	meta(property="og:description", content="Soy Desarrollador Frontend Junior. Desarrollo sitios web responsive garantizando la funcionalidad independientemente del navegador.  Trabajo con Angular, HTML5, CSS3, JavaScript, Responsive Design. Soy muy curioso, decidido y proactivo ...")
 	meta(property="og:image" content='http://jesusrojas.com.ve/img/OG.jpg')
 	meta(property="og:image:alt" content='http://jesusrojas.com.ve/img/OG.jpg')
-	link(rel="stylesheet", href="css/fontawesome-all.min.css")
-	link(rel="stylesheet", href="css/estilos.css")
+
+	style.
+		body,figure,h1,h2,ul{margin:0;padding:0}body{font-family:Ubuntu Mono,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue;font-family:Nunito,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue;overflow-x:hidden}.portada{background:url(../img/bg.jpg) 50% no-repeat;background-size:cover}.portada .contenedor{background:#002374;background:rgba(0,35,116,.5);height:110vh}.portada .contenedor .header{margin:0 4.6em;padding-top:2em;display:flex;justify-content:space-between;align-items:center}.portada .contenedor .header .logo{width:15%}.portada .contenedor .header .logo img{width:100%}.portada .contenedor .header .burger{display:none;background:none;color:#fff;border:none;font-size:44.8px;font-size:2.8rem}.portada .contenedor .header .navbar .menu{display:flex;justify-content:center}.portada .contenedor .header .navbar .menu .item{padding-right:2em;list-style:none}.portada .contenedor .header .navbar .menu .item a{color:#fff;text-decoration:none;font-size:18.72px;font-size:1.17rem;text-transform:uppercase;font-weight:600}.portada .contenedor .copy{margin:0 4.6em;display:flex;align-items:center;height:100%}.portada .contenedor .copy .container{padding-bottom:10em}.portada .contenedor .copy .caption{font-size:32px;font-size:2rem;color:#fff;font-weight:400}.portada .contenedor .copy .nombre{font-family:Ubuntu Mono,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue;color:#fff;font-size:73.6px;font-size:4.6rem}.portada .contenedor .copy .subtitle{color:#00e3c1;text-transform:uppercase;font-weight:400}.portada .contenedor .copy .descripcion{color:#fff;width:50%;font-size:17.6px;font-size:1.1rem;margin-bottom:3em}.portada .contenedor .copy .btn{background:gray;border-radius:10px;padding:1em 2em;text-transform:uppercase;font-weight:600;text-decoration:none;border:2px solid gray;color:#fff;background:#004fe5;border-color:#004fe5;width:13%}@media (max-width:500px){.portada .contenedor .header{margin:0 2em}.portada .contenedor .header .logo{width:40%!important}.portada .contenedor .header .burger{display:inline}.portada .contenedor .header .navbar .menu{display:none}.portada .contenedor .copy{margin:0 2em}.portada .contenedor .copy .caption{font-size:1.8rem}.portada .contenedor .copy .nombre{font-size:3rem}.portada .contenedor .copy .descripcion{width:100%}}@media (max-width:800px){.portada .contenedor .header .logo{width:20%}}@media (max-width:360px){.portada .contenedor .copy .caption{display:none}.portada .contenedor .copy .descripcion{font-size:1rem}}
 body
 	section.portada
 		.contenedor
@@ -76,18 +77,27 @@ body
 				li.item
 					a(href="#") Diseño Grafico
 			.contenedor
-				a(href="#").item
+				a(href="#").item.load
+					.loader
+						.circulo
+						.movimiento
 					.hover
 						span.fa.fa-search
-					img.img(src="img/movies.jpg", alt="movies")
-				a(href="#").item
+					img.img.b-lazy(data-src="img/movies.jpg", alt="movies")
+				a(href="#").item.load
+					.loader
+						.circulo
+						.movimiento
 					.hover
 						span.fa.fa-search
-					img.img(src="img/platzi-video-postcss.jpg", alt="platzi video")
-				a(href="#").item
+					img.img.b-lazy(data-src="img/platzi-video-postcss.jpg", alt="platzi video")
+				a(href="#").item.load
+					.loader
+						.circulo
+						.movimiento
 					.hover
 						span.fa.fa-search
-					img.img(src="img/vigilante.jpg", alt="vigilante")
+					img.img.b-lazy(data-src="img/vigilante.jpg", alt="vigilante")
 	section.contacto
 		.contenedor
 			h2.title Contacto
@@ -132,6 +142,8 @@ body
 				li.item
 					a(href="#")
 						span.fab.fa-github
+	link(rel="stylesheet", href="css/fontawesome-all.min.css")
+	link(rel="stylesheet", href="css/estilos.css")
 	script(src="js/jquery.js")
 	script(src="js/popper.min.js")
 	script(src="js/hammer.min.js")
