@@ -7,20 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesus Rojas <jesusrojas.frontend@gmail.com> (http://jesusrojas.com.ve)",
-  "homepage": "https://github.com/jesusrojas-frontend/jesusrojas-frontend.github.io#readme",
+  "homepage": "https://github.com/jesusrojasweb/jesusrojasweb.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "css-mqpacker": "^6.0.1",
-    "csswring": "^6.0.1",
+    "browser-sync": "^2.23.6",
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-pug": "^3.3.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "lost": "^8.2.0",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^11.0.0",
-    "postcss-mixins": "^6.2.0",
-    "postcss-nested": "^2.1.2",
-    "rucksack-css": "^1.0.2"
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.1.0"
+  },
+  "dependencies": {
+    "postcss-font-magician": "^2.2.1"
   }
 }

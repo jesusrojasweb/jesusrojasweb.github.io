@@ -1,15 +1,11 @@
 const gulp = require('gulp'),
-	pug = require('gulp-pug'),
+  pug = require('gulp-pug'),
 	postcss = require('gulp-postcss'),
-	  rucksack = require('rucksack-css'),
 	  cssnext = require('postcss-cssnext'),
-	  cssnested = require('postcss-nested'),
-	  mixins = require('postcss-mixins'),
-	  lost= require('lost'),
-	  sourcemaps = require('gulp-sourcemaps')
 	  atImport = require('postcss-import'),
-	  csswring = require('csswring'),
+	  cssnano = require('cssnano'),
 	  mqpacker = require('css-mqpacker'),
+    fontMagician = require('postcss-font-magician'),
 	browserSync = require('browser-sync').create()
 
 // Servidor de desarrollo
@@ -22,16 +18,26 @@ gulp.task('css', ()=>{
 
   const processor = [
     atImport(),
-    mixins(),
-    cssnested,
-    lost(),
-    rucksack(),
+    fontMagician({
+      variants: {
+          'Ubuntu Mono': {
+            '400': [],
+            '700': []
+          },
+          'Nunito': {
+            '400': [],
+            '600': [],
+            '700': []
+          }
+        }
+      }),
+    //cssnested,
     cssnext({browsers: ['> 5%', 'ie 8']}),
     mqpacker(),
-    csswring()
+    cssnano()
   ]
-  return gulp.src('./postcss-cssnext/*.css')
-    .pipe(sourcemaps.init())
+  return gulp.src('./src/postcss/estilos.css')
+    //.pipe(sourcemaps.init())
     .pipe(postcss(processor))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream())
@@ -39,12 +45,13 @@ gulp.task('css', ()=>{
 
 // Tarea para vigilar los cambios
 gulp.task('watch', ()=>{
-	gulp.watch('./postcss-cssnext/*.css', ['css'])
-	gulp.watch('./jade/*.pug', ['pug'])
-	gulp.watch('./*.html').on('change', browserSync.reload)
+	gulp.watch('./src/postcss/*.css', ['css'])
+  gulp.watch('./*.html').on('change', browserSync.reload)
+  gulp.watch('./src/jade/*.pug', ['pug'])
+	gulp.watch('./js/*.js').on('change', browserSync.reload)
 })
 gulp.task('pug', ()=>{
-  gulp.src('./jade/*.pug')
+  gulp.src('./src/jade/*.pug')
   .pipe(pug({
     pretty: false
   }))
