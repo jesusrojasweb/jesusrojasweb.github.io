@@ -36,7 +36,7 @@ gulp.task('css', ()=>{
     mqpacker(),
     cssnano()
   ]
-  return gulp.src('./src/postcss/estilos.css')
+  return gulp.src('./src/postcss/*.css')
     //.pipe(sourcemaps.init())
     .pipe(postcss(processor))
     .pipe(gulp.dest('./css'))

@@ -1,391 +1,62 @@
-@import './estilos.css';
-
+@import 'estilos.css';
 :root{
-	--FuenteP: 'Exo', sans-serif;
-	--FuenteS: 'Nunito', sans-serif;
+	--FuenteP: 'Ubuntu Mono', system-ui;
+	--FuenteS: 'Nunito', system-ui;
 
-	--colorTitle: #484848;
-	--colorAzul: #3971ff;
-	--colorTexto: #545454;
+	--colorFondo: #002374;
+	--colorPrincipal: #004fe5;
+	--colorSecundario: #00e3c1;
+	--colorTexto: #4c596b;
 
-	--colorBack: #f3f3f3;
-	--colorMenu: #f3f3f3;
-}
-
-@custom-media --mobile (max-width: 500px);
-@custom-media --tablet (max-width: 769px);
-body{
-	overflow-x: hidden;
-}
-.load{
-	height: 475px;
-}
-.JesusPaciones{
-	.load{
-		width: 90%;
-		padding: 0;
-		display: flex;
-		justify-content: center;
-		.loader{
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			.circulo,.movimiento{
-				width: 80px;
-				height: 80px;
-
-			}
-		}
-	}
-}
-.JesusCursos{
-	.load{
-		height: 207px;
-		width: 100%;
-		.loader{
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			.circulo,.movimiento{
-				width: 80px;
-				height: 80px;
-
-			}
-		}
-	}
-}
-.img-load{
-	opacity: 0;
-}
-.b-loaded{
-	opacity: 1;
-}
-.JesusHero{
-	&-cabecera{
-		background: var(--colorMenu);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-bottom: 2em;
-		&-precentacion{
-			width: 80%;
-			margin-top: 7em;
-			box-shadow: 0px 8px 20px 5px #d2d2d2;
-			box-sizing: border-box;
-			border-radius: .5em;
-			overflow: hidden;
-			&-portada{
-				&-imagen{
-					padding: 0;
-					margin: 0;
-					background: var(--colorTitle);
-					padding: .8em .8em 0;
-					img{
-						width: 100%;
-					}
-				}
-			}
-			&-cuerpo{
-				display: flex;
-				justify-content: space-between;
-				background: white;
-				padding: 1em 3em;
-				position: relative;
-				align-items: flex-end;
-				height: 200px;
-				&-imagen{
-					position: absolute;
-					left: 0;
-					right: 0;
-					top: -50%;
-					display: flex;
-					justify-content: center;
-					&-figure{
-						overflow: hidden;
-						border-radius: 50%;
-						border: .5em solid white;
-						margin: 0;
-						padding: 0;
-						width: 18%;
-						&-img{
-							width: 100%;
-						}
-					}
-				}
-				&-estudios{
-					&-title{
-						font-family: var(--FuenteP);
-						color: var(--colorTitle);
-					}
-				}
-				&-informacion{
-					&-title{
-						font-family: var(--FuenteP);
-						color: var(--colorTitle);
-						text-align: center;
-					}
-					&-subtitle{
-						font-family: var(--FuenteS);
-						text-transform: uppercase;
-						font-weight: lighter;
-						font-size: 1.2rem;
-						color: var(--colorAzul);
-					}
-				}
-				&-sociales{
-					&-title{
-						font-family: var(--FuenteP);
-						color: var(--colorTitle);
-					}
-					&-menu{
-						display: flex;
-						padding: 0;
-						&-item{
-							list-style: none;
-							a{
-								padding: .5em;
-								transition: .3s;
-								color: var(--colorAzul);
-								&:hover{
-									color: var(--colorTexto);
-								}
-							}
-						}
-					}
-
-				}
-			}
-		}
-		&-soy{
-			width: 80%;
-			padding-top: 3em;
-			font-family: var(--FuenteS);
-			color: var(--colorTexto);
-			strong{
-				color: var(--colorAzul);
-			}
-		}
-	}
-}
-.JesusPaciones{
-	padding-top: 3em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	&-title{
-		font-size: 2rem;
-		text-align: center;
-		&:before{
-			left: inherit;
-			width: 50%;
-		}
-	}
-	&-container{
-		display: grid;
-		grid-template-columns: repeat(2,1fr);
-		width: 80%;
-		margin-top: 4em;
-		&-item{
-			padding: 2em;
-			&:nth-child(2),&:nth-child(3){
-				margin: 2em;
-			}
-			&-title{
-				font-size: 1.5rem;
-				margin-bottom: 2em;
-			}
-			&-parrafo{
-				font-family: var(--FuenteS);
-				color: var(--colorTexto);
-				strong{
-					color: var(--colorAzul);
-				}
-				i{
-					color: var(--colorAzul);
-					font-size: 1.4rem;
-					padding-right: .5em;
-					animation: flotar 1.5s infinite;
-				}
-			}
-		}
-		img{
-			width: 100%;
-		}
-
-	}
-}
-.JesusCursos{
-	background: var(--colorBack);
-	padding: 3em 0;
-	&-title{
-		font-size: 1.8rem;
-		text-align: center;
-		&:before{
-			left: inherit;
-		}
-	}
-	&-container{
-		display: grid;
-		grid-template-columns: repeat(4,1fr);
-		width: 80%;
-		margin: 3em auto;
-		&-item{
-			transition: .3s;
-			position: relative;
-			&:hover{
-				transform: scale(1.1);
-				z-index: 2;
-			}
-		}
-		img{
-			width: 100%;
-			opacity: 0;
-			&.b-loaded{
-				opacity: 1;
-			}
-		}
-
-	}
-}
-.JesusCall{
-	padding: 3em 4em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	&-description{
-		&-title{
-			color: var(--colorTitle);
-			font-family: var(--FuenteP);
-			font-size: 2rem;
-		}
-		&-call{
-			font-family: var(--FuenteS);
-			color: var(--colorTexto);
-			font-size: 1.4rem;
-		}
-	}
-	&-boton{
+	--tamanoFuenteTitulo: 4.6rem;
+	--tamanoFuenteSubtitulo: 2.8rem;
+	--tamanoFuenteCaption: 1.7rem;
+	--tamanoFuenteTexto: 1.1rem;
+	
+	--distanciaPrincipal: 4.6em;
+	--distanciaSecundaria: 2.8em;
+	--distanciaTercera: 1.7em;
+	--distanciaCuarta: 1.1em;
+	
+	--btn: {
+		color: white;
+		background: gray;
+		border-radius: 10px;
+		padding: 1em 2em;
+		text-transform: uppercase;
+		font-weight: 600;
+		text-decoration: none;
+		border: 2px solid gray;
 		transition: .3s;
-		&:hover{
+	};
+	--margen: {
+		margin: 0 var(--distanciaPrincipal);
+		@media (--mobile) {
+			margin: 0 2em;
+			
+		}
+	};
+	--title: {
+		font-size: var(--tamanoFuenteTitulo);
+		color: var(--colorPrincipal);
+		font-family: var(--FuenteP);
+		@media (--mobile) {
+			font-size: 4rem;
+			
+		}
+		@media (--min) {
+			font-size: 3rem !important;
+			
+		}
+	};
+	--text: {
+		color: var(--colorTexto);
+		font-size: var(--tamanoFuenteTexto);
+		@media (--min) {
+			font-size: 1rem;
+		}
+	};
+	
 
-			transform: scale(.95);
-		}
-		&-btn{
-			background: var(--colorAzul);
-			color: white;
-			font-family: var(--FuenteP);
-			padding: 1em 2em;
-			font-size: 2rem;
-			border-radius: .5rem;
-			transition: .3s;
-			&:hover{
-				color: white;
-				text-decoration: none;
-			}
-		}
-	}
-}
-.JesusFooter{
-	background: var(--colorTitle);
-	padding: 2em 2em 1em 2em;
-	color: white;
-	font-family: var(--FuenteP);
 }
 
-@keyframes flotar {
-	0% {
-		transform: translateY(0%);	
-	}
-	25% {
-		transform: translateY(8%);	
-	}
-	75% {
-		transform: translateY(-8%);	
-	}	
-	100% {
-		transform: translateY(0%);
-	}			
-}
-@media screen and (max-width: 769px){
-	.JesusHero{
-		&-cabecera-precentacion-cuerpo{
-			height: 160px;
-			&-imagen{
-				top: -25%;
-			}
-			&-estudios-title,&-sociales-title{
-				font-size: 1.3rem;
-			}
-			&-informacion{
-				&-title{
-					font-size: 1.7rem;
-				}
-				&-subtitle{
-					font-size: 1rem;
-					text-align: center;
-				}
-			}
-		}
-	}
-	.JesusPaciones-container{
-		grid-template-columns: 1fr;
-		&-item{
-			padding: 0;
-			margin-bottom: 2em;
-			&:nth-child(3){
-				grid-row: 4;
-			}
-		}
-	}
-	.JesusCursos-container{
-		grid-template-columns: 1fr 1fr;
-	}
-	.JesusCall{
-		flex-direction: column;
-		text-align: center;
-		&-boton{
-			margin-top: 2em;
-		}
-	}
-}
-@media screen and (max-width: 500px){
-	.title{
-		font-size: 1.5rem;
-	}
-	.JesusHero-cabecera-precentacion{
-		&-portada-imagen{
-			padding: 0;
-		}
-		&-cuerpo{
-			height: 125px;
-			&-imagen-figure{
-				border: 2px solid white;
-				width: 25%;
-			}
-			&-estudios{
-				display: none;
-			}
-			&-informacion{
-				&-subtitle{
-					font-size: .8rem;
-				}
-			}
-			&-sociales{
-				display: none;
-			}
-		}
-	}	
-	.JesusCursos{
-		&-container{
-			margin-top: 4em;
-			grid-template-columns: 1fr;
-			&-item{
-				margin-bottom: 2em;
-			}
-		}
-	}
-}

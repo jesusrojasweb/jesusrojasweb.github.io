@@ -72,7 +72,6 @@ body{
 .load{
 	width: 100%;
 	height: 180px;
-	background: var(--verde);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -94,7 +93,6 @@ body{
 		& .circulo{
 			width: 100%;
 			height: 100%;
-			border: 8px solid color(var(--azul) a(80%));
 			border-radius: 50%;
 			position: absolute;
 			box-sizing: border-box;
