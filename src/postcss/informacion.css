@@ -149,16 +149,18 @@
 .detalles{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	margin: var(--distanciaPrincipal);
+	margin: 2em var(--distanciaPrincipal);
 	grid-gap: var(--distanciaSecundaria);
 	& .item{
 
 		& .titulo{
 			@apply --title;
+			color: var(--colorFondo);
 		}
 		& .title{
 			@apply --title;
 			font-size: var(--tamanoFuenteSubtitulo);
+			color: var(--colorFondo);
 		}
 		& .perfil{
 			text-align: center;
@@ -220,6 +222,86 @@
 					color: var(--colorTexto);
 				}
 			}
+		}
+		& .overview{
+			& .contenedor{
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: var(--distanciaCuarta);
+				margin-top: var(--distanciaTercera);
+				padding-bottom: var(--distanciaSecundaria);
+				border-bottom: 2px solid var(--colorPrincipal);
+				& .realizado{
+					display: flex;
+					flex-direction: column;
+					@apply --sombra;
+					border-radius: 5%;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					color: var(--colorTexto);
+					padding: .5em 0;
+					& .numero{
+						font-size: 1.5rem;
+					}
+					& .nombre{
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+		& .experiencia{
+			padding-top: var(--distanciaSecundaria);
+			& .title{
+				margin-bottom: .5em;
+			}
+			& .trabajo{
+				text-decoration: none;
+				color: var(--colorPrincipal);
+				& .nombre{
+					font-size: var(--tamanoFuenteCaption);
+				}
+				& .fecha{
+					font-size: var(--tamanoFuenteTexto);
+					color: var(--colorSecundario);
+				}
+				& .descripcion{
+					color: var(--colorTexto);
+					font-size: var(--tamanoFuenteTexto);
+				}
+			}
+		}
+		& .areas{
+			& .contenedor{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				margin-top: var(--distanciaTercera);
+				grid-gap: var(--distanciaCuarta);
+				& .area{
+					@apply --sombra;
+					border-radius: 50px;
+					text-align: center;
+					padding: .5em;
+					font-size: var(--tamanoFuenteTexto);
+					color: white;
+					&:nth-of-type(1){
+						background: #0074ea;
+					}
+					&:nth-of-type(2){
+						background: #56efda;
+					}
+					&:nth-of-type(3){
+						background: #9ebf7a;
+					}
+					&:nth-of-type(4){
+						background: #ffc387;
+					}
+				}
+
+			}
+		}
+		&:nth-of-type(2),&:nth-of-type(3){
+			margin-top: var(--distanciaPrincipal);
 		}
 		&:nth-of-type(3){
 			& img{
