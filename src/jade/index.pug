@@ -101,10 +101,10 @@ body
 	section.contacto#contacto
 		.contenedor
 			h2.title Contacto
-			form.formulario
+			form.formulario(action="enviar.php")
 				span.far.fa-user.icono
 
-				input#nombre.input(type="text", placeholder="Nombre")
+				input#nombre.input(type="text", placeholder="Nombre", name="nombre")
 
 				span.far.fa-envelope.icono
 
