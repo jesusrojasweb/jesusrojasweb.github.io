@@ -187,6 +187,7 @@
 			}
 			& .btn{
 				@apply --btn;
+				transition: .3s;
 				& span{
 					margin-right: .5em;
 				}
@@ -195,12 +196,20 @@
 					background: var(--colorPrincipal);
 					border-color: var(--colorPrincipal);
 					margin-right: 1em;
+					&:hover{
+						background: white;
+						color: var(--colorPrincipal);
+					}
 				}
 				&:nth-of-type(2){
 					color: var(--colorPrincipal);
 					background: white;
 					border-color: var(--colorPrincipal);
 					margin-right: 1em;
+					&:hover{
+						background: var(--colorPrincipal);
+						color: white;
+					}
 				}
 			}
 
@@ -303,6 +312,7 @@
 		& .curso{
 			text-decoration: none;
 			color: var(--colorPrincipal);
+			position: relative;
 			& img{
 				width: 100%;
 			}
@@ -321,7 +331,25 @@
 				}
 			}
 			& .over{
-				display: none;
+				visibility: hidden;
+				opacity: 0;
+				position: absolute;
+				width: 370.734px;
+				height: 286px;
+				top: -15em;
+				padding: 1em;
+				background: var(--colorSombra);
+				border-radius: 1em;
+				left: calc(-370.734px - 1em - 2.8em);
+				transition: .3s;
+
+			}
+			&:hover{
+				& .over{
+					visibility: visible;
+					display: inline;
+					opacity: 1;
+				}
 			}
 		}
 		&:nth-of-type(2),&:nth-of-type(3){
