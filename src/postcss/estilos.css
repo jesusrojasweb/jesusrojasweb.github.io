@@ -228,7 +228,7 @@ body{
 							right: 0;
 							bottom: 0;
 							flex-direction: column;
-							background: color(var(--colorSecundario) a(50%));
+							background: color(var(--colorFondo) a(50%));
 							justify-content: center;
 							align-items: center;
 							z-index: 1500;
@@ -236,7 +236,7 @@ body{
 								margin-bottom: 1em;
 								& a{
 									font-size: var(--tamanoFuenteSubtitulo);
-									color: var(--colorPrincipal);
+									color: white;
 								}
 							}
 						}

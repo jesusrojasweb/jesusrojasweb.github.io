@@ -8,8 +8,9 @@ head
 	link(rel="stylesheet", href="css/informacion.css")
 body
 	header.header
-		figure.logo
-			img(src="img/logo-blanco.png", alt="logo")
+		a(href="/")
+			figure.logo
+				img(src="img/logo.png", alt="logo")
 		nav.navbar
 			ul.menu#menu
 				li.item
@@ -29,12 +30,13 @@ body
 					img.img(src="img/perfil.jpg", alt="perfil")
 				h2.nombre Jesús Rojas
 				h3.cargo Junior Frontend Developer
-				a.btn.curriculum(href="curriculum.pdf" target="_blank")
-					span.far.fa-file
-					span Curriculum
-				a.btn.contactar(href="/#contacto")
-					span.far.fa-paper-plane
-					span Contactar
+				.botones
+					a.btn.curriculum(href="curriculum.pdf" target="_blank")
+						span.far.fa-file
+						span Curriculum
+					a.btn.contactar(href="/#contacto")
+						span.far.fa-paper-plane
+						span Contactar
 			article.habilidades
 				h2.title Habilidades
 				.contenedor
