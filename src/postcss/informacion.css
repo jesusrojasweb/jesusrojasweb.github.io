@@ -300,12 +300,36 @@
 
 			}
 		}
+		& .curso{
+			text-decoration: none;
+			color: var(--colorPrincipal);
+			& img{
+				width: 100%;
+			}
+			& .ver{
+				display: grid;
+				grid-template-columns: 1fr 5fr;
+				margin-bottom: var(--distanciaCuarta);
+				& .nombre{
+					font-size: var(--tamanoFuenteCaption);
+					text-transform: capitalize;
+				}
+				& .fecha{
+					color: var(--colorSecundario);
+					grid-column: 2;
+					font-size: var(--tamanoFuenteTexto);
+				}
+			}
+			& .over{
+				display: none;
+			}
+		}
 		&:nth-of-type(2),&:nth-of-type(3){
 			margin-top: var(--distanciaPrincipal);
 		}
 		&:nth-of-type(3){
-			& img{
-				width: 100%;
+			& .title{
+				margin-bottom: .5em;
 			}
 		}
 	}
