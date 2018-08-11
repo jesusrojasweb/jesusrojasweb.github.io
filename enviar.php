@@ -49,14 +49,18 @@ if( !$error ) {
   <meta charset="UTF-8"/>
   <title>Contacto</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/estilos.css"/>
   <link rel="stylesheet" href="css/informacion.css"/>
 </head>
 <body id="top">
+  <section class="contacto" id="contacto">
+  <div class="contenedor">
   <header class="header">
-    <figure class="logo">
-      <img src="img/logo-blanco.png" alt="logo"/>
-    </figure>
+    <a href="/">
+      <figure class="logo">
+        <img src="img/logo-blanco.png" alt="logo"/>
+      </figure></a>
     <nav class="navbar">
       <ul class="menu" id="menu">
         <li class="item">
@@ -73,8 +77,8 @@ if( !$error ) {
   </header>
 
     <?php if( $error ) { ?>
-    <section class="contacto" id="contacto">
-      <div class="contenedor">
+    <h1>Algo paso vuelve a enviar el correo</h1>
+    
         <h2 class="title">Contacto</h2>
         <form class="formulario" action="enviar.php">
           <span class="far fa-user icono"></span>
@@ -88,11 +92,13 @@ if( !$error ) {
           <button class="btn" type="submit"><span class="far fa-paper-plane"></span>
           </button>
         </form>
-      </div>
-    </section>
+      
   <?php } else { ?>
   <p>Gracias por ponerse en contacto conmigo. Le respondere lo mas pronto que sea posible</p>
   <?php } ?>
+  </div>
+    </section>
+  <footer class="footer"><div class="contenedor"><p class="right">&copy; Todos los Derechos Reservados 2018</p><ul class="social"><li class="item"><a href="https://facebook.com/jesusrojasweb" target="_blank"><span class="fab fa-facebook"></span></a></li><li class="item"><a href="https://twitter.com/jesusrojasweb" target="_blank"><span class="fab fa-twitter"></span></a></li><li class="item"><a href="https://www.youtube.com/channel/UCDEtrxlTfQr55A4G8fxs-XA" target="_blank"><span class="fab fa-youtube"></span></a></li><li class="item"><a href="https://codepen.io/jesusrojasweb" target="_blank"><span class="fab fa-codepen"></span></a></li><li class="item"><a href="https://instagram.com/jesusrojasweb" target="_blank"><span class="fab fa-instagram"></span></a></li><li class="item"><a href="https://github.com/jesusrojasweb" target="_blank"><span class="fab fa-github"></span></a></li></ul></div></footer>
   <script src="js/jquery.js"></script>
   <script src="js/app.js"></script>
 </body>
