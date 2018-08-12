@@ -1,151 +1,20 @@
-@import 'estilos.css';
+@import 'variables.css';
+@import 'inicio.css';
+@import 'header.css';
+@import 'footer.css';
 :root{
-	--FuenteP: 'Ubuntu Mono', system-ui;
-	--FuenteS: 'Nunito', system-ui;
-
-	--colorFondo: #002374;
-	--colorPrincipal: #004fe5;
-	--colorSecundario: #00e3c1;
-	--colorTexto: #4c596b;
-	--colorSombra: #cbd5e4;
-
-
-	--tamanoFuenteTitulo: 4.6rem;
-	--tamanoFuenteSubtitulo: 2.8rem;
-	--tamanoFuenteCaption: 1.7rem;
-	--tamanoFuenteTexto: 1.1rem;
-	
-	--distanciaPrincipal: 4.6em;
-	--distanciaSecundaria: 2.8em;
-	--distanciaTercera: 1.7em;
-	--distanciaCuarta: 1.1em;
-	
 	--btn: {
 		color: white;
 		background: gray;
 		border-radius: 50px;
-		padding: .5em 2em;		
+		padding: .5em 1em;
 		font-weight: 600;
 		text-decoration: none;
 		font-size: var(--tamanoFuenteTexto);
 		border: 2px solid gray;
 		transition: .3s;
 	};
-	--margen: {
-		margin: 0 var(--distanciaPrincipal);
-		@media (--mobile) {
-			margin: 0 2em;
-			
-		}
-	};
-	--title: {
-		font-size: var(--tamanoFuenteTitulo);
-		color: var(--colorPrincipal);
-		font-family: var(--FuenteP);
-		@media (--mobile) {
-			font-size: 4rem;
-			
-		}
-		@media (--min) {
-			font-size: 3rem !important;
-			
-		}
-	};
-	--text: {
-		color: var(--colorTexto);
-		font-size: var(--tamanoFuenteTexto);
-		@media (--min) {
-			font-size: 1rem;
-		}
-	};
-	--sombra: {
-		box-shadow: 0 0 30px 3px var(--colorSombra);
-	};
-	
-
 }
-.header{
-	@apply --margen;
-	padding-top: 2em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	& .logo{		
-		width: 30%;
-		@media (--tablet) {
-			width: 20%;
-		}
-		@media (--mobile) {
-			width: 40% !important;
-		}
-		& img{
-			width: 100%;
-		}
-	}
-	& .burger{
-		display: none;
-		background: none;
-		color: var(--colorPrincipal);
-		border: none;
-		font-size: var(--tamanoFuenteSubtitulo);
-		z-index: 2000;
-		position: fixed;
-		right: 1em;
-		@media (--mobile) {
-			display: inline;
-
-		}
-	}
-	& .navbar{
-		& .menu{
-			display: flex;
-			justify-content: center;
-			@media (--mobile) {
-				display: none;
-				&.active {
-					animation-name: aparecer;
-					-webkit-animation-name: aparecer;	
-
-					animation-duration: 1s;	
-					-webkit-animation-duration: 1s;
-
-					animation-timing-function: ease-in-out;	
-					-webkit-animation-timing-function: ease-in-out;	
-					display: flex;
-					position: fixed;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					flex-direction: column;
-					background: color(var(--colorFondo) a(50%));
-					justify-content: center;
-					align-items: center;
-					z-index: 1500;
-					& .item{
-						margin-bottom: 1em;
-						& a{
-							font-size: var(--tamanoFuenteSubtitulo);
-							color: white;
-						}
-					}
-				}
-			}
-			& .item{
-				padding-right: 2em;
-				list-style: none;
-				& a{
-					color: var(--colorPrincipal);
-					text-decoration: none;
-					font-size: 1.17rem;
-					text-transform: uppercase;
-					font-weight: 600;
-				}
-			}
-		}
-	}
-}
-@custom-media --desktop (width > 800px);
 .detalles{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -157,8 +26,13 @@
 	@media (--mobile) {
 		margin: 2em;
 	}
+	@media (--min) {
+		margin: 1em !important;
+	}
 	& .item{
-
+		@media (--min) {
+			width: 95%;
+		}
 		& .titulo{
 			@apply --title;
 			color: var(--colorFondo);
@@ -171,6 +45,7 @@
 				font-size: var(--tamanoFuenteSubtitulo);
 			}
 		}
+		/* --------- Perfil------*/
 		& .perfil{
 			text-align: center;
 			padding-bottom: var(--distanciaSecundaria);
@@ -252,6 +127,7 @@
 				}
 			}
 		}
+		/* --------- Overview------*/
 		& .overview{
 			& .contenedor{
 				display: grid;
@@ -314,21 +190,22 @@
 					font-size: var(--tamanoFuenteTexto);
 					color: white;
 					&:nth-of-type(1){
-						background: #0074ea;
+						background: #e332a4;
 					}
 					&:nth-of-type(2){
-						background: #56efda;
+						background: #00c5be;
 					}
 					&:nth-of-type(3){
-						background: #9ebf7a;
+						background: #00d152;
 					}
 					&:nth-of-type(4){
-						background: #ffc387;
+						background: #ed5c01;
 					}
 				}
 
 			}
 		}
+		/* --------- Educación------*/
 		& .curso{
 			text-decoration: none;
 			color: var(--colorPrincipal);

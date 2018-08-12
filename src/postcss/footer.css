@@ -1,0 +1,32 @@
+.footer{
+	background: var(--colorSecundario);
+	& .contenedor{
+		@apply --margen;
+		display: flex;
+		justify-content: space-between;
+		@media (--mobile) {
+			flex-direction: column;
+		}
+		& .right{
+			color: white;
+			font-family: var(--FuenteP);
+			font-size: var(--tamanoFuenteCaption);
+		}
+		& .social{
+			display: flex;
+			list-style: none;
+			align-items: center;
+			& .item {
+				margin: 1em;
+				@media (--min) {
+					margin: .8em;
+				}
+				& a{
+
+					color: white;
+					font-size: var(--tamanoFuenteCaption);
+				}
+			}
+		}
+	}
+}
