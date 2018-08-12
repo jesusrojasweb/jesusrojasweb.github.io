@@ -62,3 +62,15 @@ body{
 	transition: .3s;
 }
 
+.derecha{
+	transform: translate(-100%);
+	opacity: 0;
+}
+.izquierda{
+	transform: translate(100%);
+	opacity: 0;
+}
+.mostrar{
+	transform: scale(0);
+	opacity: 0.0;
+}

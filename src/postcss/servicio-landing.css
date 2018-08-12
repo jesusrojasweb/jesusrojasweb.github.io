@@ -59,7 +59,7 @@
 			}
 			& .item.imagen{
 				justify-self: center;
-				@media (--min) {
+				@media (--mobile) {
 					& img{
 
 						width: 100%;

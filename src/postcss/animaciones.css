@@ -1,3 +1,41 @@
+.mover-derecha{
+	animation-name: mover-derecha;
+	animation-duration: 1s;	
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;	
+}
+
+@keyframes mover-derecha{
+	0%{
+		transform: translate(-100%);
+	}
+	90%{
+		transform: translate(5%);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+.mover-izquierda{
+	animation-name: mover-izquierda;
+	animation-duration: 1s;	
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;	
+}
+
+@keyframes mover-izquierda{
+	0%{
+		transform: translate(100%);
+	}
+	90%{
+		transform: translate(-5%);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
 @keyframes rotar{
 	0%{
 		transform: rotate(-45deg);
@@ -6,7 +44,10 @@
 		transform: rotate(315deg);
 	}
 }
-
+.aparecer{
+	animation: aparecer 1s ease-out;
+	animation-fill-mode: forwards;
+}
 
 @keyframes aparecer {
 	0% {
@@ -43,3 +84,44 @@
 		opacity: 1;	
 	}		
 }
+.form{
+	animation: form 1s ease;
+	animation-fill-mode: forwards;
+}
+@media (--desktop) {
+	
+	@keyframes form{
+		0%{
+			width: 0%
+		}
+		100%{
+			width: 60%;
+			opacity: 1;
+		}
+	}
+}
+@media (--tablet) {
+
+	@keyframes form{
+		0%{
+			width: 0%
+		}
+		100%{
+			width: 80%;
+			opacity: 1;
+		}
+	}
+}
+@media (--mobile) {
+
+	@keyframes form{
+		0%{
+			width: 0%
+		}
+		100%{
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}
+	

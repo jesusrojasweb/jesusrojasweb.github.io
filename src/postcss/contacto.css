@@ -5,7 +5,7 @@
 		background: color(var(--colorFondo) a(50%));
 		padding: var(--distanciaPrincipal);
 		@media (--mobile) {
-			padding: 2em;
+			padding: 1em;
 			
 		}
 		& .title{
@@ -23,11 +23,14 @@
 			display: grid;
 			grid-template-columns: 1fr 10fr;
 			grid-row-gap: var(--distanciaTercera);
+			opacity: 0;
 			@media (--tablet) {
 				width: 80%;
 			}
 			@media (--mobile) {
 				width: 100% !important;
+				margin: 0;
+				grid-template-columns: 1fr 15fr;
 				& .icono, & .input, & .textarea{
 					font-size: 1.3rem;
 				}

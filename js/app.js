@@ -65,6 +65,39 @@ $burger.addEventListener('click', mostrar)
 function mostrar() {
   $menu.classList.toggle('active');
 }
+
+$(window).scroll(function() {
+    var topOfWindow = $(window).scrollTop();
+    $('#servicios').each(function(){
+      var imagePos = $(this).offset().top - 300;
+      var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow) {
+          $('.derecha').addClass('mover-derecha')
+          $('.izquierda').addClass('mover-izquierda')
+
+        }
+    })
+    $('#call').each(function(){
+      var imagePos = $(this).offset().top - 600;
+      var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow) {
+          $('.mostrar').addClass('aparecer')
+
+        }
+    })
+    $('#contacto').each(function(){
+      var imagePos = $(this).offset().top - 200;
+      var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow) {
+          $('.formulario').addClass('form')
+
+        }
+    })
+})
+/*
  //Ver mas
 /*$('#JesusEdu-list-mas').on('click', function(e){
    e.preventDefault();
