@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesús Rojas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header class="header">
@@ -13,13 +16,13 @@
                 <figure class="navbar-logo"><img src="img/logo-horizontal-positivo.png" alt="logo header" class="logo-image"></figure>
             </a>
             
+            <ul class="header-menu">
+                <li class="menu-lista"><a href="#" class="lista-link">Sobre Mi</a></li>
+                <li class="menu-lista"><a href="#" class="lista-link">Servicios</a></li>
+                <li class="menu-lista"><a href="#" class="lista-link">Blog</a></li>
+                <li class="menu-lista"><a href="#" class="lista-link">Contacto</a></li>
+            </ul>
         </nav>
-        <ul class="header-menu">
-            <li class="menu-lista"><a href="#" class="lista-link">Sobre Mi</a></li>
-            <li class="menu-lista"><a href="#" class="lista-link">Servicios</a></li>
-            <li class="menu-lista"><a href="#" class="lista-link">Blog</a></li>
-            <li class="menu-lista"><a href="#" class="lista-link">Contacto</a></li>
-        </ul>
     </header>
     <div class="banner-container">
         <div class="banner">
@@ -39,42 +42,76 @@
                 </div>
                 <div class="informacion-texto">
                     <h3 class="texto-headline">¿Que haces?</h3>
-                    <h2 class="texto-titulo">Tu empresa digital</h2>
-                    <p class="texto-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit. Voluptates, accusantium ratione, expedita deleniti veniam quisquam, molestiae aliquid ipsam iure nisi a qui similique vel id itaque et vitae?</p>
+                    <h2 class="texto-titulo">Cosa de profesionales</h2>
+                    <p class="texto-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate dignissimos eveniet id ea voluptates officia sequi illo, quaerat quidem fugiat beatae iusto dolore obcaecati quis eum quasi natus in harum! Quam eos corporis adipisci! Ut nemo harum, totam laborum quisquam id aspernatur temporibus suscipit voluptate consequatur quasi vitae mollitia quo fugit? Quisquam nesciunt illo voluptas! Nam neque consequuntur repudiandae!</p>
                 </div>
             </section>
             <section class="banner-item banner-servicios">
-                <div class="servicios-servicio">
-                    <div class="servicio-informacion">
-                        <h3 class="servicio-informacion-titulo">Branding (){</h3>
-                        <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, deserunt est?</p>
-                        <span class="servicio-informacion-cierre">}</span><span class="fab fa-facebook servicio-informacion-icono"></span>
+                <div class="servicios-header">
+                    <div class="servicios-servicio">
+                        
+                        <div class="informacion-texto">
+    
+                            <h3 class="servicio-informacion-titulo">Branding ( ){</h3>
+    
+                            <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, deserunt est?</p>
+                            <span class="servicio-informacion-cierre">}</span>
+                        </div>
+                        <div class="informacion-media">
+                            <div class="icono">
+
+                                <span class="fab fa-facebook servicio-informacion-icono"></span>
+                            </div>
+                        </div>
+                        <div class="servicio-imagen"><img src="img/planeta-03.png" alt="planeta branding" class="imagen-planeta"></div>
                     </div>
-                    <div class="servicio-imagen"><img src="img/planeta-03.png" alt="planeta branding" class="imagen-planeta"></div>
+                    <div class="servicios-servicio">
+                        <div class="informacion-texto">
+    
+                            <h3 class="servicio-informacion-titulo">Backend ( ){</h3>
+    
+                            <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, libero modi!</p>
+                            <span class="servicio-informacion-cierre">}</span>
+                        </div>
+                        <div class="informacion-media">
+                            <div class="icono">
+
+                                <span class="fa fa-code servicio-informacion-icono"></span>
+                            </div>
+                        </div>
+                        <div class="servicio-imagen"><img src="img/planeta-02.png" alt="planeta backend" class="imagen-planeta"></div>
+                    </div>
+                    
                 </div>
-                <div class="servicios-servicio">
-                    <div class="servicio-informacion">
-                        <h3 class="servicio-informacion-titulo">Frontend (){</h3>
-                        <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ratione possimus!</p>
-                        <span class="servicio-informacion-cierre">}</span>
+                <div class="servicios-footer">
+
+                    <div class="servicios-servicio">
+                        <div class="informacion-texto">
+    
+                            <h3 class="servicio-informacion-titulo">Frontend ( ){</h3>
+                            <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ratione possimus!</p>
+                            <span class="servicio-informacion-cierre">}</span>
+                        </div>
+                        <div class="informacion-media">
+                            <div class="servicio-imagen"><img src="img/planeta-01.png" alt="planeta frontend" class="imagen-planeta"></div>
+                        </div>
                     </div>
-                    <div class="servicio-imagen"><img src="img/planeta-01.png" alt="planeta frontend" class="imagen-planeta"></div>
-                </div>
-                <div class="servicios-servicio">
-                    <div class="servicio-informacion">
-                        <h3 class="servicio-informacion-titulo">Backend (){</h3>
-                        <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, libero modi!</p>
-                        <span class="servicio-informacion-cierre">}</span><span class="fa fa-code servicio-informacion-icono"></span>
+                    <div class="servicios-servicio">
+                        <div class="informacion-texto">
+    
+                            <h3 class="servicio-informacion-titulo">Diseño ( ){</h3>
+    
+                            <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, hic inventore?</p>
+                            <span class="servicio-informacion-cierre">}</span>
+                        </div>
+                        <div class="informacion-media">
+                            <div class="icono">
+
+                                <span class="fa fa-pencil-alt servicio-informacion-icono"></span>
+                            </div>
+                        </div>
+                        <div class="servicio-imagen"><img src="img/planeta-04.png" alt="planeta-diseño" class="imagen-planeta"></div>
                     </div>
-                    <div class="servicio-imagen"><img src="img/planeta-02.png" alt="planeta backend" class="imagen-planeta"></div>
-                </div>
-                <div class="servicios-servicio">
-                    <div class="servicio-informacion">
-                        <h3 class="servicio-informacion-titulo">Diseño</h3>
-                        <p class="servicio-informacion-descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, hic inventore?</p>
-                        <span class="servicio-informacion-cierre"></span><span class="fa fa-pencil-alt servicio-informacion-icono"></span>
-                    </div>
-                    <div class="servicio-imagen"><img src="img/planeta-04.png" alt="planeta-diseño" class="imagen-planeta"></div>
                 </div>
             </section>
         </div>
@@ -86,7 +123,7 @@
     </div>
 
     <section class="portafolio">
-        <div class="protafolio-servicio">
+        <div class="portafolio-servicio">
             <div class="portafolio-header">
                 <h2 class="portafolio-header-title">&lt;Backend/></h2>
             </div>
@@ -99,7 +136,7 @@
                 </a>
             </div>
         </div>
-        <div class="protafolio-servicio">
+        <div class="portafolio-servicio">
             <div class="portafolio-header">
                 <h2 class="portafolio-header-title">&lt;Branding/></h2>
             </div>
@@ -112,7 +149,7 @@
                 </a>
             </div>
         </div>
-        <div class="protafolio-servicio">
+        <div class="portafolio-servicio">
             <div class="portafolio-header">
                 <h2 class="portafolio-header-title">&lt;Frontend/></h2>
             </div>
@@ -125,7 +162,7 @@
                 </a>
             </div>
         </div>
-        <div class="protafolio-servicio">
+        <div class="portafolio-servicio">
             <div class="portafolio-header">
                 <h2 class="portafolio-header-title">&lt;Diseño/></h2>
             </div>
@@ -142,6 +179,7 @@
 
     <section class="call-to-action">
         <div class="action-call">
+            <div class="rombo"></div>
             <h2 class="call-copy">¿Tienes un proyecto en mente? Tomemos un cafe.</h2>
         </div>
         <div class="call-action"><a href="#" class="btn">Mis servicios</a><a href="#" class="btn">Hablemos</a></div>
@@ -159,18 +197,16 @@
             </ul>
             <p class="right">&copy; 2020 - Todos los derechos reservados</p>
         </div>
-        <div class="footer-menu">
-            <nav class="footer-nav">
-                <ul class="footer-nav-menu">
-                    <li class="footer-nav-menu-item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="footer-nav-menu-item"><a href="#">Servicios</a></li>
-                    <li class="footer-nav-menu-item"><a href="">Blog</a></li>
-                    <li class="footer-nav-menu-item"><a href="">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-menu">
+                <li class="footer-nav-menu-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="footer-nav-menu-item"><a href="#">Servicios</a></li>
+                <li class="footer-nav-menu-item"><a href="">Blog</a></li>
+                <li class="footer-nav-menu-item"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
