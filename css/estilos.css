@@ -7,12 +7,20 @@ body{
     background: #05042c;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0 5em;
+    position: relative;
+    overflow-x: hidden;
 }
 h1,h2{
     font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .header{
-    
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 5em;
+    box-sizing: border-box;
+    z-index: 1000;
 }
     .header .header-navbar{
         display: flex;
@@ -44,8 +52,62 @@ h1,h2{
             font-size: 1.1rem;
         }
 
-.banner-container{}
-    .banner-container .banner{}
+.banner-container{
+    position: relative;
+    width: calc(100vw - 11em);
+    overflow: hidden;
+}
+    .banner-container .banner-buttons{
+        position: absolute;
+        bottom: 2em;
+        width: 100%;
+        left: 0;
+    }
+    .banner-buttons .banner-buttons-container{
+            display: flex;
+            margin: 0 auto;
+            width: fit-content;
+        }
+            .banner-buttons .banner-button{
+                font-family: 'Montserrat', system-ui;
+                background: none;
+                color: white;
+                border-right: 1px solid white;
+                border-bottom: 1px solid white;
+                border-left: 1px solid white;
+                border-top: none;
+                font-size: 1rem;
+                padding: .5em 6em;
+                margin-right: 2em;
+                opacity: .5;
+                font-weight: 600;
+            }
+            .banner-buttons .banner-button:last-child{
+                margin-right: 0;
+            }
+            .banner-buttons .banner-button:active{
+                border-top: none;
+            }
+            .banner-buttons .banner-button.active{
+                border-top: none;
+                opacity: 1;
+            }
+    
+    .banner-container .banner{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+        .banner .banner-item{
+            height: 100vh;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+            .banner .banner-item.active{
+                left: 0;
+            }
         .banner .banner-hero{
             display: flex;
             align-items: center;
@@ -53,7 +115,7 @@ h1,h2{
             padding: 0 7em;
         }
             .banner-hero .hero-imagen{
-                width: 55%;
+                width: 45%;
             }
                 .hero-imagen img{
                     width: 100%;
@@ -89,7 +151,6 @@ h1,h2{
                     margin-left: 5px;
                 }
         .banner .banner-informacion{
-            margin-top: 4em;
             display: grid;
             grid-template-columns: 4fr 5fr;
             align-items: center;
@@ -102,7 +163,8 @@ h1,h2{
             .banner-informacion .informacion-texto{
                 padding: 5em;
                 color: white;
-                text-transform: uppercase
+                text-transform: uppercase;
+                margin-top: 3em;
             }
                 .informacion-texto .texto-headline{
                     color: #8d4189;
@@ -144,12 +206,16 @@ h1,h2{
                 }
         .banner .banner-servicios{
             color: white;
-            margin-top: 4em;
             max-width: 100%;
             height: 100vh;
             overflow: hidden;
-            padding: 7em 10em 0 0;
+            padding: 3em 10em 0 0;
+            margin-top: 8em;
+            width: 100%;
         }
+            .banner-servicios .banner-servicios-container{
+                position: relative;
+            }
             .banner .banner-servicios img{
                 width: 100%;
             }
@@ -160,7 +226,7 @@ h1,h2{
             .banner-servicios .servicios-footer{
                 display: flex;
                 justify-content: flex-end;
-                height: 400px;
+                height: 300px;
             }
                 .servicios-footer .servicios-servicio:first-child{
                     margin-right: 16em;
@@ -181,12 +247,13 @@ h1,h2{
                             top: 0;
                         }
                     .servicios-footer .servicios-servicio:first-child .servicio-imagen{
-                        width: 450px;
-                        top: -30em;
-                        right: -18em;
+                        width: 418px;
+                        top: -29em;
+                        right: -17em;
                     }
                 .servicios-footer .servicios-servicio:last-child{
                     align-self: flex-end;
+                    margin-bottom: 3em;
                 }
             .banner-servicios .servicios-servicio{
                 display: flex;
