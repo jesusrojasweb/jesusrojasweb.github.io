@@ -1,115 +1,84 @@
-/* ---------- Scroll ----------*/
-/*
-$(window).scroll(function() {
-  	var topOfWindow = $(window).scrollTop();
-  	$('#top').each(function(){
-    var imagePos = $(this).offset().top;
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow) {
-        $('#burguer').addClass('active');
-      }
-    });
-  	$('#habilidades').each(function(){
-  		var imagePos = $(this).offset().top;
-	    var topOfWindow = $(window).scrollTop();
+let $banner = document.getElementById('banner')
+let $bannerItems = $banner.children
+let $bannerButtons = document.querySelectorAll('.banner-button')
+let $body = document.getElementById('body')
+let bannerLength = $bannerItems.length;
+let bannerActive = true
 
-	      if (imagePos < topOfWindow) {
-	      	$('.noventa').css('width', '90%');
-	      	$('.ochenta').css('width', '80%');
-	      	$('.sesenta').css('width', '60%');
+document.addEventListener('wheel',handleScroll);
 
-	      }
-  	})
-})*/
-/* ---------- Menu ----------*/
-/*var consulta = window.matchMedia('(max-width: 500px)');
-var $burguerButton = document.getElementById('burguer');
-  var $menu = document.getElementById('menu');
-  function toggleMenu(){
-    $menu.classList.toggle('active');
-  };
-  function showMenu(){
-    $menu.classList.add('active');
-  };
-  function hideMenu(){
-    $menu.classList.remove('active');
-  };
+function handleScroll(e) {
+  
+  let top = body.getBoundingClientRect().top
 
-  function mediaQuery() {
-    if (consulta.matches) {
-      // si se cumple hagamos esto
-      console.log('se cumplió la condicion');
-      $burguerButton.addEventListener('touchstart', toggleMenu);
-    } else {
-      $burguerButton.removeEventListener('touchstart', toggleMenu);
-      // si no se cumple hagamos esto
-      console.log('no se cumplió la condicion');
+  if(top === 0){
+    $body.classList.remove('active')
+    bannerActive = true
+  }
+  
+  if(bannerActive){
+
+    if(e.deltaY < 0){
+      banner(false)
+    }
+    if(e.deltaY > 0){
+      banner(true)
     }
   }
-  mediaQuery();
-  /* ---------- Hammer ----------*/
-  /*var $body = document.body;
-
-  var gestos = new Hammer($body);
-  gestos.on('swipeleft', showMenu);
-  gestos.on('swiperight', hideMenu);
-/* ---------- Blazy ----------*/
-var bLazy = new Blazy({
-  selector: 'img'
-});
-
-var $burger = document.getElementById("burger");
-var $menu = document.getElementById("menu");
-
-$burger.addEventListener('click', mostrar)
-function mostrar() {
-  $menu.classList.toggle('active');
 }
 
-$(window).scroll(function() {
-    var topOfWindow = $(window).scrollTop();
-    $('#servicios').each(function(){
-      var imagePos = $(this).offset().top - 300;
-      var topOfWindow = $(window).scrollTop();
+for(const boton of $bannerButtons){
+  boton.addEventListener('click',(e)=>{
+    let opcion = e.path[0].innerText -1
+    handleSiguiente(opcion)
+  })
+}
 
-        if (imagePos < topOfWindow) {
-          $('.derecha').addClass('mover-derecha')
-          $('.izquierda').addClass('mover-izquierda')
+function banner(opcion){
+  
+  for(let i = 0; i < bannerLength; i++){
+    let next;
+    let itemClassActive = $bannerItems[i].classList[2]
+    if(itemClassActive){
 
-        }
-    })
-    $('#call').each(function(){
-      var imagePos = $(this).offset().top - 600;
-      var topOfWindow = $(window).scrollTop();
+      if(opcion){
+        next = i + 1
+      }
+  
+      if(!opcion){
+        next = i -1
+      }
 
-        if (imagePos < topOfWindow) {
-          $('.mostrar').addClass('aparecer')
+      if(next >= bannerLength){
+        body.classList.add('active')
+        bannerActive = false
+        break
+      }
+      if(next < 0){
+        next = 0;
+      }
+      
+      handleSiguiente(next)
+      break
+    }
 
-        }
-    })
-    $('#contacto').each(function(){
-      var imagePos = $(this).offset().top - 200;
-      var topOfWindow = $(window).scrollTop();
+  }
+}
 
-        if (imagePos < topOfWindow) {
-          $('.formulario').addClass('form')
+function handleSiguiente(opcion) {
+  removerAllActive()
+  $bannerItems[opcion].classList.add('active')
+  $bannerButtons[opcion].classList.add('active')
+}
 
-        }
-    })
-})
-/*
- //Ver mas
-/*$('#JesusEdu-list-mas').on('click', function(e){
-   e.preventDefault();
-   console.log(this);
+function removerAllActive() {
 
-   verMas(this);
-})
- function verMas(a) {
-   $('.oculto').removeClass('oculto').addClass('aparecer');
-   $('#'+a.id).addClass('oculto');
+  removeClassItem($bannerItems)
+  removeClassItem($bannerButtons)
 
-<<<<<<< HEAD
- }
-=======
- }*/
+}
+function removeClassItem(padre) {
+  for(const item of padre){
+    item.classList.remove('active')
+  } 
+}
