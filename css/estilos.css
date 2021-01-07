@@ -456,9 +456,6 @@ h1,h2{
             top: -.5em;
             /* z-index: -1; */
         }
-    .call-to-action .call-action{
-        /* width: 50%; */
-    }
         .call-action .btn{
             background: #49378d;
             padding: 1em 2em;
@@ -509,9 +506,6 @@ h1,h2{
         .footer-informacion .right{
             color: white;
         }
-    .footer .footer-nav{
-
-    }
         .footer-nav .footer-nav-menu{
             list-style:none;
             display: flex;
@@ -528,3 +522,117 @@ h1,h2{
                 .footer-nav-menu a:hover{
                     color: #651279;
                 }
+
+
+@media screen and (max-width: 500px){
+    body{
+        padding: 0 2em;
+    }
+    #particles-js {
+        height: 100vh;
+    }
+    .header{
+        padding: 0 2em;
+    }
+        .header-navbar .navbar-home {
+            width: 50%;
+        }
+        .header-navbar .burger {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+        }
+        .header .header-menu{
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: calc(100vw - 6em);
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            background: rgb(71 51 141 / 90%);
+        }
+        .header .header-menu.active{
+            left: 0;
+        }
+            .header-menu .menu-lista{
+                margin-bottom: 2em;
+            }
+        
+    .banner-container {
+        width: calc(100vw - 3.5em);
+        overflow: visible;
+    }
+        .banner-container .banner {
+            position: relative;
+            height: auto;
+            width: 100%;
+        }
+            .banner-container .banner-buttons {
+                display: none;
+            }
+            .banner .banner-item {
+                height: auto;
+                box-sizing: border-box;
+                position: relative;
+                opacity: 1;
+                left: 0;
+            }
+            .banner .banner-hero{
+                padding: 0;
+                height: 100vh;
+            }
+                .banner-hero .hero-imagen {
+                    display: none;
+                }
+                .banner-hero .hero-titulos {
+                    margin: 0;
+                    height: 200px;
+                }
+                    .hero-titulos .titulos-principal {
+                        font-size: 1.6em;
+                        margin-bottom: -0.2em;
+                    }
+                    .hero-titulos .titulos-creativo {
+                        letter-spacing: 6px;
+                        margin: 0 auto;
+                        font-size: 1.5rem;
+                    }
+                    .hero-titulos .titulos-cargo {
+                        font-size: 2rem;
+                    }
+            .banner .banner-informacion {
+                grid-template-columns: 1fr;
+            }
+                .banner-informacion .informacion-imagen-container{
+                    display: none;
+                }
+                .banner-informacion .informacion-texto{
+                    margin: 0;
+                    padding: 0;
+                }
+                    .informacion-texto .texto-titulo {
+                        font-size: 3rem;
+                    }
+            .banner .banner-servicios {
+                height: auto;
+                overflow: visible;
+                padding: 0;
+                margin-top: 8em;
+                width: 100%;
+            }
+                .banner-servicios .servicios-header {
+                    flex-direction: column;
+                }
+                .banner-servicios .servicios-footer {
+                    flex-direction: column;
+                    height: auto;
+                }
+
+
+
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
