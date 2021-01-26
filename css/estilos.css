@@ -34,7 +34,17 @@ h1,h2{
     padding: 0 5em;
     box-sizing: border-box;
     z-index: 1000;
+    transition: .3s;
 }
+    header.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #0f0f46;
+    }
+    header.active .header-navbar{
+        padding: 2.4em 0 1em;
+    }
     .header .header-navbar{
         display: flex;
         justify-content: space-between;
@@ -557,6 +567,7 @@ h1,h2{
             flex-direction: column;
             justify-content: center;
             background: rgb(71 51 141 / 90%);
+            transition: .3s;
         }
         .header .header-menu.active{
             left: 0;

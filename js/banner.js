@@ -4,8 +4,15 @@ let $bannerButtons = document.querySelectorAll('.banner-button')
 let $body = document.getElementById('body')
 let bannerLength = $bannerItems.length;
 let bannerActive = true
+let viewportWidth = window.innerWidth
 
-document.addEventListener('wheel',handleScroll);
+if(viewportWidth > 500){
+
+  document.addEventListener('wheel',handleScroll);
+} else{
+  $body.classList.add('active')
+}
+
 
 function handleScroll(e) {
   
@@ -50,9 +57,7 @@ function banner(opcion){
       }
 
       if(next >= bannerLength){
-        body.classList.add('active')
-        bannerActive = false
-        smoothScroll('portafolio', 1000);
+        outBanner('portafolio')
         break
       }
       if(next < 0){
@@ -82,4 +87,10 @@ function removeClassItem(padre) {
   for(const item of padre){
     item.classList.remove('active')
   } 
+}
+
+function outBanner(to) {
+  body.classList.add('active')
+  bannerActive = false
+  smoothScroll(to, 1000);
 }
