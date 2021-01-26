@@ -1,115 +1,64 @@
-/* ---------- Scroll ----------*/
-/*
-$(window).scroll(function() {
-  	var topOfWindow = $(window).scrollTop();
-  	$('#top').each(function(){
-    var imagePos = $(this).offset().top;
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow) {
-        $('#burguer').addClass('active');
-      }
-    });
-  	$('#habilidades').each(function(){
-  		var imagePos = $(this).offset().top;
-	    var topOfWindow = $(window).scrollTop();
+let portafolioButtons = document.querySelectorAll('.portafolio-menu-item a');
 
-	      if (imagePos < topOfWindow) {
-	      	$('.noventa').css('width', '90%');
-	      	$('.ochenta').css('width', '80%');
-	      	$('.sesenta').css('width', '60%');
-
-	      }
-  	})
-})*/
-/* ---------- Menu ----------*/
-/*var consulta = window.matchMedia('(max-width: 500px)');
-var $burguerButton = document.getElementById('burguer');
-  var $menu = document.getElementById('menu');
-  function toggleMenu(){
-    $menu.classList.toggle('active');
-  };
-  function showMenu(){
-    $menu.classList.add('active');
-  };
-  function hideMenu(){
-    $menu.classList.remove('active');
-  };
-
-  function mediaQuery() {
-    if (consulta.matches) {
-      // si se cumple hagamos esto
-      console.log('se cumplió la condicion');
-      $burguerButton.addEventListener('touchstart', toggleMenu);
-    } else {
-      $burguerButton.removeEventListener('touchstart', toggleMenu);
-      // si no se cumple hagamos esto
-      console.log('no se cumplió la condicion');
-    }
-  }
-  mediaQuery();
-  /* ---------- Hammer ----------*/
-  /*var $body = document.body;
-
-  var gestos = new Hammer($body);
-  gestos.on('swipeleft', showMenu);
-  gestos.on('swiperight', hideMenu);
-/* ---------- Blazy ----------*/
-var bLazy = new Blazy({
-  selector: 'img'
-});
-
-var $burger = document.getElementById("burger");
-var $menu = document.getElementById("menu");
-
-$burger.addEventListener('click', mostrar)
-function mostrar() {
-  $menu.classList.toggle('active');
+for(const boton of portafolioButtons){
+    boton.addEventListener('click',(e)=>{
+        e.preventDefault();
+    })
 }
 
-$(window).scroll(function() {
-    var topOfWindow = $(window).scrollTop();
-    $('#servicios').each(function(){
-      var imagePos = $(this).offset().top - 300;
-      var topOfWindow = $(window).scrollTop();
+let $burgerButton = document.querySelector('.burger')
+let $menu = document.querySelector('.header-menu')
+let $headerMenuList = document.querySelectorAll('.header-menu a')
+let $footerMenuList = document.querySelectorAll('.footer-informacion-social a')
+let $portafolioMenuList = document.querySelectorAll('.portafolio-menu a')
+let $header = document.querySelector('header')
 
-        if (imagePos < topOfWindow) {
-          $('.derecha').addClass('mover-derecha')
-          $('.izquierda').addClass('mover-izquierda')
+if(viewportWidth <= 500){
+    $burgerButton.addEventListener('click',()=>{
+        $menu.classList.toggle('active')
+    })
 
+    document.addEventListener('scroll', (e)=>{
+        let top = body.getBoundingClientRect().top
+    
+        if(top < -60 ){
+            $header.classList.add('active')
+        }
+        if(top >= -60){
+            $header.classList.remove('active')
         }
     })
-    $('#call').each(function(){
-      var imagePos = $(this).offset().top - 600;
-      var topOfWindow = $(window).scrollTop();
+}else{
 
-        if (imagePos < topOfWindow) {
-          $('.mostrar').addClass('aparecer')
+    menuButtonToBanner($headerMenuList[0],01)
+    menuButtonToBanner($headerMenuList[1],02)
+    menuButtonOutBanner($headerMenuList[2])
+    menuButtonToBanner($footerMenuList[0],01)
+    menuButtonToBanner($footerMenuList[1],02)
+    menuButtonOutBanner($footerMenuList[2])
+    
+    function menuButtonToBanner(button, to){
+        button.addEventListener('click',(e)=>{
+            e.preventDefault()
+            smoothScroll($body, 1000);
+            handleSiguiente(to)
+        })
+    }
 
-        }
+    function menuButtonOutBanner(button) {
+        button.addEventListener('click',(e)=>{
+            e.preventDefault();
+            console.log(button)
+            let to = button.attributes.href.value.split('#')[1]
+            outBanner(to)
+        })
+    }
+}
+
+for(const button of $portafolioMenuList){
+    button.addEventListener('click',(e)=>{
+        e.preventDefault();
+
+        alert('Esta funcionalidad todavia esta en construcción')
     })
-    $('#contacto').each(function(){
-      var imagePos = $(this).offset().top - 200;
-      var topOfWindow = $(window).scrollTop();
-
-        if (imagePos < topOfWindow) {
-          $('.formulario').addClass('form')
-
-        }
-    })
-})
-/*
- //Ver mas
-/*$('#JesusEdu-list-mas').on('click', function(e){
-   e.preventDefault();
-   console.log(this);
-
-   verMas(this);
-})
- function verMas(a) {
-   $('.oculto').removeClass('oculto').addClass('aparecer');
-   $('#'+a.id).addClass('oculto');
-
-<<<<<<< HEAD
- }
-=======
- }*/
+}
