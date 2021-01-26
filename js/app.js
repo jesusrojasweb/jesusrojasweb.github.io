@@ -10,6 +10,7 @@ let $burgerButton = document.querySelector('.burger')
 let $menu = document.querySelector('.header-menu')
 let $headerMenuList = document.querySelectorAll('.header-menu a')
 let $footerMenuList = document.querySelectorAll('.footer-informacion-social a')
+let $portafolioMenuList = document.querySelectorAll('.portafolio-menu a')
 let $header = document.querySelector('header')
 
 if(viewportWidth <= 500){
@@ -52,4 +53,12 @@ if(viewportWidth <= 500){
             outBanner(to)
         })
     }
+}
+
+for(const button of $portafolioMenuList){
+    button.addEventListener('click',(e)=>{
+        e.preventDefault();
+
+        alert('Esta funcionalidad todavia esta en construcción')
+    })
 }
