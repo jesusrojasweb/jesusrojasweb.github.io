@@ -50,6 +50,9 @@ h1,h2{
                 .navbar-logo .logo-image{
                     width: 100%;
                 }
+        .header-navbar .burger{
+            display: none;
+        }
 
         .header-navbar .header-menu{
             display: flex;
@@ -448,13 +451,11 @@ h1,h2{
             line-height: 3.5rem;
         }
         .action-call .rombo{
-            width: 4em;
-            height: 4em;
-            background: #49378d;
+            width: 10em;
+            height: 10em;
             position: absolute;
-            left: 0;
-            top: -.5em;
-            /* z-index: -1; */
+            left: -2em;
+            top: -2em;
         }
         .call-action .btn{
             background: #49378d;
@@ -527,6 +528,7 @@ h1,h2{
 @media screen and (max-width: 500px){
     body{
         padding: 0 2em;
+        overflow-x: hidden;
     }
     #particles-js {
         height: 100vh;
@@ -534,6 +536,9 @@ h1,h2{
     .header{
         padding: 0 2em;
     }
+        .header-navbar .burger{
+            display: block;
+        }
         .header-navbar .navbar-home {
             width: 50%;
         }
@@ -622,6 +627,10 @@ h1,h2{
                 margin-top: 8em;
                 width: 100%;
             }
+                .banner-servicios .servicios-servicio,.servicios-footer .servicios-servicio:first-child{
+                    width: 230px;
+                    margin-right: 0;
+                }
                 .banner-servicios .servicios-header {
                     flex-direction: column;
                 }
@@ -629,10 +638,86 @@ h1,h2{
                     flex-direction: column;
                     height: auto;
                 }
+                    .servicios-servicio{
+                        margin-bottom: 2em;
+                    }
+                    .servicios-servicio .servicio-imagen {
+                        width: 50%;
+                        right: -6em;
+                        top: 0em;
+                    }
+                    .informacion-texto .servicio-informacion-titulo, .informacion-texto .servicio-informacion-cierre{
+                        font-size: 1.6rem;
+                    }
+                    .informacion-texto .servicio-informacion-descripcion{
+                        font-size: .9rem;
+                    }
+                    .servicios-footer .servicios-servicio:first-child .servicio-imagen{
+                        width: 115px;
+                        top: -9em;
+                        right: -6em;
+                    }
+                    .servicios-footer .servicios-servicio:last-child{
+                        align-self: inherit;
+                        margin-bottom: 0;
+                    }
+                    .servicios-footer .servicios-servicio:first-child .informacion-texto{
+                        margin-bottom: 0;
+                    }
+                    .servicios-footer .servicios-servicio:first-child .informacion-texto:before{
+                        right: -0.7em;
+                    }
+                    .servicios-footer .servicios-servicio:last-child .servicio-informacion-cierre{
+                        margin-left: 2em;
+                    }
+    .portafolio-servicio .portafolio-proyecto,
+    .portafolio-servicio .portafolio-proyecto:nth-child(4n+2),
+    .portafolio-servicio .portafolio-proyecto:nth-child(4n+3){
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .call-to-action{
+        grid-template-columns: 1fr;
+        margin: 4em 0 0 -2em;
+        width: 100%;
+        padding: 8em 2em;
+    }
+        .call-to-action .rombo{
+            left: calc(50% - 6em);
+        }
+        .action-call h2{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .call-action{
+            margin-top: 2em;
+        }
+            .call-action .btn:first-child {
+                margin-right: 1em;
+            }
+            .call-action .btn{
+                padding: 1em 1.7em;
+            }
 
 
 
     .footer{
         grid-template-columns: 1fr;
+        
     }
+        .footer img {
+            width: 85%;
+        }
+        .footer-logo,
+        .footer-informacion,
+        .footer-informacion-social{
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .footer-nav{
+            display: none;
+        }
+        
 }
